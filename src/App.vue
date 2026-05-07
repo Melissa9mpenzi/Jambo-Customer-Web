@@ -17,10 +17,10 @@
       </div>
         <img src="/images/paper.png" class="food-item paper-left" alt="">
         <img src="/images/paper.png" class="food-item paper-right" alt="">
-        <img src="/images/sharwama.png" class="food-item pepper-right" alt="Shawarma">
+        <img src="/images/shops.png" class="food-item pepper-right" alt="Shawarma">
         <img src="/images/toma.png" class="food-item cheese-right" alt="Tomato">
-        <img src="/images/pizza.png" class="food-item broccoli-left" alt="Pizza">
-        <img src="/images/ppepr.png" class="food-item broccoli-left-2" alt="Pepper">
+        <img src="/images/drug.png" class="food-item broccoli-left" alt="Pizza">
+        <img src="/images/pizza.png" class="food-item broccoli-left-2" alt="Pepper">
         <img src="/images/burger.png" class="food-item pizza" alt="Burger">
       </section>
 
@@ -37,13 +37,13 @@
       </section>
 
       <section class="foods-menu">
-        <h2>TOP RESTAURANTS</h2>
+        <h2>TOP CATEGORIES</h2>
         <p>Our menu is a nod to street food vendors who help their customers stay on-the-go by delivering quick tasty bites. We incorporated flavors from around the world to offer.</p>
         <div class="menu-categories">
-          <div class="menu-category"><div class="plate-wrapper"><img src="/images/burger.png" class="category-image" alt="Burger"></div><div class="category-content"><h3>Jambo bite</h3><p>Our menu is a nod to street food vendors who help their customers stay.</p><button class="menu-btn" aria-label="View appetizers">→</button></div></div>
-          <div class="menu-category"><div class="plate-wrapper"><img src="/images/pizza.png" class="category-image" alt="Pizza"></div><div class="category-content"><h3>Pizza Hub</h3><p>Our menu is a nod to street food vendors who help their customers stay.</p><button class="menu-btn" aria-label="View salads">→</button></div></div>
-          <div class="menu-category"><div class="plate-wrapper"><img src="/images/sharwama.png" class="category-image" alt="Shawarma"></div><div class="category-content"><h3>Sharwama House</h3><p>Our menu is a nod to street food vendors who help their customers stay.</p><button class="menu-btn" aria-label="View soups">→</button></div></div>
-          <div class="menu-category"><div class="plate-wrapper"><img src="/images/toma.png" class="category-image" alt="Main dish"></div><div class="category-content"><h3>Spice Route</h3><p>Our menu is a nod to street food vendors who help their customers stay.</p><button class="menu-btn" aria-label="View main dishes">→</button></div></div>
+          <div class="menu-category"><div class="plate-wrapper"><img src="/images/burger.png" class="category-image" alt="Burger"></div><div class="category-content"><h3>Food</h3><p>Our menu is a nod to street food vendors who help their customers stay.</p><button class="menu-btn" aria-label="View appetizers">→</button></div></div>
+          <div class="menu-category"><div class="plate-wrapper"><img src="/images/drug.png" class="category-image" alt="Pizza"></div><div class="category-content"><h3>Pharmacy</h3><p>Our menu is a nod to street food vendors who help their customers stay.</p><button class="menu-btn" aria-label="View salads">→</button></div></div>
+          <div class="menu-category"><div class="plate-wrapper"><img src="/images/shops.png" class="category-image" alt="Shawarma"></div><div class="category-content"><h3>Shops</h3><p>Our menu is a nod to street food vendors who help their customers stay.</p><button class="menu-btn" aria-label="View soups">→</button></div></div>
+          <div class="menu-category"><div class="plate-wrapper"><img src="/images/toma.png" class="category-image" alt="Main dish"></div><div class="category-content"><h3>Groceries</h3><p>Our menu is a nod to street food vendors who help their customers stay.</p><button class="menu-btn" aria-label="View main dishes">→</button></div></div>
         </div>
       </section>
 

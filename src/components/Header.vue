@@ -1,21 +1,17 @@
 <template>
   <header>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menus</a></li>
-        <li><a href="#">Order</a></li>
-      </ul>
+    <nav class="header-nav">
       <div class="logo">
         <div class="logo-circle">
           <img src="/images/jambo-logo.jpg" alt="Jambo Bites logo">
         </div>
       </div>
-      <ul class="nav-links">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Reserve</a></li>
-        <li><a href="#">More</a></li>
-      </ul>
+      <div class="spacer"></div>
+      <div class="header-center-image">
+        <img src="/images/logo.png" alt="Header Center Image" />
+      </div>
+      <div class="spacer"></div>
+      <button class="contact-btn">Contact</button>
     </nav>
   </header>
 </template>
