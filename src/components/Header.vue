@@ -11,8 +11,18 @@
         <img src="/images/logo.png" alt="Header Center Image" />
       </div>
       <div class="spacer"></div>
-      <button class="contact-btn">Contact</button>
+      <button class="contact-btn" @click="goToHelpSupport">Help & Support</button>
     </nav>
   </header>
 </template>
+
+<script setup>
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+const goToHelpSupport = () => {
+  router.push('/help-support')
+}
+</script>
 
