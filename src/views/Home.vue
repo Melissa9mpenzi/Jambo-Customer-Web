@@ -41,10 +41,46 @@
         <h2>TOP CATEGORIES</h2>
         <p>Our menu is a nod to street food vendors who help their customers stay on-the-go by delivering quick tasty bites. We incorporated flavors from around the world to offer.</p>
         <div class="menu-categories">
-          <div class="menu-category"><div class="plate-wrapper"><img src="/images/burger.png" class="category-image" alt="Burger"></div><div class="category-content"><h3>Food</h3><p>Our menu is a nod to street food vendors who help their customers stay.</p><button class="menu-btn" aria-label="View appetizers">→</button></div></div>
-          <div class="menu-category"><div class="plate-wrapper"><img src="/images/drug.png" class="category-image" alt="Pizza"></div><div class="category-content"><h3>Pharmacy</h3><p>Our menu is a nod to street food vendors who help their customers stay.</p><button class="menu-btn" aria-label="View salads">→</button></div></div>
-          <div class="menu-category"><div class="plate-wrapper"><img src="/images/shops.png" class="category-image" alt="Shawarma"></div><div class="category-content"><h3>Shops</h3><p>Our menu is a nod to street food vendors who help their customers stay.</p><button class="menu-btn" aria-label="View soups">→</button></div></div>
-          <div class="menu-category"><div class="plate-wrapper"><img src="/images/toma.png" class="category-image" alt="Main dish"></div><div class="category-content"><h3>Groceries</h3><p>Our menu is a nod to street food vendors who help their customers stay.</p><button class="menu-btn" aria-label="View main dishes">→</button></div></div>
+          <router-link to="/category/food" class="menu-category-link">
+            <div class="menu-category">
+              <div class="plate-wrapper"><img src="/images/burger.png" class="category-image" alt="Burger"></div>
+              <div class="category-content">
+                <h3>Food</h3>
+                <p>Delicious meals, street food and quick bites delivered right to your door.</p>
+                <span class="menu-btn" aria-label="View Food">→</span>
+              </div>
+            </div>
+          </router-link>
+          <router-link to="/category/pharmacy" class="menu-category-link">
+            <div class="menu-category">
+              <div class="plate-wrapper"><img src="/images/drug.png" class="category-image" alt="Pharmacy"></div>
+              <div class="category-content">
+                <h3>Pharmacy</h3>
+                <p>Medicines, supplements and health products from trusted pharmacies near you.</p>
+                <span class="menu-btn" aria-label="View Pharmacy">→</span>
+              </div>
+            </div>
+          </router-link>
+          <router-link to="/category/shops" class="menu-category-link">
+            <div class="menu-category">
+              <div class="plate-wrapper"><img src="/images/shops.png" class="category-image" alt="Shops"></div>
+              <div class="category-content">
+                <h3>Shops</h3>
+                <p>Fashion, electronics and home goods from local and online shops near you.</p>
+                <span class="menu-btn" aria-label="View Shops">→</span>
+              </div>
+            </div>
+          </router-link>
+          <router-link to="/category/groceries" class="menu-category-link">
+            <div class="menu-category">
+              <div class="plate-wrapper"><img src="/images/toma.png" class="category-image" alt="Groceries"></div>
+              <div class="category-content">
+                <h3>Groceries</h3>
+                <p>Fresh produce, pantry staples and dairy from trusted stores near you.</p>
+                <span class="menu-btn" aria-label="View Groceries">→</span>
+              </div>
+            </div>
+          </router-link>
         </div>
       </section>
 
@@ -102,3 +138,20 @@
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 </script>
+
+<style scoped>
+.menu-category-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.25s ease;
+}
+.menu-category-link:hover {
+  transform: translateY(-6px);
+}
+.menu-category-link:hover .menu-btn {
+  background-color: #fdd20a;
+  color: #14407b;
+  transform: scale(1.12);
+}
+</style>
