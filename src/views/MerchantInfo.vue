@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="partner-page">
     <Header />
     
@@ -212,6 +212,4 @@ export default {
 }
 </script>
 
-<style scoped>
- .pizza { top: 260px; left: 35%; width: 350px;  z-index: 6; animation: floatBounce 3s ease-in-out infinite; }
 </style>

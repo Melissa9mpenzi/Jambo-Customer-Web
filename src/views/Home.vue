@@ -132,38 +132,3 @@
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 </script>
-
-<style scoped>
-/* Category link wrapper */
-.menu-category-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  transition: transform 0.25s ease;
-}
-.menu-category-link:hover { transform: translateY(-6px); }
-.menu-category-link:hover .menu-btn { background-color: #fdd20a; color: #14407b; transform: scale(1.12); }
-
-/* Icon circle replacing image plates */
-.cat-icon-circle {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: #14407b;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-.cat-icon-circle i {
-  color: #fff;
-  font-size: 2.6rem;
-  transition: color 0.3s ease;
-}
-.menu-category-link:hover .cat-icon-circle {
-  background: #fdd20a;
-}
-.menu-category-link:hover .cat-icon-circle i {
-  color: #14407b;
-}
-</style>

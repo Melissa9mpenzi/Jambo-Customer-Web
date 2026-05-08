@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <section class="page-hero">
     <h1>{{ title }}<br><span>{{ subtitle }}</span></h1>
     <div class="paint-container">
@@ -16,54 +16,4 @@ defineProps({
 })
 </script>
 
-<style scoped>
-.page-hero {
-  position: relative;
-  text-align: center;
-  padding: 60px 20px 0;
-  min-height: 440px;
-  background-color: #fdfbf4;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.page-hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2.4rem, 5vw, 4rem);
-  color: #14407b;
-  margin-bottom: 20px;
-  line-height: 1.1;
-  position: relative;
-  z-index: 5;
-  font-weight: 700;
-}
-.page-hero h1 span {
-  color: #fdd20a;
-  -webkit-text-stroke: 1px #c9a800;
-}
-.paint-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
-}
-.paint-svg {
-  position: absolute;
-  bottom: -5px;
-  width: 100%;
-  height: auto;
-  min-height: 380px;
-  display: block;
-}
-/* All floating images inside slot will use these base rules */
-:slotted(.float-hero-img) {
-  position: absolute;
-  z-index: 5;
-  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
-  pointer-events: none;
-}
 </style>
