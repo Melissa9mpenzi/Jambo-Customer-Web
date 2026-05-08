@@ -1,7 +1,9 @@
+
 <template>
-<router-view />
+  <router-view />
 </template>
 
+
 <script setup>
-// This is now the main app container with router-view
+// No need to import Home, router-view handles routing
 </script>

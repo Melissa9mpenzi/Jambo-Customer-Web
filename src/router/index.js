@@ -1,18 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../Home.vue'
-import HelpSupport from '../components/HelpSupport.vue'
+import Home from '../views/Home.vue'
+import CourierInfo from '../views/CourierInfo.vue'
+import MerchantInfo from '../views/MerchantInfo.vue'
 
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/help-support',
-    name: 'HelpSupport',
-    component: HelpSupport
-  }
+  { path: '/', component: Home },
+  { path: '/courier-info', component: CourierInfo },
+  { path: '/merchant-info', component: MerchantInfo}
 ]
 
 const router = createRouter({

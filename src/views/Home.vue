@@ -72,25 +72,25 @@
           <p>Explore opportunities to join our vibrant community as a rider, partner, or team member. Let’s build something great together!</p>
         </div>
         <div class="join-us-grid">
-          <div class="join-card">
-            <div class="join-icon"><i class="fas fa-motorcycle"></i></div>
-            <h3>Become a Rider</h3>
-            <p>Deliver happiness and great food to our customers. Flexible hours and great rewards await!</p>
-            <button class="join-btn" aria-label="Become a Rider">Join Now</button>
-          </div>
-          <div class="join-card">
-            <div class="join-icon"><i class="fas fa-handshake"></i></div>
-            <h3>Become a Partner</h3>
-            <p>Grow your business by partnering with us. Reach more customers and boost your brand.</p>
-            <button class="join-btn" aria-label="Become a Partner">Partner Up</button>
-          </div>
-          <div class="join-card">
-            <div class="join-icon"><i class="fas fa-briefcase"></i></div>
-            <h3>Careers</h3>
-            <p>Join our passionate team and help shape the future of food delivery and hospitality.</p>
-            <button class="join-btn" aria-label="Careers">See Openings</button>
-          </div>
-        </div>
+            <div class="join-card">
+                <div class="join-icon"><i class="fas fa-motorcycle"></i></div>
+                <h3>Become a Rider</h3>
+                <p>Deliver happiness and great food to our customers. Flexible hours and great rewards await!</p>
+                <a href="/courier-info" class="join-btn" aria-label="Become a Rider">Join Now</a>
+            </div>
+            <div class="join-card">
+                <div class="join-icon"><i class="fas fa-handshake"></i></div>
+                <h3>Become a Partner</h3>
+                <p>Grow your business by partnering with us. Reach more customers and boost your brand.</p>
+                <a href="/merchant-info" class="join-btn" aria-label="Become a Partner">Partner Up</a>
+            </div>
+            <div class="join-card">
+                <div class="join-icon"><i class="fas fa-briefcase"></i></div>
+                <h3>Careers</h3>
+                <p>Join our passionate team and help shape the future of food delivery and hospitality.</p>
+                <a href="/careers" class="join-btn" aria-label="Careers">See Openings</a>
+            </div>
+            </div>
       </section>
     </main>
 

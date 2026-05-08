@@ -1,9 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router/index.js'
 import './style.css'
 import router from './router'
 
 const app = createApp(App)
+app.use(router)
+
 app.use(router)
 
 // Scroll handler for sticky header
