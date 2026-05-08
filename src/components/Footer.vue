@@ -9,12 +9,12 @@
         <h4>Jambo Bites</h4>
       </div>
       <div class="footer-col">
-        <img src="/images/rest.jpg" alt="The Savory">
-        <h4>The Savory</h4>
+        <img src="/images/shops.png" alt="The Savory">
+        <h4>The Shoppers</h4>
       </div>
       <div class="footer-col">
-        <img src="/images/rant.jpg" alt="Spice Route">
-        <h4>Spice Route</h4>
+        <img src="/images/drug.png" alt="Spice Route">
+        <h4>Mulu Pharmacy</h4>
       </div>
       <div class="footer-col">
         <img src="/images/burger.png" alt="Burger House">

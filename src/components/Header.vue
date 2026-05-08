@@ -1,11 +1,11 @@
 <template>
   <header>
     <nav class="header-nav">
-      <div class="logo">
+      <router-link to="/" class="logo">
         <div class="logo-circle">
           <img src="/images/jambo-logo.jpg" alt="Jambo Bites logo">
         </div>
-      </div>
+      </router-link>
       <div class="spacer"></div>
       <div class="header-center-image">
         <img src="/images/logo.png" alt="Header Center Image" />

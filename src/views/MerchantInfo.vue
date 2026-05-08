@@ -16,53 +16,29 @@
       <img src="/images/toma.png" class="food-item cheese-right" alt="Tomato">
       <img src="/images/drug.png" class="food-item broccoli-left" alt="Products">
       <img src="/images/pizza.png" class="food-item broccoli-left-2" alt="Food">
-      <img src="/images/burger.png" class="food-item pizza" alt="Burger">
+      <img src="/images/merchant.png" class="food-item pizza" alt="Burger">
     </section>
 
-    <!-- Why Partner Section - Horizontal Scrolling Cards -->
+    <!-- Why Partner Section -->
     <section class="why-partner">
       <div class="container">
         <h2 class="section-title">Why Partner With JamboApp?</h2>
         <p class="section-subtitle">Join hundreds of successful merchants growing their business on our platform</p>
-        
-        <div class="benefits-showcase">
-          <div class="main-benefit-display">
-            <div class="main-benefit-card" :key="activeBenefit" :class="'benefit-theme-' + activeBenefit">
-              <div class="main-benefit-badge">
-                <i :class="benefits[activeBenefit].icon"></i>
-              </div>
-              <h3>{{ benefits[activeBenefit].title }}</h3>
-              <p>{{ benefits[activeBenefit].description }}</p>
-              <div class="benefit-stats">
-                <div class="stat">
-                  <span class="stat-number">{{ benefits[activeBenefit].stat }}</span>
-                  <span class="stat-label">{{ benefits[activeBenefit].statLabel }}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="benefit-thumbnails">
-            <div 
-              v-for="(benefit, index) in benefits" 
-              :key="index"
-              class="benefit-thumb"
-              :class="{ active: activeBenefit === index }"
-              @click="activeBenefit = index"
-            >
-              <i :class="benefit.icon"></i>
-              <span>{{ benefit.shortTitle }}</span>
-            </div>
+        <div class="benefits-grid">
+          <div class="benefit-card" v-for="(benefit, index) in benefits" :key="index">
+            <div class="benefit-icon"><i :class="benefit.icon"></i></div>
+            <h3>{{ benefit.title }}</h3>
+            <p>{{ benefit.description }}</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Business Types Section - Circular Interactive Layout -->
+    <!-- Business Types Section -->
     <section class="business-types">
       <div class="container">
         <h2 class="section-title">Who Can Partner With Us?</h2>
         <p class="section-subtitle">Click on your business type to see how we can help you grow</p>
-        
         <div class="business-orbit">
           <div class="orbit-center">
             <div class="center-logo">
@@ -71,22 +47,12 @@
             </div>
           </div>
           <div class="orbit-ring">
-            <div 
-              v-for="(biz, index) in businessTypes" 
-              :key="index"
-              class="orbit-item"
-              :class="{ active: activeBusiness === index }"
-              :style="getOrbitPosition(index)"
-              @click="activeBusiness = activeBusiness === index ? null : index"
-            >
-              <div class="orbit-icon">
-                <i :class="biz.icon"></i>
-              </div>
+            <div v-for="(biz, index) in businessTypes" :key="index" class="orbit-item" :class="{ active: activeBusiness === index }" :style="getOrbitPosition(index)" @click="activeBusiness = activeBusiness === index ? null : index">
+              <div class="orbit-icon"><i :class="biz.icon"></i></div>
               <span class="orbit-label">{{ biz.type }}</span>
             </div>
           </div>
         </div>
-        
         <div class="business-detail-panel" v-if="activeBusiness !== null" :class="{ visible: activeBusiness !== null }">
           <div class="panel-header">
             <i :class="businessTypes[activeBusiness].icon"></i>
@@ -94,38 +60,38 @@
             <button class="close-panel" @click="activeBusiness = null">×</button>
           </div>
           <div class="panel-items">
-            <span v-for="(item, i) in businessTypes[activeBusiness].items" :key="i" class="item-tag">
-              {{ item }}
-            </span>
+            <span v-for="(item, i) in businessTypes[activeBusiness].items" :key="i" class="item-tag">{{ item }}</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Partner Requirements - Timeline Style -->
+    <!-- Getting Started Section with Timeline and Image -->
     <section class="partner-requirements">
       <div class="container">
         <h2 class="section-title">Getting Started Is Easy</h2>
         <p class="section-subtitle">Just a few things you'll need to begin your journey with us</p>
-        
-        <div class="requirements-timeline">
-          <div class="timeline-track">
-            <div 
-              v-for="(req, index) in partnerRequirements" 
-              :key="index"
-              class="timeline-node"
-              :class="{ passed: hoveredRequirement >= index }"
-              @mouseenter="hoveredRequirement = index"
-              @mouseleave="hoveredRequirement = -1"
-            >
-              <div class="node-connector" v-if="index < partnerRequirements.length - 1"></div>
-              <div class="node-circle">
-                <i :class="req.icon"></i>
-              </div>
-              <div class="node-content" :class="{ visible: hoveredRequirement >= index }">
-                <div class="node-number">0{{ index + 1 }}</div>
-                <h3>{{ req.title }}</h3>
-                <p>{{ req.description }}</p>
+        <div class="requirements-layout">
+          <div class="requirements-image-side">
+            <img src="/images/rant.jpg" alt="Partner getting started" class="side-image">
+            <div class="image-overlay-text">
+              <span>Start Your Journey</span>
+            </div>
+          </div>
+          <div class="requirements-timeline-side">
+            <div class="requirements-timeline">
+              <div class="timeline-track">
+                <div v-for="(req, index) in partnerRequirements" :key="index" class="timeline-node">
+                  <div class="node-connector" v-if="index < partnerRequirements.length - 1"></div>
+                  <div class="node-circle">
+                    <i :class="req.icon"></i>
+                  </div>
+                  <div class="node-content">
+                    <div class="node-number">0{{ index + 1 }}</div>
+                    <h3>{{ req.title }}</h3>
+                    <p>{{ req.description }}</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -133,16 +99,13 @@
       </div>
     </section>
 
-    <!-- FAQ Section - Accordion Column Layout -->
+    <!-- FAQ Section -->
     <section class="faq-section">
       <div class="container">
         <h2 class="section-title">Frequently Asked Questions</h2>
-        
         <div class="faq-columns">
           <div class="faq-column">
-            <div class="faq-item" v-for="(faq, index) in faqs.slice(0, 5)" :key="index" 
-                 :class="{ active: activeFaq === index }"
-                 @click="toggleFaq(index)">
+            <div class="faq-item" v-for="(faq, index) in faqs.slice(0, 5)" :key="index" :class="{ active: activeFaq === index }" @click="toggleFaq(index)">
               <div class="faq-question">
                 <span class="faq-number">{{ String(index + 1).padStart(2, '0') }}</span>
                 <h3>{{ faq.question }}</h3>
@@ -154,9 +117,7 @@
             </div>
           </div>
           <div class="faq-column">
-            <div class="faq-item" v-for="(faq, index) in faqs.slice(5, 10)" :key="index + 5"
-                 :class="{ active: activeFaq === index + 5 }"
-                 @click="toggleFaq(index + 5)">
+            <div class="faq-item" v-for="(faq, index) in faqs.slice(5, 10)" :key="index + 5" :class="{ active: activeFaq === index + 5 }" @click="toggleFaq(index + 5)">
               <div class="faq-question">
                 <span class="faq-number">{{ String(index + 6).padStart(2, '0') }}</span>
                 <h3>{{ faq.question }}</h3>
@@ -171,50 +132,24 @@
       </div>
     </section>
 
-    <!-- CTA Section - Split Design -->
+    <!-- CTA Section -->
     <section class="cta-section">
       <div class="container">
-        <div class="cta-split">
-          <div class="cta-left">
-            <span class="cta-badge">START TODAY</span>
-            <h2>Ready to Grow Your<br>Business <span class="highlight">Together?</span></h2>
-            <p>Join hundreds of merchants who've already expanded their reach with JamboApp</p>
-            <div class="cta-stats-row">
-              <div class="cta-stat">
-                <span class="cta-stat-num">500+</span>
-                <span class="cta-stat-label">Active Partners</span>
-              </div>
-              <div class="cta-stat">
-                <span class="cta-stat-num">50k+</span>
-                <span class="cta-stat-label">Monthly Orders</span>
-              </div>
-              <div class="cta-stat">
-                <span class="cta-stat-num">4.8★</span>
-                <span class="cta-stat-label">Partner Rating</span>
-              </div>
-            </div>
-          </div>
-          <div class="cta-right">
-            <div class="cta-card">
-              <h3>Become a Partner</h3>
-              <p>Fill in your details and our team will get back to you within 24 hours</p>
-              <a href="/register-partner" class="cta-btn cta-primary">
-                <i class="fas fa-handshake"></i>
-                Register Now — It's Free
-              </a>
-              <div class="cta-divider">
-                <span>or</span>
-              </div>
-              <a href="/contact" class="cta-btn cta-secondary">
-                <i class="fas fa-phone-alt"></i>
-                Talk to Our Team
-              </a>
-            </div>
-          </div>
+        <h2>Ready to Grow Your Business?</h2>
+        <p>Partner with JamboApp today and reach thousands of new customers</p>
+        <div class="cta-buttons">
+          <a href="/register-partner" class="cta-btn cta-primary">
+            <i class="fas fa-handshake"></i>
+            Become a Partner
+          </a>
+          <a href="/contact" class="cta-btn cta-secondary">
+            <i class="fas fa-phone-alt"></i>
+            Talk to Our Team
+          </a>
         </div>
       </div>
     </section>
-    
+
     <Footer />
   </div>
 </template>
@@ -225,185 +160,52 @@ import Footer from '../components/Footer.vue'
 
 export default {
   name: 'PartnerRegistration',
-  components: {
-    Header,
-    Footer
-  },
+  components: { Header, Footer },
   data() {
     return {
       activeFaq: null,
-      activeBenefit: 0,
       activeBusiness: null,
-      hoveredRequirement: -1,
       benefits: [
-        {
-          icon: 'fas fa-chart-line',
-          shortTitle: 'Revenue',
-          title: 'Increase Your Revenue',
-          description: 'Reach more customers and boost your sales by being visible on our popular platform with thousands of active users.',
-          stat: '2.5x',
-          statLabel: 'Average revenue increase'
-        },
-        {
-          icon: 'fas fa-bullhorn',
-          shortTitle: 'Marketing',
-          title: 'Free Marketing & Visibility',
-          description: 'Get featured in our app, participate in promotions, and let our marketing efforts drive customers to your business.',
-          stat: '10k+',
-          statLabel: 'Monthly impressions'
-        },
-        {
-          icon: 'fas fa-truck',
-          shortTitle: 'Delivery',
-          title: 'Reliable Delivery Network',
-          description: 'Our fleet of professional couriers ensures your products reach customers quickly, safely, and in perfect condition.',
-          stat: '25min',
-          statLabel: 'Average delivery time'
-        },
-        {
-          icon: 'fas fa-chart-pie',
-          shortTitle: 'Insights',
-          title: 'Data & Insights',
-          description: 'Access detailed analytics about your sales, popular items, peak hours, and customer preferences to optimize your business.',
-          stat: '15+',
-          statLabel: 'Analytics reports'
-        },
-        {
-          icon: 'fas fa-headset',
-          shortTitle: 'Support',
-          title: 'Dedicated Support',
-          description: 'Get priority access to our partner support team for technical assistance, order management, and business guidance.',
-          stat: '24/7',
-          statLabel: 'Support availability'
-        },
-        {
-          icon: 'fas fa-wallet',
-          shortTitle: 'Payments',
-          title: 'Fast & Secure Payments',
-          description: 'Receive your earnings weekly directly to your bank account or mobile money with complete transparency.',
-          stat: 'Weekly',
-          statLabel: 'Payment cycle'
-        }
+        { icon: 'fas fa-chart-line', title: 'Increase Your Revenue', description: 'Reach more customers and boost your sales by being visible on our popular platform with thousands of active users.' },
+        { icon: 'fas fa-bullhorn', title: 'Free Marketing & Visibility', description: 'Get featured in our app, participate in promotions, and let our marketing efforts drive customers to your business.' },
+        { icon: 'fas fa-truck', title: 'Reliable Delivery Network', description: 'Our fleet of professional couriers ensures your products reach customers quickly, safely, and in perfect condition.' },
+        { icon: 'fas fa-chart-pie', title: 'Data & Insights', description: 'Access detailed analytics about your sales, popular items, peak hours, and customer preferences to optimize your business.' },
+        { icon: 'fas fa-headset', title: 'Dedicated Support', description: 'Get priority access to our partner support team for technical assistance, order management, and business guidance.' },
+        { icon: 'fas fa-wallet', title: 'Fast & Secure Payments', description: 'Receive your earnings weekly directly to your bank account or mobile money with complete transparency.' }
       ],
       businessTypes: [
-        {
-          icon: 'fas fa-utensils',
-          type: 'Restaurants',
-          items: ['Fast food', 'Local cuisine', 'Bakeries', 'Cafes']
-        },
-        {
-          icon: 'fas fa-shopping-basket',
-          type: 'Groceries',
-          items: ['Supermarkets', 'Fresh produce', 'Butcheries', 'Mini markets']
-        },
-        {
-          icon: 'fas fa-pills',
-          type: 'Pharmacies',
-          items: ['Medicine', 'Health products', 'Vitamins', 'First aid']
-        },
-        {
-          icon: 'fas fa-store',
-          type: 'Retail',
-          items: ['Electronics', 'Clothing', 'Gifts', 'Essentials']
-        },
-        {
-          icon: 'fas fa-wine-glass-alt',
-          type: 'Beverages',
-          items: ['Juice bars', 'Liquor', 'Soft drinks', 'Water']
-        },
-        {
-          icon: 'fas fa-flower',
-          type: 'Specialty',
-          items: ['Florists', 'Pet supplies', 'Books', 'Cosmetics']
-        }
+        { icon: 'fas fa-utensils', type: 'Restaurants', items: ['Fast food', 'Local cuisine', 'Bakeries', 'Cafes'] },
+        { icon: 'fas fa-shopping-basket', type: 'Groceries', items: ['Supermarkets', 'Fresh produce', 'Butcheries', 'Mini markets'] },
+        { icon: 'fas fa-pills', type: 'Pharmacies', items: ['Medicine', 'Health products', 'Vitamins', 'First aid'] },
+        { icon: 'fas fa-store', type: 'Retail', items: ['Electronics', 'Clothing', 'Gifts', 'Essentials'] },
+        { icon: 'fas fa-wine-glass-alt', type: 'Beverages', items: ['Juice bars', 'Liquor', 'Soft drinks', 'Water'] },
+        { icon: 'fas fa-briefcase', type: 'Specialty', items: ['Florists', 'Pet supplies', 'Books', 'Cosmetics'] }
       ],
       partnerRequirements: [
-        {
-          icon: 'fas fa-file-alt',
-          title: 'Business License',
-          description: 'Valid trading license from relevant authorities'
-        },
-        {
-          icon: 'fas fa-map-marker-alt',
-          title: 'Physical Location',
-          description: 'A store or kitchen within our delivery zones'
-        },
-        {
-          icon: 'fas fa-mobile-alt',
-          title: 'Smart Device',
-          description: 'Smartphone or tablet to manage orders'
-        },
-        {
-          icon: 'fas fa-boxes',
-          title: 'Product Inventory',
-          description: 'Well-stocked inventory ready for orders'
-        },
-        {
-          icon: 'fas fa-shield-alt',
-          title: 'Quality Standards',
-          description: 'Commitment to quality and hygiene'
-        },
-        {
-          icon: 'fas fa-clock',
-          title: 'Operating Hours',
-          description: 'Consistent hours for reliable fulfillment'
-        }
+        { icon: 'fas fa-file-alt', title: 'Business License', description: 'Valid trading license from relevant authorities' },
+        { icon: 'fas fa-map-marker-alt', title: 'Physical Location', description: 'A store or kitchen within our delivery zones' },
+        { icon: 'fas fa-mobile-alt', title: 'Smart Device', description: 'Smartphone or tablet to manage orders' },
+        { icon: 'fas fa-boxes', title: 'Product Inventory', description: 'Well-stocked inventory ready for orders' },
+        { icon: 'fas fa-shield-alt', title: 'Quality Standards', description: 'Commitment to quality and hygiene' },
+        { icon: 'fas fa-clock', title: 'Operating Hours', description: 'Consistent hours for reliable fulfillment' }
       ],
       faqs: [
-        {
-          question: 'How much does it cost to partner with JamboApp?',
-          answer: 'There are no upfront costs to join! We operate on a commission-based model where you only pay a percentage when you make a sale. Our standard commission is 15% per order, with reduced rates available through our Premium and Enterprise plans.'
-        },
-        {
-          question: 'How long does the onboarding process take?',
-          answer: 'The typical onboarding process takes 3-5 business days. This includes account registration, document verification, store setup, and training. We fast-track restaurants and essential businesses to get them live within 24-48 hours.'
-        },
-        {
-          question: 'How do I manage incoming orders?',
-          answer: 'You\'ll receive orders through our easy-to-use Partner Dashboard (web) and Partner App (mobile). You can accept, prepare, and mark orders as ready for pickup. The app notifies you instantly when a new order comes in.'
-        },
-        {
-          question: 'Who handles the delivery?',
-          answer: 'Our network of professional couriers handles all deliveries. Once you mark an order as ready, a nearby courier is automatically assigned to pick it up and deliver it to the customer. You just focus on preparing great products!'
-        },
-        {
-          question: 'How and when do I get paid?',
-          answer: 'Payments are processed weekly every Monday. Your earnings (order total minus our commission) are transferred directly to your bank account or mobile money wallet. You can track all earnings in real-time through your Partner Dashboard.'
-        },
-        {
-          question: 'Can I set my own menu prices?',
-          answer: 'Absolutely! You have full control over your menu and pricing. Many partners maintain the same prices as in-store.'
-        },
-        {
-          question: 'What if I need to pause operations?',
-          answer: 'You can easily switch your store to "offline" mode through the Partner App or Dashboard at any time. This prevents new orders from coming in while you handle any issues.'
-        },
-        {
-          question: 'Do you offer marketing support?',
-          answer: 'Yes! We regularly run promotional campaigns and feature partners in our app. Premium partners get additional marketing benefits including featured placements and social media promotion.'
-        },
-        {
-          question: 'What kind of support do partners receive?',
-          answer: 'All partners get access to our support team for technical and operational assistance. Premium partners enjoy 24/7 priority support and a dedicated account manager.'
-        },
-        {
-          question: 'Can I deliver orders myself?',
-          answer: 'While our courier network handles most deliveries, some partners prefer using their own delivery staff for nearby orders. We support this through our "Self-Delivery" option, which comes with reduced commission rates.'
-        }
+        { question: 'How much does it cost to partner with JamboApp?', answer: 'There are no upfront costs to join! We operate on a commission-based model where you only pay a percentage when you make a sale. Our standard commission is 15% per order, with reduced rates available through our Premium and Enterprise plans.' },
+        { question: 'How long does the onboarding process take?', answer: 'The typical onboarding process takes 3-5 business days. This includes account registration, document verification, store setup, and training. We fast-track restaurants and essential businesses to get them live within 24-48 hours.' },
+        { question: 'How do I manage incoming orders?', answer: 'You\'ll receive orders through our easy-to-use Partner Dashboard (web) and Partner App (mobile). You can accept, prepare, and mark orders as ready for pickup. The app notifies you instantly when a new order comes in.' },
+        { question: 'Who handles the delivery?', answer: 'Our network of professional couriers handles all deliveries. Once you mark an order as ready, a nearby courier is automatically assigned to pick it up and deliver it to the customer. You just focus on preparing great products!' },
+        { question: 'How and when do I get paid?', answer: 'Payments are processed weekly every Monday. Your earnings (order total minus our commission) are transferred directly to your bank account or mobile money wallet. You can track all earnings in real-time through your Partner Dashboard.' },
+        { question: 'Can I set my own menu prices?', answer: 'Absolutely! You have full control over your menu and pricing. Many partners maintain the same prices as in-store.' },
+        { question: 'What if I need to pause operations?', answer: 'You can easily switch your store to "offline" mode through the Partner App or Dashboard at any time. This prevents new orders from coming in while you handle any issues.' },
+        { question: 'Do you offer marketing support?', answer: 'Yes! We regularly run promotional campaigns and feature partners in our app. Premium partners get additional marketing benefits including featured placements and social media promotion.' },
+        { question: 'What kind of support do partners receive?', answer: 'All partners get access to our support team for technical and operational assistance. Premium partners enjoy 24/7 priority support and a dedicated account manager.' },
+        { question: 'Can I deliver orders myself?', answer: 'While our courier network handles most deliveries, some partners prefer using their own delivery staff for nearby orders. We support this through our "Self-Delivery" option, which comes with reduced commission rates.' }
       ]
     }
   },
   methods: {
-    toggleFaq(index) {
-      this.activeFaq = this.activeFaq === index ? null : index;
-    },
-    getOrbitPosition(index) {
-      const total = this.businessTypes.length;
-      const angle = (index / total) * 360 - 90;
-      return {
-        '--angle': angle + 'deg'
-      };
-    }
+    toggleFaq(index) { this.activeFaq = this.activeFaq === index ? null : index; },
+    getOrbitPosition(index) { const total = this.businessTypes.length; const angle = (index / total) * 360 - 90; return { '--angle': angle + 'deg' }; }
   }
 }
 </script>
@@ -415,7 +217,7 @@ export default {
 .paint-container { position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
 .paint-svg { position: absolute; bottom: -5px; width: 100%; height: auto; min-height: 450px; display: block; }
 .food-item { position: absolute; z-index: 5; }
-.pizza { top: 320px; left: 35%; width: 380px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3)); z-index: 6; animation: floatBounce 3s ease-in-out infinite; }
+.pizza { top: 320px; left: 35%; width: 320px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3)); z-index: 6; animation: floatBounce 3s ease-in-out infinite; }
 .paper-left { top: 120px; left: 35%; width: 60px; z-index: 4; }
 .paper-right { top: 120px; right: 35%; width: 60px; z-index: 4; }
 .pepper-right { top: 200px; right: 5%; width: 250px; animation: floatBounce 3.2s ease-in-out infinite; animation-delay: 1s; }
@@ -428,31 +230,23 @@ export default {
 .section-subtitle { text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 50px; }
 .why-partner { padding: 80px 0; background: #14407b; color: #fff; }
 .why-partner .section-title { color: #fff; }
-.why-partner .section-subtitle { color: rgba(255,255,255,0.85); }
-.benefits-showcase { margin-top: 40px; }
-.main-benefit-display { margin-bottom: 30px; }
-.main-benefit-card { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25); border-radius: 24px; padding: 50px 40px; text-align: center; transition: all 0.4s ease; backdrop-filter: blur(10px); }
-.main-benefit-badge { width: 80px; height: 80px; border-radius: 50%; background: #fdd20a; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; font-size: 2rem; color: #14407b; }
-.main-benefit-card h3 { font-size: 1.8rem; margin-bottom: 15px; color: #fff; }
-.main-benefit-card p { color: rgba(255,255,255,0.8); max-width: 500px; margin: 0 auto 25px; line-height: 1.6; }
-.benefit-stats { display: flex; justify-content: center; }
-.stat-number { display: block; font-size: 4rem; font-weight: 700; font-family: 'Playfair Display', serif; color: #fdd20a; }
-.stat-label { color: rgba(255,255,255,0.7); font-size: 0.9rem; }
-.benefit-thumbnails { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-.benefit-thumb { padding: 12px 20px; border-radius: 50px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.7); font-size: 0.9rem; }
-.benefit-thumb i { font-size: 1rem; }
-.benefit-thumb:hover, .benefit-thumb.active { background: #fdd20a; color: #14407b; border-color: #fdd20a; transform: translateY(-2px); }
+.why-partner .section-subtitle { color: rgba(255, 255, 255, 0.85); }
+.benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+.benefit-card { background: rgba(255, 255, 255, 0.1); padding: 35px 30px; border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease; }
+.benefit-card:hover { background: rgba(255, 255, 255, 0.15); transform: translateY(-5px); }
+.benefit-icon { font-size: 2.5rem; color: #fdd20a; margin-bottom: 20px; }
+.benefit-card h3 { font-size: 1.3rem; margin-bottom: 12px; color: #fff; }
+.benefit-card p { color: rgba(255, 255, 255, 0.8); line-height: 1.6; }
 .business-types { padding: 80px 0; background: #fdfbf4; overflow: hidden; }
 .business-orbit { position: relative; width: 500px; height: 500px; margin: 50px auto; }
 .orbit-center { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; }
 .center-logo { width: 120px; height: 120px; border-radius: 50%; background: #14407b; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center; font-size: 0.75rem; font-weight: 600; box-shadow: 0 10px 40px rgba(20,64,123,0.3); }
 .center-logo i { font-size: 1.8rem; margin-bottom: 5px; }
-.orbit-ring { position: absolute; top: 0; left: 0; right: 0; bottom: 0; border: 2px dashed rgba(20,64,123,0.15); border-radius: 50%; animation: rotate 30s linear infinite; }
+.orbit-ring { position: absolute; top: 0; left: 0; right: 0; bottom: 0; border: 2px dashed rgba(20,64,123,0.15); border-radius: 50%; }
 .orbit-item { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-220px) rotate(calc(-1 * var(--angle))); display: flex; flex-direction: column; align-items: center; gap: 6px; cursor: pointer; z-index: 3; transition: all 0.3s ease; }
-.orbit-icon { width: 60px; height: 60px; border-radius: 50%; background: #fff; border: 2px solid #e0e0e0; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: #14407b; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
+.orbit-icon { width: 100px; height: 100px; border-radius: 50%; background: #fff; border: 2px solid #e0e0e0; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: #14407b; transition: all 0.3s ease; }
 .orbit-item.active .orbit-icon, .orbit-item:hover .orbit-icon { background: #14407b; color: #fff; border-color: #14407b; transform: scale(1.15); box-shadow: 0 8px 25px rgba(20,64,123,0.25); }
 .orbit-label { font-size: 0.75rem; font-weight: 600; color: #14407b; text-align: center; }
-@keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 .business-detail-panel { max-width: 600px; margin: 20px auto 0; background: #fff; border-radius: 20px; padding: 30px; box-shadow: 0 15px 40px rgba(0,0,0,0.08); opacity: 0; transform: translateY(20px); transition: all 0.4s ease; }
 .business-detail-panel.visible { opacity: 1; transform: translateY(0); }
 .panel-header { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
@@ -464,15 +258,21 @@ export default {
 .item-tag { padding: 8px 16px; border-radius: 50px; background: #fdfbf4; border: 1px solid #e0e0e0; color: #14407b; font-size: 0.9rem; font-weight: 500; transition: all 0.3s ease; }
 .item-tag:hover { background: #14407b; color: #fff; border-color: #14407b; }
 .partner-requirements { padding: 80px 0; background: #fff; }
-.requirements-timeline { max-width: 800px; margin: 60px auto 0; }
+.requirements-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-top: 40px; }
+.requirements-image-side { position: relative; overflow: hidden;  }
+.side-image { width: 100%; height: 650px; object-fit: cover; display: block;  transition: transform 0.5s ease; }
+.requirements-image-side:hover .side-image { transform: scale(1.05); }
+.image-overlay-text { position: absolute; bottom: 0; left: 0; right: 0; padding: 30px; background: linear-gradient(transparent, rgba(20,64,123,0.9)); color: #fff; text-align: center; }
+.image-overlay-text span { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 600; }
+.requirements-timeline-side { padding-left: 20px; }
+.requirements-timeline { position: relative; }
 .timeline-track { position: relative; display: flex; flex-direction: column; gap: 0; }
-.timeline-node { position: relative; display: flex; align-items: flex-start; padding: 20px 0; padding-left: 80px; min-height: 100px; }
-.node-connector { position: absolute; left: 34px; top: 70px; bottom: -20px; width: 2px; background: #e0e0e0; transition: background 0.4s ease; }
-.timeline-node.passed .node-connector { background: #14407b; }
-.node-circle { position: absolute; left: 10px; top: 25px; width: 50px; height: 50px; border-radius: 50%; background: #f8f9fa; border: 2px solid #e0e0e0; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #999; transition: all 0.4s ease; z-index: 2; }
-.timeline-node.passed .node-circle { background: #14407b; border-color: #14407b; color: #fff; box-shadow: 0 5px 20px rgba(20,64,123,0.2); }
-.node-content { opacity: 0.4; transform: translateX(-10px); transition: all 0.4s ease; }
-.node-content.visible { opacity: 1; transform: translateX(0); }
+.timeline-node { position: relative; display: flex; align-items: flex-start; padding: 15px 0; padding-left: 70px; min-height: 90px; }
+.node-connector { position: absolute; left: 24px; top: 60px; bottom: -25px; width: 2px; background: #14407b; }
+.node-circle { position: absolute; left: 0; top: 28px; width: 50px; height: 50px; border-radius: 50%; background: #14407b; border: 3px solid #14407b; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #fff; box-shadow: 0 5px 20px rgba(20,64,123,0.2); z-index: 2; transition: all 0.3s ease; }
+.timeline-node:hover .node-circle { transform: scale(1.1); background: #fdd20a; border-color: #fdd20a; color: #14407b; }
+.node-content { opacity: 1; transform: translateX(0); transition: all 0.3s ease; }
+.timeline-node:hover .node-content { transform: translateX(5px); }
 .node-number { font-size: 0.8rem; font-weight: 700; color: #fdd20a; margin-bottom: 5px; letter-spacing: 1px; }
 .node-content h3 { font-size: 1.2rem; color: #14407b; margin-bottom: 5px; }
 .node-content p { color: #666; line-height: 1.5; }
@@ -488,26 +288,34 @@ export default {
 .faq-item.active .faq-question i { transform: rotate(180deg); }
 .faq-answer { padding: 0 20px 20px; padding-left: 63px; }
 .faq-answer p { color: #666; line-height: 1.7; margin: 0; font-size: 0.9rem; }
-.cta-section { padding: 80px 0 120px; background: #fdfbf4; }
-.cta-split { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
-.cta-left { padding-right: 40px; }
-.cta-badge { display: inline-block; padding: 6px 16px; border-radius: 50px; background: #fdd20a; color: #14407b; font-weight: 700; font-size: 0.8rem; letter-spacing: 1px; margin-bottom: 20px; }
-.cta-left h2 { font-family: 'Playfair Display', serif; font-size: 2.8rem; color: #14407b; margin-bottom: 15px; line-height: 1.2; }
-.cta-left h2 .highlight { color: #fdd20a; }
-.cta-left p { color: #666; font-size: 1.05rem; margin-bottom: 30px; }
-.cta-stats-row { display: flex; gap: 30px; }
-.cta-stat-num { display: block; font-size: 1.8rem; font-weight: 700; color: #14407b; font-family: 'Playfair Display', serif; }
-.cta-stat-label { font-size: 0.8rem; color: #999; }
-.cta-right { display: flex; justify-content: center; }
-.cta-card { background: #fff; border-radius: 24px; padding: 45px 40px; box-shadow: 0 20px 60px rgba(0,0,0,0.08); text-align: center; max-width: 420px; width: 100%; border: 1px solid #f0f0f0; }
-.cta-card h3 { font-size: 1.5rem; color: #14407b; margin-bottom: 10px; font-family: 'Playfair Display', serif; }
-.cta-card p { color: #666; font-size: 0.95rem; margin-bottom: 25px; }
-.cta-btn { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 15px 30px; border-radius: 50px; font-size: 1rem; font-weight: 600; text-decoration: none; transition: all 0.3s ease; width: 100%; }
+.cta-section { padding: 80px 0 120px; background: #fdfbf4; text-align: center; }
+.cta-section h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #14407b; margin-bottom: 15px; }
+.cta-section p { font-size: 1.1rem; color: #666; margin-bottom: 40px; }
+.cta-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.cta-btn { display: inline-flex; align-items: center; gap: 10px; padding: 15px 35px; border-radius: 50px; font-size: 1.1rem; font-weight: 600; text-decoration: none; transition: all 0.3s ease; }
 .cta-primary { background: #14407b; color: #fff; }
-.cta-primary:hover { background: #0d2f5c; transform: translateY(-2px); box-shadow: 0 10px 30px rgba(20,64,123,0.25); }
-.cta-divider { display: flex; align-items: center; gap: 15px; margin: 20px 0; color: #ccc; font-size: 0.85rem; }
-.cta-divider::before, .cta-divider::after { content: ''; flex: 1; height: 1px; background: #e0e0e0; }
+.cta-primary:hover { background: #0d2f5c; transform: translateY(-2px); }
 .cta-secondary { background: transparent; color: #14407b; border: 2px solid #14407b; }
 .cta-secondary:hover { background: #14407b; color: #fff; transform: translateY(-2px); }
-@media (max-width: 768px) { .hero { min-height: 500px; padding: 40px 20px 0; } .hero h1 { font-size: 2.5rem; } .pizza { width: 250px; top: 250px; left: 25%; } .section-title { font-size: 2rem; } .business-orbit { width: 340px; height: 340px; } .orbit-item { transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-150px) rotate(calc(-1 * var(--angle))); } .center-logo { width: 90px; height: 90px; font-size: 0.65rem; } .center-logo i { font-size: 1.3rem; } .orbit-icon { width: 48px; height: 48px; font-size: 1.1rem; } .orbit-label { font-size: 0.65rem; } .faq-columns { grid-template-columns: 1fr; } .cta-split { grid-template-columns: 1fr; gap: 40px; } .cta-left { padding-right: 0; text-align: center; } .cta-stats-row { justify-content: center; } .cta-left h2 { font-size: 2rem; } .node-content.visible { opacity: 1; transform: translateX(0); } }
+@media (max-width: 768px) {
+  .hero { min-height: 500px; padding: 40px 20px 0; }
+  .hero h1 { font-size: 2.5rem; }
+  .pizza { width: 250px; top: 250px; left: 25%; }
+  .section-title { font-size: 2rem; }
+  .benefits-grid { grid-template-columns: 1fr; }
+  .business-orbit { width: 340px; height: 340px; }
+  .orbit-item { transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-150px) rotate(calc(-1 * var(--angle))); }
+  .center-logo { width: 90px; height: 90px; font-size: 0.65rem; }
+  .center-logo i { font-size: 1.3rem; }
+  .orbit-icon { width: 48px; height: 48px; font-size: 1.1rem; }
+  .orbit-label { font-size: 0.65rem; }
+  .requirements-layout { grid-template-columns: 1fr; gap: 40px; }
+  .side-image { height: 350px; }
+  .requirements-timeline-side { padding-left: 0; }
+  .faq-columns { grid-template-columns: 1fr; }
+  .cta-buttons { flex-direction: column; align-items: center; }
+  .timeline-node { padding-left: 60px; }
+  .node-circle { width: 40px; height: 40px; font-size: 1rem; left: 0; }
+  .node-connector { left: 19px; }
+}
 </style>

@@ -22,13 +22,13 @@
         <img src="/images/toma.png" class="food-item cheese-right" alt="Tomato">
         <img src="/images/drug.png" class="food-item broccoli-left" alt="Pizza">
         <img src="/images/pizza.png" class="food-item broccoli-left-2" alt="Pepper">
-        <img src="/images/burger.png" class="food-item pizza" alt="Burger">
+        <img src="/images/phone.png" class="food-item pizza" alt="Burger">
       </section>
 
       <section class="content-section">
         <div class="text-content">
           <h2>Not Fast food<br>But Good Food Fast.</h2>
-          <p>We've built something extraordinary that will transform how you connect, work, and create. Join our exclusive experience to the future.</p>
+          <p>JAMBOAPP is an on-demand multi-service delivery platform designed to connect customers with local merchants and reliable couriers for fast and seamless delivery of food, groceries, and everyday essentials. The platform offers a smooth end-to-end experience where users can easily browse products, place orders, make secure payments, and track their deliveries in real time from dispatch to arrival. Built with a vision to become the most trusted, fast, and affordable last-mile marketplace, JAMBOAPP focuses on delivering orders within an average of 45 minutes while supporting local businesses and empowering delivery partners.</p>
           <div class="signature">Good Food Fast</div>
         </div>
         <div class="image-gallery">
