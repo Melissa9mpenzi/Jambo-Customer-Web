@@ -10,18 +10,8 @@
     <Header />
 
     <main class="help-support-main">
-      <!-- Hero Section -->
-      <section class="hero-section">
-        <div class="hero-content">
-          <h1>Help & Support</h1>
-          <p>We're here to help you every step of the way. Find answers, get support, and learn how to make the most of JamboApp.</p>
-        </div>
-        <div class="hero-image">
-          <div class="support-avatar">
-            <img src="/images/customer-service-hero.jpg" alt="Customer Support Agent" class="hero-support-image" />
-          </div>
-        </div>
-      </section>
+      <!-- Shared Hero Section -->
+      <HeroSection />
 
       <!-- Quick Contact Section -->
       <section class="quick-contact-section">
@@ -319,6 +309,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
+import HeroSection from '../components/HeroSection.vue'
 
 const faqs = ref([
   {
@@ -427,15 +418,7 @@ const submitForm = () => {
   margin: 0 auto;
 }
 
-/* Hero Section */
-.hero-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-  margin-bottom: 4rem;
-  padding: 3rem 0;
-}
+/* Hero Section styles removed — now using shared HeroSection component */
 
 .hero-content h1 {
   font-size: 3.5rem;

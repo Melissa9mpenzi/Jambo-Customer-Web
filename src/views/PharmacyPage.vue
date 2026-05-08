@@ -8,12 +8,9 @@
     </div>
 
     <Header />
-
     <main>
-      <!-- Shared Hero Section -->
       <HeroSection />
 
-      <!-- Category Page Content -->
       <section class="category-page-section">
         <div class="category-breadcrumb">
           <router-link to="/" class="breadcrumb-link">Home</router-link>
@@ -21,34 +18,35 @@
           <span class="breadcrumb-current">Pharmacy</span>
         </div>
 
-        <div class="category-page-header">
-          <div class="category-page-icon">
-            <img src="/images/drug.png" alt="Pharmacy" />
-          </div>
-          <div class="category-page-title-wrap">
-            <h2 class="category-page-title">Pharmacy</h2>
-            <p class="category-page-subtitle">Order medicines, health supplements, and wellness products from trusted pharmacies near you. Fast, reliable, and confidential delivery.</p>
+        <!-- Category Banner with floating pharmacy images -->
+        <div class="category-banner pharma-banner">
+          <img src="/images/drug.png" class="float-img f1" alt="Medicine">
+          <img src="/images/drug.png" class="float-img f2" alt="Pills">
+          <img src="/images/drug.png" class="float-img f3" alt="Pharmacy">
+          <img src="/images/drug.png" class="float-img f4" alt="Health">
+          <div class="banner-text">
+            <div class="banner-icon">💊</div>
+            <h2>Pharmacy</h2>
+            <p>Trusted medicines, health supplements and wellness products from licensed pharmacies near you.</p>
           </div>
         </div>
 
-        <div class="category-items-grid">
-          <div class="category-item-card" v-for="item in pharmacyItems" :key="item.id">
-            <div class="item-img-wrap">
-              <img :src="item.image" :alt="item.name" />
-            </div>
-            <div class="item-details">
-              <h4>{{ item.name }}</h4>
-              <p>{{ item.description }}</p>
-              <div class="item-footer">
-                <span class="item-price">{{ item.price }}</span>
-                <button class="item-order-btn" :aria-label="'Order ' + item.name">Order Now</button>
-              </div>
+        <div class="subcategory-intro">
+          <h3>Browse by Type</h3>
+          <p>Discover the range of pharmacy and health products available on JamboApp</p>
+        </div>
+
+        <div class="subcategory-grid">
+          <div class="subcategory-card" v-for="cat in pharmacyCategories" :key="cat.name">
+            <div class="subcategory-icon">{{ cat.icon }}</div>
+            <div class="subcategory-info">
+              <h4>{{ cat.name }}</h4>
+              <p>{{ cat.description }}</p>
             </div>
           </div>
         </div>
       </section>
     </main>
-
     <Footer />
   </div>
 </template>
@@ -58,158 +56,102 @@ import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 import HeroSection from '../components/HeroSection.vue'
 
-const pharmacyItems = [
-  { id: 1, name: 'Paracetamol 500mg', description: 'Trusted pain relief and fever reducer. Available in packs of 20.', price: 'KSh 50', image: '/images/drug.png' },
-  { id: 2, name: 'Vitamin C Supplements', description: 'Boost your immunity with high-dose Vitamin C tablets.', price: 'KSh 250', image: '/images/drug.png' },
-  { id: 3, name: 'Antacid Tablets', description: 'Fast relief from heartburn, indigestion, and acid reflux.', price: 'KSh 120', image: '/images/drug.png' },
-  { id: 4, name: 'Antiseptic Cream', description: 'Antiseptic cream for minor cuts, burns, and skin irritations.', price: 'KSh 180', image: '/images/drug.png' },
-  { id: 5, name: 'Multivitamin Pack', description: 'Daily multivitamins to support overall health and wellbeing.', price: 'KSh 400', image: '/images/drug.png' },
-  { id: 6, name: 'Cough Syrup', description: 'Soothing cough syrup for dry and productive coughs.', price: 'KSh 220', image: '/images/drug.png' },
+const pharmacyCategories = [
+  { icon: '💊', name: 'Prescription Medicines', description: 'Upload your prescription and get your medication delivered safely and discreetly.' },
+  { icon: '🩹', name: 'Over-the-Counter (OTC)', description: 'Pain relievers, antacids, antihistamines and everyday remedies available without a prescription.' },
+  { icon: '🧴', name: 'Skincare & Beauty', description: 'Medically-approved skincare, sunscreens, moisturisers and dermatology products.' },
+  { icon: '🌿', name: 'Vitamins & Supplements', description: 'Multivitamins, Vitamin C, D, Zinc and natural health boosters for everyday wellness.' },
+  { icon: '🩺', name: 'Medical Devices', description: 'Blood pressure monitors, glucometers, thermometers and other home health equipment.' },
+  { icon: '🧪', name: 'Lab & Testing Kits', description: 'Rapid test kits for blood sugar, malaria, COVID-19 and more, available for home use.' },
+  { icon: '🍼', name: 'Baby & Maternal Health', description: 'Baby formula, nappies, prenatal vitamins and products for mother and child care.' },
+  { icon: '🏋️', name: 'Sports & Nutrition', description: 'Protein supplements, energy drinks, recovery aids and sports performance products.' },
 ]
 </script>
 
 <style scoped>
-.category-page-section {
-  background: #fdfbf4;
-  padding: 60px 8% 100px;
-  min-height: 600px;
-}
-.category-breadcrumb {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.9rem;
-  color: #888;
-  margin-bottom: 40px;
-}
-.breadcrumb-link {
-  color: #14407b;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.2s;
-}
+.category-page-section { background: #fdfbf4; padding: 40px 8% 100px; }
+
+.category-breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: #888; margin-bottom: 36px; }
+.breadcrumb-link { color: #14407b; text-decoration: none; font-weight: 600; transition: color 0.2s; }
 .breadcrumb-link:hover { color: #fdd20a; }
 .breadcrumb-sep { color: #bbb; }
 .breadcrumb-current { color: #333; font-weight: 500; }
 
-.category-page-header {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  margin-bottom: 60px;
-  flex-wrap: wrap;
-}
-.category-page-icon {
-  width: 120px;
-  height: 120px;
-  background: #14407b;
-  border-radius: 50%;
+.category-banner {
+  position: relative;
+  border-radius: 24px;
+  padding: 70px 40px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 12px 32px rgba(20, 64, 123, 0.18);
-  flex-shrink: 0;
+  min-height: 280px;
+  margin-bottom: 64px;
 }
-.category-page-icon img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-}
-.category-page-title {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  color: #14407b;
-  margin-bottom: 10px;
-}
-.category-page-subtitle {
-  color: #555;
-  font-size: 1rem;
-  line-height: 1.7;
-  max-width: 600px;
-}
+.pharma-banner { background: linear-gradient(135deg, #0d5e3f 0%, #14815a 60%, #0a4a30 100%); }
 
-.category-items-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 32px;
+.float-img {
+  position: absolute;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,0.35));
+  pointer-events: none;
 }
-.category-item-card {
+.f1 { width: 140px; bottom: -5px; left: 3%; animation: floatA 3.2s ease-in-out infinite; }
+.f2 { width: 100px; top: 10px; left: 20%; animation: floatB 3.8s ease-in-out infinite; opacity: 0.7; }
+.f3 { width: 120px; bottom: -10px; right: 20%; animation: floatA 3.5s ease-in-out infinite; animation-delay: 0.8s; opacity: 0.8; }
+.f4 { width: 130px; top: 5px; right: 4%; animation: floatB 2.9s ease-in-out infinite; animation-delay: 1.2s; }
+
+@keyframes floatA { 0%,100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-16px) rotate(3deg); } }
+@keyframes floatB { 0%,100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-20px) rotate(-3deg); } }
+
+.banner-text { position: relative; z-index: 5; text-align: center; color: #fff; }
+.banner-icon { font-size: 3rem; margin-bottom: 10px; }
+.banner-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+.banner-text p { font-size: 1rem; max-width: 480px; margin: 0 auto; opacity: 0.9; line-height: 1.7; }
+
+.subcategory-intro { text-align: center; margin-bottom: 40px; }
+.subcategory-intro h3 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 3vw, 2.2rem); color: #14407b; margin-bottom: 10px; }
+.subcategory-intro p { color: #666; font-size: 1rem; }
+
+.subcategory-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; }
+.subcategory-card {
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(20, 64, 123, 0.08);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 28px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  box-shadow: 0 6px 24px rgba(20,64,123,0.07);
+  border: 1.5px solid transparent;
+  transition: all 0.3s ease;
+  cursor: default;
 }
-.category-item-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 48px rgba(20, 64, 123, 0.15);
-}
-.item-img-wrap {
-  background: linear-gradient(135deg, #14407b 0%, #1a5298 100%);
+.subcategory-card:hover { border-color: #14407b; transform: translateY(-5px); box-shadow: 0 16px 40px rgba(20,64,123,0.13); }
+.subcategory-icon {
+  font-size: 2.4rem;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  background: #f0f4ff;
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 28px;
-  height: 180px;
+  transition: background 0.3s;
 }
-.item-img-wrap img {
-  width: 120px;
-  height: 120px;
-  object-fit: contain;
-  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.3));
-  transition: transform 0.3s ease;
-}
-.category-item-card:hover .item-img-wrap img {
-  transform: scale(1.08) rotate(-4deg);
-}
-.item-details {
-  padding: 24px 20px 20px;
-}
-.item-details h4 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.2rem;
-  color: #14407b;
-  margin-bottom: 8px;
-  font-weight: 700;
-}
-.item-details p {
-  font-size: 0.88rem;
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 18px;
-}
-.item-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.item-price {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #14407b;
-}
-.item-order-btn {
-  background: #14407b;
-  color: #fff;
-  border: none;
-  border-radius: 20px;
-  padding: 9px 22px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
-}
-.item-order-btn:hover {
-  background: #fdd20a;
-  color: #14407b;
-  transform: scale(1.05);
-}
+.subcategory-card:hover .subcategory-icon { background: #fdd20a; }
+.subcategory-info h4 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #14407b; margin-bottom: 6px; font-weight: 700; }
+.subcategory-info p { font-size: 0.87rem; color: #666; line-height: 1.6; }
 
 @media (max-width: 768px) {
-  .category-page-section { padding: 40px 5% 80px; }
-  .category-page-header { gap: 20px; }
-  .category-page-icon { width: 80px; height: 80px; }
-  .category-page-icon img { width: 50px; height: 50px; }
+  .category-page-section { padding: 30px 5% 80px; }
+  .category-banner { padding: 50px 20px; min-height: 220px; }
+  .f1,.f2,.f3,.f4 { width: 70px; }
 }
 </style>
