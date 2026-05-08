@@ -298,4 +298,53 @@ export const translations = {
     access:      { sw: 'Upatikanaji',         en: 'Accessibility' },
     copyright:   { sw: '© 2026 JAMBOAPP — Ubora wa Utoaji • Masharti • Faragha', en: '© 2026 JAMBOAPP — Food Delivery Excellence • Terms • Privacy' },
   },
+
+  /* ── Courier Info page ── */
+  courier: {
+    heroLine1:   { sw: 'Kuwa',                         en: 'Become A' },
+    heroLine2:   { sw: 'Msambazaji',                   en: 'Courier' },
+    howToTitle:  { sw: 'Jinsi ya Kuwa Msambazaji',     en: 'How to Become a Courier' },
+    howToSub:    { sw: 'Fuata hatua hizi rahisi kuanza kupata pesa nasi', en: 'Follow these simple steps to start earning with us' },
+    reqTitle:    { sw: 'Unachohitaji Kuanza',           en: 'What You Need to Get Started' },
+    faqTitle:    { sw: 'Maswali Yanayoulizwa Mara kwa Mara', en: 'Frequently Asked Questions' },
+    ctaTitle:    { sw: 'Uko Tayari Kuanza Kupata Pesa?', en: 'Ready to Start Earning?' },
+    ctaSub:      { sw: 'Jiunge na maelfu ya wasambazaji wanaotoa furaha mjini', en: 'Join thousands of couriers delivering happiness across the city' },
+    registerNow: { sw: 'Jiandikishe Sasa',             en: 'Register Now' },
+    downloadApp: { sw: 'Pakua Programu ya Msambazaji', en: 'Download Courier App' },
+    downloadOn:  { sw: 'Pakua kwenye',                 en: 'Download on the' },
+    getItOn:     { sw: 'Pata kwenye',                  en: 'Get it on' },
+  },
+
+  /* ── Merchant Info page ── */
+  merchant: {
+    heroLine1:     { sw: 'Kukuza',                      en: 'Grow Your' },
+    heroLine2:     { sw: 'Biashara Yako',               en: 'Business' },
+    benefitsTitle: { sw: 'Kwa Nini Ushirikiane na JamboApp?', en: 'Why Partner With JamboApp?' },
+    benefitsSub:   { sw: 'Jiunge na mamia ya wafanyabiashara waliofanikiwa kwenye jukwaa letu', en: 'Join hundreds of successful merchants growing their business on our platform' },
+    whoTitle:      { sw: 'Nani Anaweza Kushirikiana Nasi?', en: 'Who Can Partner With Us?' },
+    whoSub:        { sw: 'Bonyeza aina ya biashara yako kuona jinsi tunavyoweza kukusaidia kukua', en: 'Click on your business type to see how we can help you grow' },
+    centerLabel:   { sw: 'Biashara Yako + JamboApp',   en: 'Your Business + JamboApp' },
+    startJourney:  { sw: 'Anza Safari Yako',            en: 'Start Your Journey' },
+    reqTitle:      { sw: 'Kuanza ni Rahisi',             en: 'Getting Started Is Easy' },
+    reqSub:        { sw: 'Mambo machache tu unayohitaji kuanza safari yako nasi', en: "Just a few things you'll need to begin your journey with us" },
+    faqTitle:      { sw: 'Maswali Yanayoulizwa Mara kwa Mara', en: 'Frequently Asked Questions' },
+    ctaTitle:      { sw: 'Uko Tayari Kukuza Biashara Yako?', en: 'Ready to Grow Your Business?' },
+    ctaSub:        { sw: 'Shiriki na JamboApp leo na ufikie maelfu ya wateja wapya', en: 'Partner with JamboApp today and reach thousands of new customers' },
+    becomePartner: { sw: 'Kuwa Mshirika',               en: 'Become a Partner' },
+    talkTeam:      { sw: 'Zungumza na Timu Yetu',       en: 'Talk to Our Team' },
+  },
+
+  /* ── Careers page ── */
+  careers: {
+    heroLine1:     { sw: 'Jiunge na',                   en: 'Join Our' },
+    heroLine2:     { sw: 'Timu Yetu',                   en: 'Team' },
+    whyJoinTitle:  { sw: 'Kwa Nini Kufanya Kazi JamboApp?', en: 'Why Work at JamboApp?' },
+    whyJoinSub:    { sw: 'Jenga kazi yako na kampuni inayobadilisha jinsi watu wanavyopata bidhaa na huduma', en: "Build your career with a company that's transforming how people access goods and services" },
+    cultureTitle:  { sw: 'Utamaduni Wetu',              en: 'Our Culture' },
+    cultureBody:   { sw: 'Huko JamboApp, tunaamini katika kuunda mahali pa kufanyia kazi ambapo uvumbuzi unakutana na kusudi. Timu yetu inaongozwa na dhamira ya kuunganisha jamii kupitia utoaji wa bidhaa na biashara.', en: "At JamboApp, we believe in building a workplace where innovation meets purpose. Our team is driven by the mission to connect communities through seamless delivery and commerce solutions." },
+    ctaTitle:      { sw: 'Uko Tayari Kuleta Mabadiliko?', en: 'Ready to Make an Impact?' },
+    ctaSub:        { sw: 'Jiunge na timu yetu na usaidie kuunda mustakabali wa utoaji na biashara Afrika', en: 'Join our team and help shape the future of delivery and commerce in Africa' },
+    viewPositions: { sw: 'Angalia Nafasi Zilizo Wazi',  en: 'View Open Positions' },
+    sendCV:        { sw: 'Tuma Maombi ya Hiari',        en: 'Send Spontaneous Application' },
+  },
 }

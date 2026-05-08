@@ -1,9 +1,9 @@
-﻿<template>
+<template>
   <div class="courier-page">
     <Header />
     <!-- Hero Section -->
     <section class="hero">
-      <h1 data-aos="fade-down" data-aos-duration="1200">Become A <br><span>Courier</span></h1>
+      <h1 data-aos="fade-down" data-aos-duration="1200">{{ t('courier.heroLine1') }}<br><span>{{ t('courier.heroLine2') }}</span></h1>
       <div class="paint-container">
         <svg class="paint-svg" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 160">
           <path style="fill:#14407b" d="M333,20l9-1v1c-1.139,1.139-.4,0-1,2l-2-1v1l-5,1V22C332.861,20.861,333.6,22,333,20Zm-68,0h2v1C264.99,20.426,266.135,21.12,265,20Zm8,0,6,1v1c-3.1,1.643-1.8,1.9-7,2Q272.5,22,273,20Zm-10,1h2v1C262.99,21.426,264.135,22.12,263,21Zm43,3v2l6,1v1h-1v1h-8c-1.139-1.139,0-.4-2-1,1.01-3.129.557-1.518,0-5h-8V22h1V21h3c2.05,1.885,9.224,1.1,13,1v1h-1v1h-3Zm-46-2h3v1h-2c-0.73.474-.011,1.392-2,1Zm118,0v2c-3.138.048-8.5-.565-10-2h10Zm28,0v2c-5.937.177-15.034,1.018-18-2h18Zm35,3h8q-0.5,2.5-1,5h2v3l15,1,1,2h18v1c2.719,0.547,4.4-1.148,6-2V34l6,1q-0.5,3-1,6h13v1h2v1h5l1-2,7,2c0.671,1.893,1.289,6.118,2,8,1.889,0.831,5,2.4,7,3h20v1l7,1V55l4-1v1h5V54h1v1h8V54c-1.975-1.129-2.338-1.417-3-4l-4-1v1l-9,1V50h-3V49h-1v1H545V49l-12-1V46h-3V45c1.719-1.127,1.355-.633,2-3h3v3c2.333,0.4,5.561,1.943,9,1V45h8v1h4v1h1V46h8c2.487-4.155,6.738-4.358,8-10l-5-1-1-2h2c3.694,3.591,4.09-.421,9,1v1h3v1l4-1c-0.083,2.971.011,4.984-1,7l-2,1v1h1c3.922,4.2,11.712-.247,18,2v1h2v1h3v1c5.15,1.671,8.465-2.556,10,1h-5c-0.88,3.4-1.861,3.065-6,3V51a12.7,12.7,0,0,0-5-1v3a29.368,29.368,0,0,0-7,1l1,3,14,1a25.313,25.313,0,0,0,5-1v1h3v1c1.94,0.4,3.789-1.883,7-1v1l13,1V58c3.577,0.063,5.714-.128,8-1V56l-5-1V54c-4.24-1.526-7.016,1.066-10-2,1.139-1.139.4,0,1-2h-8V49l15,1V49h13V48l6-1v2l4-1,1,3h5v1h-3v4c2.533-.505,5.063-2.78,7-3,1.6-.182,1.247,1.736,2,2,2.8,0.981,5.051-.647,7-1l1-3c4.465,0.373,2.915.628,7,0-0.36,2.022-1.432,2.944,0,4h-4v1c1.135,0.844.145-.127,1,1a10.6,10.6,0,0,0,4,1v2l8-1,1,2h2v1h8V59l8-1v1h2l1,2h9v1c4.4,1.239,12.371.419,15,0V61a3.983,3.983,0,0,1-2-2h6c1.392,1.14,5.988.69,9,0V58c3.224-.468,3.834,3.133,8,2V59l6-1v1h4v1h2v1h16v1h10v1c3.08,0.817,5.362-1.476,7-1l1,2h6V62c5.272-.273,15.725-2.758,22-1v1h5l12-1,1,2a10.88,10.88,0,0,0,7,3c1.139-1.139,0-.4,2-1V64h-3V62l15-1v1h10c3.061,0.9,8.609,3.347,14,2V63a2.657,2.657,0,0,1,3,1c4.524,1.1,8.372-.942,11-2l1-2c-1.135-.844-0.145.127-1-1l-8-1q1-3.5,2-7l10-1v1l9,1v1l32,1v2l16,1v1h-1c-0.233,1.59,1.616,1.242,2,2,1.813,3.58-1.626,3.413,4,4l3-5,6,1,1-2h6V57l9,1a100.135,100.135,0,0,1,25-3v2a105.972,105.972,0,0,0,17,1v2a11.352,11.352,0,0,0,2-2l17,1V58h3V57c3.14-.787,3.9,1.769,6,2V58l26,1v1c4.82,1.292,5.48-1.914,10-2h5v1h22v1h-1c-3.2,2.784-11.41-.178-16,0h-3v1h-14l-7-1c-0.33.667-.67,1.333-1,2l-6,1V62c1.14-1.139.4,0,1-2a40.117,40.117,0,0,0-9,1c-0.33,2-.67,4-1,6l3,1c3.13,2.854,25.01,2.763,32,2,2.93-.32,4.02-1.757,6-3V66l23,2c5.34,0.173,8.26-1.859,12-3h7V64h4v1c4.09,1.066,9.19-.477,12-1,1.43-3.826.63-3.158,8-3v1h5c0.33,0.667.67,1.333,1,2l6-1c0.67-1,1.33-2,2-3l4,1V60h4V58c-4.22.139-11.01-.111-13-2h2c3.9-3.759,16.04,1.162,19,2l8-1c0.33,1,.67,2,1,3h-3v2c2.66,1.412,4.22,2.03,9,2v1c1.61,0.894,7-1,7-1,0.33,0.667.67,1.333,1,2,1.47,0.767,6.4,2.038,9,1,0.33-.667.67-1.333,1-2h1c2.08-.276,2,1,2,1l10-1c0.33,0.667.67,1.333,1,2h21v1l12,1V68l12-1c2.02,0.176,2,1,2,1h5v1l9-1v1l4,1v1c2.87,0.571,2.36-1.808,3-2a1.549,1.549,0,0,1,2,1l5-1v2l4-1c0.33-.667.67-1.333,1-2l22-1V66h-3V64l5,1v2a12.66,12.66,0,0,0,5,1V67h3V65l6,3v1c2.76,0.74,2.28-1.723,3-2h12V66h5V65l13,1v1a2.583,2.583,0,0,0,3-1h16V65l5-1v2l37-2v1l3,1h11a2.614,2.614,0,0,1,3-1v1h4v1h7v1h-8v1h-1c-0.99,0-3.79-2.2-6-1-0.33.667-.67,1.333-1,2h-1c-0.23,1.4.37-.268,1,1,3.2,2.78,10.43-.685,15,1v1h2v1l3,1V73l31,1v1h8V74c3.92-1.1,12.43,1.283,15,2l9-1v1h7v1l5-1c0.33,0.667.67,1.333,1,2h15v7l-20-1V83h-11l-14-1V81h-13V80h-6V79h-15v1l-9-1c-0.33,1-.67,2-1,3l4,1v1h12v1h10v1c2.18,0.356,3.93-2.224,7-1,0.33,0.667.67,1.333,1,2l28-1c0.67,1,1.33,2,2,3l11-1c0.68,2.927,1.11,3.275,4,4,0.88-3.4,1.86-3.065,6-3v1h4V195H0V56c6.264-.162,9.232-2.562,14-4l19-1V50c2.893-.836,8.879-0.905,10,0-3.537.286-4.884,1.349-8,2v2l-6,1v1c-4.671,1.436-7.876-1.19-11,2l16-1v2l-4,1v3H27l1,2c-0.36.566-14.554,1.781-16,2,0.844,1.135-.127.145,1,1,2.786,3.1,6.729,1.543,12,2,1.848,0.16,2,1,2,1l15-1,45-1,1-2,8,1V67h5v1c3.858,1.033,8.376-.514,11-1V62a13.307,13.307,0,0,0,4-3h8v2l20,1V61c2.509-.907,4.5-0.283,6-2l1-3,10-1c6.236-2.012,12.925-4.594,20-6V47l28-5h14V41h17V40h11l20-1V38l11,1V38h3V37l6-2V34h11V33h3V32c2.225-.659,17.162,2.252,19,3v1h2v1c1.682,0.383,1.767-.951,2-1h15c1.382-2.612,1.769-1.693,2-6-0.223-.105-3.626-1.439-3-2h1c4.8-4.753,15.039.813,20,2v4h10c0.249,0.054.311,1.362,2,1V34h2V33l15,1v1h3v1c3.564,1.13,8.383.022,11,1v1h-5c-2.7-2.515-10.481-.273-14,0l1,3,5-1,1,2,11,2V43l6-1q-0.5-2.5-1-5c1.135-.844.145,0.127,1-1h13V35c3.394-2.495,1.052-3.507,7-4,1.653,1.6,5.613,1.99,9,2l4-5h-1c-1.139-1.139,0-.4-2-1V25ZM289,27h2v1C288.99,27.426,290.135,28.12,289,27Zm177,0h3v1h-3V27Zm26,1h4l1,2h1v1h-1v1h-5c-1.139-1.139,0-.4-2-1l-1-2h3V28Zm28,2v2c-3.619.431-12.181,1.593-15-1Zm4,1h3v1h-1c-1.139,1.139,0,.4-2,1V31Zm23,1,10,1c-1.107,4.237-3.875,4.177-5,9-1.882-.275-1.963-0.988-2-1h-5V40c3.686-.326,4.21-0.818,5-4C548.025,34.871,547.662,34.583,547,32Zm57,7h-3l-2-3h4v1C604.139,38.139,603.4,37,604,39Zm20-3h2v1C623.99,36.426,625.135,37.12,624,36Zm18,5,9,2q-0.5-2.5-1-5a15.68,15.68,0,0,1,6-1v1l5,1v1h-1c-4.27,6.684-12.423,3.763-20,5V44C641.719,42.873,641.355,43.368,642,41Zm126-3h2v1C767.99,38.426,769.135,39.12,768,38Zm44,0h6v1h-2v1h-5ZM120,39h2v1C119.99,39.426,121.135,40.12,120,39Zm566,0h4v1h-4V39Zm25,0h4v1h-4V39Zm23,0v2c-2.393-.607-1.858-0.318-3-2h3Zm198,2c4.652,0.037,5.545,1.217,9,2q0.5,2.5,1,5l-6,1v1l-4-1V41ZM610,42h2v1C609.99,42.426,611.135,43.12,610,42Zm129,0q0.5,2,1,4H729V44C734.707,44.063,735.29,42.956,739,42Zm118,4V42h1v1h9v1c2.31,0.7,3.994.252,6,1v1h-3C868.839,45.041,861.093,45.882,857,46ZM719,43h2v3h-1V45C718.861,43.861,719.6,45,719,43Zm85,0a14.823,14.823,0,0,1,6,1c-1.139,1.139,0,.4-2,1v1h-4V43Zm-30,1h1v1h10v1c-2.312.3-9.676,1.363-12,0Zm241,0h4v1h-4V44ZM900,45c2.694-.049,15.922,1.015,17,2l-10,1s0.094-1.211-2-1v1l-6-1Zm55,0h2v1h-1v1C954.861,45.861,955.6,47,955,45Zm54,0v2h-3V46h1C1008.14,44.861,1007,45.6,1009,45Zm53,3c-5.74.111-7.33,0.818-12,0V46a76.022,76.022,0,0,1,13-1v1C1061.86,47.139,1062.6,46,1062,48Zm8-3h3v1h-3V45Zm77,1c-1.08,4.573-4.35,4.249-10,4V49h1C1139.77,45.877,1141.94,45.851,1147,46ZM58,47h3v1H58V47Zm1114,0,8,1v1c-2.52,1.339-3.5,1.99-8,2V47Zm-168,1,3,1v1h3v1h-1v1h-6V51h-4V50h2V49h3V48ZM768,49c4.557,0.462,5.621.8,10,0-1.434,6.056-4.632,2.552-10,2V49Zm29,0,10,1v1h1l-1,2h9V52a3.983,3.983,0,0,1-2-2h2v1h8l1,2,5,1,1,2h4v1l-20,1V57c1.139-1.139.4,0,1-2h-9v1h-2v1l-11-1-1-3h2v1c0.6,0.021,1.85-.888,4-1V51h-2V49Zm54,3V50c0.865-.1,6.292-1.071,8,0v1Zm351,0c1.12-4.218,3.99-3.24,9-3v1c3.04,1.679,7.69-1.018,10,1ZM666,50h5v1h-5V50Zm36,0,5,1v1h-3C703.229,50.984,702.771,51.016,702,50Zm47,0h9c0.254,0.056.331,1.27,2,1V50h3v1h-2c-0.8,3.506-1.772,3.9-6,4v1h-5V55l-11,1-1-3c5.062,0.282,6.348.843,11,0V50Zm36,0h3v1h-3V50Zm80,0a9.746,9.746,0,0,1,4,1v1C865.991,51.7,866.277,51.865,865,50ZM700,51v2c-1.135-.844-0.145.127-1-1-1.135-.844-0.145.127-1-1h2Zm13,0c3.553-.072,6.785.157,9,1v1h-1v1h-3v1h-2v1h-7v1h-1V56h-4V54l9-1V51Zm12,0h2v1C724.99,51.426,726.135,52.12,725,51Zm295,0h2v1C1019.99,51.426,1021.13,52.12,1020,51Zm4,0h3v1h-3V51Zm7,0h2v1C1030.99,51.426,1032.13,52.12,1031,51Zm10,0h3v1h-3V51Zm8,2h-5V52h4s0.03-2.031,1-1v2Zm6-2h2c-0.84,1.135.13,0.145-1,1v1C1054.86,51.861,1055.6,53,1055,51ZM690,52v2c-1.135-.844-0.145.127-1-1-1.135-.844-0.145.127-1-1h2Zm367,0h3v1h-3V52Zm9,0h2v1C1065.99,52.426,1067.13,53.12,1066,52Zm4,0h2v1C1069.99,52.426,1071.13,53.12,1070,52Zm10,0h2v1C1079.99,52.426,1081.13,53.12,1080,52Zm48,0,6,1v1h-8V53C1128.01,52.426,1126.87,53.12,1128,52Zm-17,1h6v1h-6V53ZM852,55v2c-2.755.053-14.878-.973-16-2C842.784,54.955,847.071,54.143,852,55Zm308-1,3,1v1C1160.61,55.393,1161.14,55.683,1160,54Zm7,0h3v1h-3V54Zm125,0v2l-11,1c-0.33-.667-0.67-1.333-1-2h2C1283.7,53.417,1288.73,53.9,1292,54ZM875,55l9,1V55h4v3l-6-1-1,2-8,1V57h2V55ZM40,56h4v1H43v1H39Zm7,0h5v1H47V56Zm1137,0h2v1C1183.99,56.426,1185.13,57.12,1184,56ZM897,57h2v1C896.99,57.426,898.135,58.12,897,57Zm85,0h2v1C981.99,57.426,983.135,58.12,982,57Zm377,1c3.58-.063,5.71.128,8,1-0.77,1.016-1.23.984-2,2-2.22-.292-1.58-0.841-2-1h-5C1358.33,59.333,1358.67,58.667,1359,58Zm-101,1,4,1v1h-4V59ZM47,65c4.294-.088,9.149-0.079,12,1v1H49V66H44V65H42V64c-3.917-1.242-5.477,1.339-8,2V64c2.871-.672,2.524-1.8,3-2h9c2.374-.716,4.4-1.8,8-2v1H53v1H48v1C46.861,64.139,47.6,63,47,65Zm1099-5h5v1h-5V60Zm129,1h2v1C1274.99,61.426,1276.13,62.12,1275,61Zm7,0h3v1h-3V61Zm12,0h3v1c4.24,1.214,9.8-.206,13,1v1h-8V63h-8V61ZM74,66V63c5.361-1.138,14.557-1.544,18,2L82,66v1Zm24-4v2H92V63h2V62h4Zm1426,5v2c-1.8-.253-2-1-2-1h-6c-0.33-.667-0.67-1.333-1-2h2v1h7Z"/>
@@ -21,11 +21,11 @@
     <!-- How It Works Section -->
     <section class="how-it-works">
       <div class="container">
-        <h2 class="section-title" data-aos="fade-down">How to Become a Courier</h2>
-        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Follow these simple steps to start earning with us</p>
+        <h2 class="section-title" data-aos="fade-down">{{ t('courier.howToTitle') }}</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">{{ t('courier.howToSub') }}</p>
         
         <div class="steps-grid">
-          <div class="step-card" v-for="(step, index) in steps" :key="index" 
+          <div class="step-card" v-for="(step, index) in translatedSteps" :key="index" 
                :data-aos="index % 2 === 0 ? 'fade-right' : 'fade-left'" 
                :data-aos-delay="200 + (index * 100)">
             <div class="step-number" data-aos="zoom-in" :data-aos-delay="300 + (index * 100)">{{ step.number }}</div>
@@ -40,9 +40,9 @@
     <!-- Requirements Section -->
     <section class="requirements">
       <div class="container">
-        <h2 class="section-title" data-aos="fade-down">What You Need to Get Started</h2>
+        <h2 class="section-title" data-aos="fade-down">{{ t('courier.reqTitle') }}</h2>
         <div class="requirements-grid">
-          <div class="requirement-item" v-for="(req, index) in requirements" :key="index" 
+          <div class="requirement-item" v-for="(req, index) in translatedRequirements" :key="index" 
                data-aos="zoom-in" 
                :data-aos-delay="100 + (index * 50)">
             <i :class="req.icon"></i>
@@ -55,10 +55,10 @@
     <!-- FAQ Section -->
     <section class="faq-section">
       <div class="container">
-        <h2 class="section-title" data-aos="fade-down">Frequently Asked Questions</h2>
+        <h2 class="section-title" data-aos="fade-down">{{ t('courier.faqTitle') }}</h2>
         
         <div class="faq-list">
-          <div class="faq-item" v-for="(faq, index) in faqs" :key="index" 
+          <div class="faq-item" v-for="(faq, index) in translatedFaqs" :key="index" 
                :class="{ active: activeFaq === index }"
                @click="toggleFaq(index)"
                data-aos="fade-up" 
@@ -78,26 +78,26 @@
     <!-- Call to Action Section -->
     <section class="cta-section">
       <div class="container">
-        <h2 data-aos="zoom-in">Ready to Start Earning?</h2>
-        <p data-aos="fade-up" data-aos-delay="200">Join thousands of couriers delivering happiness across the city</p>
+        <h2 data-aos="zoom-in">{{ t('courier.ctaTitle') }}</h2>
+        <p data-aos="fade-up" data-aos-delay="200">{{ t('courier.ctaSub') }}</p>
         <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
           <a href="/register" class="cta-btn cta-primary" data-aos="zoom-in" data-aos-delay="500">
             <i class="fas fa-user-plus"></i>
-            Register Now
+            {{ t('courier.registerNow') }}
           </a>
           <a href="#" class="cta-btn cta-secondary" @click.prevent="downloadApp" data-aos="zoom-in" data-aos-delay="600">
             <i class="fas fa-download"></i>
-            Download Courier App
+            {{ t('courier.downloadApp') }}
           </a>
         </div>
         <div class="app-store-buttons" data-aos="fade-up" data-aos-delay="700">
           <a href="#" class="store-btn" @click.prevent="downloadApp('ios')" data-aos="flip-left" data-aos-delay="800">
             <i class="fab fa-apple"></i>
-            <span>Download on the<br><strong>App Store</strong></span>
+            <span>{{ t('courier.downloadOn') }}<br><strong>App Store</strong></span>
           </a>
           <a href="#" class="store-btn" @click.prevent="downloadApp('android')" data-aos="flip-right" data-aos-delay="900">
             <i class="fab fa-google-play"></i>
-            <span>Get it on<br><strong>Google Play</strong></span>
+            <span>{{ t('courier.getItOn') }}<br><strong>Google Play</strong></span>
           </a>
         </div>
       </div>
@@ -107,125 +107,72 @@
 </template>
 
 <script>
-import { onMounted } from 'vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
+import { useLang } from '../i18n/useLanguage.js'
 
 export default {
   name: 'CourierRegistration',
-  components: {
-    Header,
-    Footer
+  components: { Header, Footer },
+  setup() {
+    const { lang, t } = useLang()
+    return { lang, t }
   },
   data() {
     return {
       activeFaq: null,
       steps: [
-        {
-          number: '01',
-          icon: 'fas fa-user-plus',
-          title: 'Sign Up Online',
-          description: 'Fill out our simple registration form with your personal details and preferred delivery areas.'
-        },
-        {
-          number: '02',
-          icon: 'fas fa-file-alt',
-          title: 'Submit Documents',
-          description: 'Upload your ID, driving license, and vehicle registration documents for verification.'
-        },
-        {
-          number: '03',
-          icon: 'fas fa-clipboard-check',
-          title: 'Background Check',
-          description: 'We conduct a quick background verification to ensure safety for all parties.'
-        },
-        {
-          number: '04',
-          icon: 'fas fa-motorcycle',
-          title: 'Vehicle Inspection',
-          description: 'Get your vehicle inspected at our nearest hub or schedule a pickup inspection.'
-        },
-        {
-          number: '05',
-          icon: 'fas fa-mobile-alt',
-          title: 'Get the App & Training',
-          description: 'Download our courier app and complete the online training module.'
-        },
-        {
-          number: '06',
-          icon: 'fas fa-check-circle',
-          title: 'Start Delivering',
-          description: 'Once approved, log into the app and start accepting delivery requests!'
-        }
+        { number: '01', icon: 'fas fa-user-plus', title: { sw: 'Jiandikishe Mtandaoni', en: 'Sign Up Online' }, description: { sw: 'Jaza fomu yetu rahisi ya usajili na maelezo yako binafsi na maeneo unayopendelea ya utoaji.', en: 'Fill out our simple registration form with your personal details and preferred delivery areas.' } },
+        { number: '02', icon: 'fas fa-file-alt', title: { sw: 'Tuma Nyaraka', en: 'Submit Documents' }, description: { sw: 'Pakia kitambulisho chako, leseni ya udereva, na nyaraka za usajili wa gari kwa uthibitishaji.', en: 'Upload your ID, driving license, and vehicle registration documents for verification.' } },
+        { number: '03', icon: 'fas fa-clipboard-check', title: { sw: 'Ukaguzi wa Nyuma', en: 'Background Check' }, description: { sw: 'Tunafanya uthibitisho wa haraka wa nyuma kuhakikisha usalama kwa pande zote.', en: 'We conduct a quick background verification to ensure safety for all parties.' } },
+        { number: '04', icon: 'fas fa-motorcycle', title: { sw: 'Ukaguzi wa Gari', en: 'Vehicle Inspection' }, description: { sw: 'Pata gari lako likaguliwe kwenye kituo chetu cha karibu au ratisha ukaguzi wa kutoka.', en: 'Get your vehicle inspected at our nearest hub or schedule a pickup inspection.' } },
+        { number: '05', icon: 'fas fa-mobile-alt', title: { sw: 'Pata Programu na Mafunzo', en: 'Get the App & Training' }, description: { sw: 'Pakua programu yetu ya msambazaji na kamilisha moduli ya mafunzo ya mtandaoni.', en: 'Download our courier app and complete the online training module.' } },
+        { number: '06', icon: 'fas fa-check-circle', title: { sw: 'Anza Kutoa', en: 'Start Delivering' }, description: { sw: 'Mara ukiidhinishwa, ingia kwenye programu na uanze kukubali maombi ya utoaji!', en: 'Once approved, log into the app and start accepting delivery requests!' } },
       ],
       requirements: [
-        { icon: 'fas fa-id-card', text: 'Valid National ID or Passport' },
-        { icon: 'fas fa-id-card', text: 'Valid Driving License' },
-        { icon: 'fas fa-motorcycle', text: 'Motorcycle or Bicycle' },
-        { icon: 'fas fa-mobile-alt', text: 'Smartphone (Android 8+ or iOS 13+)' },
-        { icon: 'fas fa-shield-alt', text: 'Insurance Coverage' },
-        { icon: 'fas fa-user-check', text: 'Must be 18+ years old' },
-        { icon: 'fas fa-map-marker-alt', text: 'Knowledge of local areas' },
-        { icon: 'fas fa-box', text: 'Delivery bag (provided after approval)' }
+        { icon: 'fas fa-id-card',        text: { sw: 'Kitambulisho halisi cha Taifa au Pasipoti', en: 'Valid National ID or Passport' } },
+        { icon: 'fas fa-id-card',        text: { sw: 'Leseni halisi ya Udereva', en: 'Valid Driving License' } },
+        { icon: 'fas fa-motorcycle',     text: { sw: 'Pikipiki au Baiskeli', en: 'Motorcycle or Bicycle' } },
+        { icon: 'fas fa-mobile-alt',     text: { sw: 'Simu ya kisasa (Android 8+ au iOS 13+)', en: 'Smartphone (Android 8+ or iOS 13+)' } },
+        { icon: 'fas fa-shield-alt',     text: { sw: 'Bima ya Gari', en: 'Insurance Coverage' } },
+        { icon: 'fas fa-user-check',     text: { sw: 'Umri wa miaka 18+', en: 'Must be 18+ years old' } },
+        { icon: 'fas fa-map-marker-alt', text: { sw: 'Ujuzi wa maeneo ya karibu', en: 'Knowledge of local areas' } },
+        { icon: 'fas fa-box',            text: { sw: 'Mfuko wa utoaji (unaotolewa baada ya kuidhinishwa)', en: 'Delivery bag (provided after approval)' } },
       ],
       faqs: [
-        {
-          question: 'How much can I earn as a courier?',
-          answer: 'Earnings vary based on number of deliveries, distance, and peak hours. Active couriers can earn between TZS 50,000 - 150,000 per day. We also offer bonuses during peak hours and weekends.'
-        },
-        {
-          question: 'What are the working hours?',
-          answer: 'You have complete flexibility! Work when you want - mornings, afternoons, evenings, or weekends. The app lets you go online/offline anytime, giving you full control of your schedule.'
-        },
-        {
-          question: 'How and when do I get paid?',
-          answer: 'Payments are processed weekly every Monday directly to your mobile money account (M-Pesa, Tigo Pesa, Airtel Money) or bank account. You can also track your earnings in real-time through the app.'
-        },
-        {
-          question: 'Do I need my own vehicle?',
-          answer: 'Yes, you need your own motorcycle or bicycle. However, we have partnerships with financing companies that can help you acquire a motorcycle with flexible payment plans if needed.'
-        },
-        {
-          question: 'How long does the registration process take?',
-          answer: 'The entire process typically takes 2-3 working days. This includes document verification, background check, and vehicle inspection. We strive to get you on the road as quickly as possible!'
-        },
-        {
-          question: 'What support do you provide to couriers?',
-          answer: 'We provide comprehensive support including: 24/7 customer support, accident insurance coverage, delivery equipment (bags, uniforms), regular training sessions, and a dedicated courier support hotline.'
-        },
-        {
-          question: 'Can I deliver in my preferred areas only?',
-          answer: 'Absolutely! The app allows you to set your preferred delivery zones. You\'ll receive orders primarily from your chosen areas, though you can also accept orders from nearby zones if available.'
-        },
-        {
-          question: 'What happens if there\'s a problem with a delivery?',
-          answer: 'Our support team is available 24/7 to assist with any issues. The app also has built-in features for reporting problems, contacting customers, and getting real-time assistance during deliveries.'
-        }
-      ]
+        { question: { sw: 'Ninaweza kupata pesa ngapi kama msambazaji?', en: 'How much can I earn as a courier?' }, answer: { sw: 'Mapato hutofautiana kulingana na idadi ya utoaji, umbali, na muda wa kilele. Wasambazaji wanaofanya kazi kwa bidii wanaweza kupata kati ya TZS 50,000 - 150,000 kwa siku.', en: 'Earnings vary based on number of deliveries, distance, and peak hours. Active couriers can earn between TZS 50,000 - 150,000 per day. We also offer bonuses during peak hours and weekends.' } },
+        { question: { sw: 'Masaa ya kazi ni yapi?', en: 'What are the working hours?' }, answer: { sw: 'Una uhuru kamili! Fanya kazi unapotaka - asubuhi, mchana, jioni, au wikendi. Programu inakuruhusu kuingia/kutoka mtandaoni wakati wowote, ikikupa udhibiti kamili wa ratiba yako.', en: 'You have complete flexibility! Work when you want - mornings, afternoons, evenings, or weekends.' } },
+        { question: { sw: 'Ninalipiwa lini na vipi?', en: 'How and when do I get paid?' }, answer: { sw: 'Malipo yanashughulikiwa kila wiki kila Jumatatu moja kwa moja kwenye akaunti yako ya pesa za simu (M-Pesa, Tigo Pesa, Airtel Money) au akaunti ya benki.', en: 'Payments are processed weekly every Monday directly to your mobile money account (M-Pesa, Tigo Pesa, Airtel Money) or bank account.' } },
+        { question: { sw: 'Je, ninahitaji gari langu mwenyewe?', en: 'Do I need my own vehicle?' }, answer: { sw: 'Ndiyo, unahitaji pikipiki au baiskeli yako mwenyewe. Hata hivyo, tuna ushirikiano na kampuni za fedha ambazo zinaweza kukusaidia kupata pikipiki na mipango ya malipo inayoweza kubadilika.', en: 'Yes, you need your own motorcycle or bicycle. However, we have partnerships with financing companies that can help you acquire a motorcycle with flexible payment plans if needed.' } },
+        { question: { sw: 'Mchakato wa usajili huchukua muda gani?', en: 'How long does the registration process take?' }, answer: { sw: 'Mchakato wote kwa kawaida huchukua siku 2-3 za kazi. Hii inajumuisha uthibitisho wa nyaraka, ukaguzi wa nyuma, na ukaguzi wa gari.', en: 'The entire process typically takes 2-3 working days. This includes document verification, background check, and vehicle inspection.' } },
+        { question: { sw: 'Je, mnatoa msaada gani kwa wasambazaji?', en: 'What support do you provide to couriers?' }, answer: { sw: 'Tunatoa msaada wa kina ikiwemo: msaada wa wateja wa 24/7, bima ya ajali, vifaa vya utoaji, vipindi vya mafunzo, na nambari ya msaada maalum ya wasambazaji.', en: 'We provide comprehensive support including: 24/7 customer support, accident insurance coverage, delivery equipment (bags, uniforms), regular training sessions, and a dedicated courier support hotline.' } },
+        { question: { sw: 'Je, ninaweza kutoa tu katika maeneo ninayopendelea?', en: 'Can I deliver in my preferred areas only?' }, answer: { sw: 'Kabisa! Programu inakuruhusu kuweka maeneo unayopendelea ya utoaji. Utapokea maagizo hasa kutoka maeneo uliyochagua.', en: "Absolutely! The app allows you to set your preferred delivery zones. You'll receive orders primarily from your chosen areas." } },
+        { question: { sw: 'Nini kitatokea kama kuna tatizo na utoaji?', en: "What happens if there's a problem with a delivery?" }, answer: { sw: 'Timu yetu ya msaada inapatikana 24/7 kusaidia na masuala yoyote. Programu pia ina vipengele vilivyojengwa ndani vya kuripoti matatizo na kupata msaada wa wakati halisi.', en: "Our support team is available 24/7 to assist with any issues. The app also has built-in features for reporting problems and getting real-time assistance during deliveries." } },
+      ],
     }
   },
+  computed: {
+    translatedSteps() {
+      return this.steps.map(s => ({ ...s, title: s.title[this.lang] ?? s.title.en, description: s.description[this.lang] ?? s.description.en }))
+    },
+    translatedRequirements() {
+      return this.requirements.map(r => ({ ...r, text: r.text[this.lang] ?? r.text.en }))
+    },
+    translatedFaqs() {
+      return this.faqs.map(f => ({ question: f.question[this.lang] ?? f.question.en, answer: f.answer[this.lang] ?? f.answer.en }))
+    },
+  },
   mounted() {
-    AOS.init({
-      duration: 800,
-      once: true,
-      offset: 120,
-      easing: 'ease-in-out'
-    })
+    AOS.init({ duration: 800, once: true, offset: 120, easing: 'ease-in-out' })
   },
   methods: {
-    toggleFaq(index) {
-      this.activeFaq = this.activeFaq === index ? null : index;
-    },
+    toggleFaq(index) { this.activeFaq = this.activeFaq === index ? null : index },
     downloadApp(platform) {
-      if (platform === 'ios') {
-        window.open('https://apps.apple.com/app/your-app-id', '_blank');
-      } else if (platform === 'android') {
-        window.open('https://play.google.com/store/apps/details?id=your.app.id', '_blank');
-      } else {
-        window.location.href = '/download-app';
-      }
+      if (platform === 'ios') window.open('https://apps.apple.com/app/your-app-id', '_blank')
+      else if (platform === 'android') window.open('https://play.google.com/store/apps/details?id=your.app.id', '_blank')
+      else window.location.href = '/download-app'
     }
   }
 }
