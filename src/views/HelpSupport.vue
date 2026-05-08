@@ -61,9 +61,7 @@
       <section class="hs-content-section">
         <!-- Spiky paint wave TOP -->
         <div class="hs-wave-top">
-          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 160">
-            <path fill="#fdfbf4" d="M333,20l9-1v1c-1.139,1.139-.4,0-1,2l-2-1v1l-5,1V22C332.861,20.861,333.6,22,333,20Zm-68,0h2v1C264.99,20.426,266.135,21.12,265,20Zm8,0,6,1v1c-3.1,1.643-1.8,1.9-7,2Q272.5,22,273,20Zm-10,1h2v1C262.99,21.426,264.135,22.12,263,21Zm43,3v2l6,1v1h-1v1h-8c-1.139-1.139,0-.4-2-1,1.01-3.129.557-1.518,0-5h-8V22h1V21h3c2.05,1.885,9.224,1.1,13,1v1h-1v1h-3Zm-46-2h3v1h-2c-0.73.474-.011,1.392-2,1Zm118,0v2c-3.138.048-8.5-.565-10-2h10Zm28,0v2c-5.937.177-15.034,1.018-18-2h18ZM0,0H1600V160H0Z"/>
-          </svg>
+          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 160"><path style="fill:#fdfbf4" d="M333,20l9-1v1c-1.139,1.139-.4,0-1,2l-2-1v1l-5,1V22C332.861,20.861,333.6,22,333,20Zm-68,0h2v1C264.99,20.426,266.135,21.12,265,20Zm8,0,6,1v1c-3.1,1.643-1.8,1.9-7,2Q272.5,22,273,20Zm-10,1h2v1C262.99,21.426,264.135,22.12,263,21Zm43,3v2l6,1v1h-1v1h-8c-1.139-1.139,0-.4-2-1,1.01-3.129.557-1.518,0-5h-8V22h1V21h3c2.05,1.885,9.224,1.1,13,1v1h-1v1h-3Zm-46-2h3v1h-2c-0.73.474-.011,1.392-2,1Zm118,0v2c-3.138.048-8.5-.565-10-2h10Zm28,0v2c-5.937.177-15.034,1.018-18-2h18Zm35,3h8q-0.5,2.5-1,5h2v3l15,1,1,2h18v1c2.719,0.547,4.4-1.148,6-2V34l6,1q-0.5,3-1,6h13v1h2v1h5l1-2,7,2c0.671,1.893,1.289,6.118,2,8,1.889,0.831,5,2.4,7,3h20v1l7,1V55l4-1v1h5V54h1v1h8V54c-1.975-1.129-2.338-1.417-3-4l-4-1v1l-9,1V50h-3V49h-1v1H545V49l-12-1V46h-3V45c1.719-1.127,1.355-.633,2-3h3v3c2.333,0.4,5.561,1.943,9,1V45h8v1h4v1h1V46h8c2.487-4.155,6.738-4.358,8-10l-5-1-1-2h2c3.694,3.591,4.09-.421,9,1v1h3v1l4-1c-0.083,2.971.011,4.984-1,7l-2,1v1h1c3.922,4.2,11.712-.247,18,2v1h2v1h3v1c5.15,1.671,8.465-2.556,10,1h-5c-0.88,3.4-1.861,3.065-6,3V51a12.7,12.7,0,0,0-5-1v3a29.368,29.368,0,0,0-7,1l1,3,14,1a25.313,25.313,0,0,0,5-1v1h3v1c1.94,0.4,3.789-1.883,7-1v1l13,1V58c3.577,0.063,5.714-.128,8-1V56l-5-1V54c-4.24-1.526-7.016,1.066-10-2,1.139-1.139.4,0,1-2h-8V49l15,1V49h13V48l6-1v2l4-1,1,3h5v1h-3v4c2.533-.505,5.063-2.78,7-3,1.6-.182,1.247,1.736,2,2,2.8,0.981,5.051-.647,7-1l1-3c4.465,0.373,2.915.628,7,0-0.36,2.022-1.432,2.944,0,4h-4v1c1.135,0.844.145-.127,1,1a10.6,10.6,0,0,0,4,1v2l8-1,1,2h2v1h8V59l8-1v1h2l1,2h9v1c4.4,1.239,12.371.419,15,0V61a3.983,3.983,0,0,1-2-2h6c1.392,1.14,5.988.69,9,0V58c3.224-.468,3.834,3.133,8,2V59l6-1v1h4v1h2v1h16v1h10v1c3.08,0.817,5.362-1.476,7-1l1,2h6V62c5.272-.273,15.725-2.758,22-1v1h5l12-1,1,2a10.88,10.88,0,0,0,7,3c1.139-1.139,0-.4,2-1V64h-3V62l15-1v1h10c3.061,0.9,8.609,3.347,14,2V63a2.657,2.657,0,0,1,3,1c4.524,1.1,8.372-.942,11-2l1-2c-1.135-.844-0.145.127-1-1l-8-1q1-3.5,2-7l10-1v1l9,1v1l32,1v2l16,1v1h-1c-0.233,1.59,1.616,1.242,2,2,1.813,3.58-1.626,3.413,4,4l3-5,6,1,1-2h6V57l9,1a100.135,100.135,0,0,1,25-3v2a105.972,105.972,0,0,0,17,1v2a11.352,11.352,0,0,0,2-2l17,1V58h3V57c3.14-.787,3.9,1.769,6,2V58l26,1v1c4.82,1.292,5.48-1.914,10-2h5v1h22v1h-1c-3.2,2.784-11.41-.178-16,0h-3v1h-14l-7-1c-0.33.667-.67,1.333-1,2l-6,1V62c1.14-1.139.4,0,1-2a40.117,40.117,0,0,0-9,1c-0.33,2-.67,4-1,6l3,1c3.13,2.854,25.01,2.763,32,2,2.93-.32,4.02-1.757,6-3V66l23,2c5.34,0.173,8.26-1.859,12-3h7V64h4v1c4.09,1.066,9.19-.477,12-1,1.43-3.826.63-3.158,8-3v1h5c0.33,0.667.67,1.333,1,2l6-1c0.67-1,1.33-2,2-3l4,1V60h4V58c-4.22.139-11.01-.111-13-2h2c3.9-3.759,16.04,1.162,19,2l8-1c0.33,1,.67,2,1,3h-3v2c2.66,1.412,4.22,2.03,9,2v1c1.61,0.894,7-1,7-1,0.33,0.667.67,1.333,1,2,1.47,0.767,6.4,2.038,9,1,0.33-.667.67-1.333,1-2h1c2.08-.276,2,1,2,1l10-1c0.33,0.667.67,1.333,1,2h21v1l12,1V68l12-1c2.02,0.176,2,1,2,1h5v1l9-1v1l4,1v1c2.87,0.571,2.36-1.808,3-2a1.549,1.549,0,0,1,2,1l5-1v2l4-1c0.33-.667.67-1.333,1-2l22-1V66h-3V64l5,1v2a12.66,12.66,0,0,0,5,1V67h3V65l6,3v1c2.76,0.74,2.28-1.723,3-2h12V66h5V65l13,1v1a2.583,2.583,0,0,0,3-1h16V65l5-1v2l37-2v1l3,1h11a2.614,2.614,0,0,1,3-1v1h4v1h7v1h-8v1h-1c-0.99,0-3.79-2.2-6-1-0.33.667-.67,1.333-1,2h-1c-0.23,1.4.37-.268,1,1,3.2,2.78,10.43-.685,15,1v1h2v1l3,1V73l31,1v1h8V74c3.92-1.1,12.43,1.283,15,2l9-1v1h7v1l5-1c0.33,0.667.67,1.333,1,2h15v7l-20-1V83h-11l-14-1V81h-13V80h-6V79h-15v1l-9-1c-0.33,1-.67,2-1,3l4,1v1h12v1h10v1c2.18,0.356,3.93-2.224,7-1,0.33,0.667.67,1.333,1,2l28-1c0.67,1,1.33,2,2,3l11-1c0.68,2.927,1.11,3.275,4,4,0.88-3.4,1.86-3.065,6-3v1h4V0H0Z"></path></svg>
         </div>
 
         <!-- Content -->
@@ -95,47 +93,41 @@
           </div>
         </div>
 
-        <!-- Spiky paint wave BOTTOM -->
-        <div class="hs-wave-bottom">
-          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 160">
-            <path fill="#fdfbf4" d="M333,140l9,1v-1c-1.139-1.139-.4,0-1-2l-2,1v-1l-5-1v1C332.861,139.139,333.6,138,333,140Zm-68,0h2v-1C264.99,139.574,266.135,138.88,265,140Zm8,0,6-1v-1c-3.1-1.643-1.8-1.9-7-2Q272.5,138,273,140Zm-10-1h2v-1C262.99,138.574,264.135,139.12,263,139Zm43-3v-2l6-1v-1h-1v-1h-8c-1.139,1.139,0,.4-2,1,1.01,3.129.557,1.518,0,5h-8v1h1v1h3c2.05-1.885,9.224-1.1,13-1v-1h-1v-1h-3Zm-46,2h3v-1h-2c-0.73-.474-.011-1.392-2-1Zm118,0v-2c-3.138-.048-8.5.565-10,2h10Zm28,0v-2c-5.937-.177-15.034-1.018-18,2h18ZM0,160H1600V0H0Z"/>
-          </svg>
+        <!-- FAQ inside the blue section -->
+        <div class="hs-faq-inner">
+          <div class="hs-faq-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Find quick answers to common questions about JamboApp</p>
+          </div>
+          <div class="faq-container">
+            <div class="faq-column">
+              <div class="faq-item" v-for="(faq, index) in faqsLeft" :key="index" @click="toggleFaq(index + 'left')">
+                <div class="faq-question">
+                  <h3>{{ faq.question }}</h3>
+                  <span class="faq-toggle" :class="{ 'active': faq.isOpen }">+</span>
+                </div>
+                <div class="faq-answer" :class="{ 'active': faq.isOpen }">
+                  <p>{{ faq.answer }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-column">
+              <div class="faq-item" v-for="(faq, index) in faqsRight" :key="index" @click="toggleFaq(index + 'right')">
+                <div class="faq-question">
+                  <h3>{{ faq.question }}</h3>
+                  <span class="faq-toggle" :class="{ 'active': faq.isOpen }">+</span>
+                </div>
+                <div class="faq-answer" :class="{ 'active': faq.isOpen }">
+                  <p>{{ faq.answer }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
 
-      <!-- FAQ Section -->
-      <section class="faq-section">
-        <div class="section-header">
-          <h2>Frequently Asked Questions</h2>
-          <p>Find quick answers to common questions about JamboApp</p>
-        </div>
-        <div class="faq-avatar">
-          <img src="/images/faq-expert.jpg" alt="Help Expert" class="faq-expert-image" />
-          <p>Got questions? We have answers!</p>
-        </div>
-        <div class="faq-container">
-          <div class="faq-column">
-            <div class="faq-item" v-for="(faq, index) in faqsLeft" :key="index" @click="toggleFaq(index + 'left')">
-              <div class="faq-question">
-                <h3>{{ faq.question }}</h3>
-                <span class="faq-toggle" :class="{ 'active': faq.isOpen }">+</span>
-              </div>
-              <div class="faq-answer" :class="{ 'active': faq.isOpen }">
-                <p>{{ faq.answer }}</p>
-              </div>
-            </div>
-          </div>
-          <div class="faq-column">
-            <div class="faq-item" v-for="(faq, index) in faqsRight" :key="index" @click="toggleFaq(index + 'right')">
-              <div class="faq-question">
-                <h3>{{ faq.question }}</h3>
-                <span class="faq-toggle" :class="{ 'active': faq.isOpen }">+</span>
-              </div>
-              <div class="faq-answer" :class="{ 'active': faq.isOpen }">
-                <p>{{ faq.answer }}</p>
-              </div>
-            </div>
-          </div>
+        <!-- Bottom wave -->
+        <div class="hs-wave-bottom">
+          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 160"><path style="fill:#fdfbf4" d="M333,20l9-1v1c-1.139,1.139-.4,0-1,2l-2-1v1l-5,1V22C332.861,20.861,333.6,22,333,20Zm-68,0h2v1C264.99,20.426,266.135,21.12,265,20Zm8,0,6,1v1c-3.1,1.643-1.8,1.9-7,2Q272.5,22,273,20Zm-10,1h2v1C262.99,21.426,264.135,22.12,263,21Zm43,3v2l6,1v1h-1v1h-8c-1.139-1.139,0-.4-2-1,1.01-3.129.557-1.518,0-5h-8V22h1V21h3c2.05,1.885,9.224,1.1,13,1v1h-1v1h-3Zm-46-2h3v1h-2c-0.73.474-.011,1.392-2,1Zm118,0v2c-3.138.048-8.5-.565-10-2h10Zm28,0v2c-5.937.177-15.034,1.018-18-2h18Zm35,3h8q-0.5,2.5-1,5h2v3l15,1,1,2h18v1c2.719,0.547,4.4-1.148,6-2V34l6,1q-0.5,3-1,6h13v1h2v1h5l1-2,7,2c0.671,1.893,1.289,6.118,2,8,1.889,0.831,5,2.4,7,3h20v1l7,1V55l4-1v1h5V54h1v1h8V54c-1.975-1.129-2.338-1.417-3-4l-4-1v1l-9,1V50h-3V49h-1v1H545V49l-12-1V46h-3V45c1.719-1.127,1.355-.633,2-3h3v3c2.333,0.4,5.561,1.943,9,1V45h8v1h4v1h1V46h8c2.487-4.155,6.738-4.358,8-10l-5-1-1-2h2c3.694,3.591,4.09-.421,9,1v1h3v1l4-1c-0.083,2.971.011,4.984-1,7l-2,1v1h1c3.922,4.2,11.712-.247,18,2v1h2v1h3v1c5.15,1.671,8.465-2.556,10,1h-5c-0.88,3.4-1.861,3.065-6,3V51a12.7,12.7,0,0,0-5-1v3a29.368,29.368,0,0,0-7,1l1,3,14,1a25.313,25.313,0,0,0,5-1v1h3v1c1.94,0.4,3.789-1.883,7-1v1l13,1V58c3.577,0.063,5.714-.128,8-1V56l-5-1V54c-4.24-1.526-7.016,1.066-10-2,1.139-1.139.4,0,1-2h-8V49l15,1V49h13V48l6-1v2l4-1,1,3h5v1h-3v4c2.533-.505,5.063-2.78,7-3,1.6-.182,1.247,1.736,2,2,2.8,0.981,5.051-.647,7-1l1-3c4.465,0.373,2.915.628,7,0-0.36,2.022-1.432,2.944,0,4h-4v1c1.135,0.844.145-.127,1,1a10.6,10.6,0,0,0,4,1v2l8-1,1,2h2v1h8V59l8-1v1h2l1,2h9v1c4.4,1.239,12.371.419,15,0V61a3.983,3.983,0,0,1-2-2h6c1.392,1.14,5.988.69,9,0V58c3.224-.468,3.834,3.133,8,2V59l6-1v1h4v1h2v1h16v1h10v1c3.08,0.817,5.362-1.476,7-1l1,2h6V62c5.272-.273,15.725-2.758,22-1v1h5l12-1,1,2a10.88,10.88,0,0,0,7,3c1.139-1.139,0-.4,2-1V64h-3V62l15-1v1h10c3.061,0.9,8.609,3.347,14,2V63a2.657,2.657,0,0,1,3,1c4.524,1.1,8.372-.942,11-2l1-2c-1.135-.844-0.145.127-1-1l-8-1q1-3.5,2-7l10-1v1l9,1v1l32,1v2l16,1v1h-1c-0.233,1.59,1.616,1.242,2,2,1.813,3.58-1.626,3.413,4,4l3-5,6,1,1-2h6V57l9,1a100.135,100.135,0,0,1,25-3v2a105.972,105.972,0,0,0,17,1v2a11.352,11.352,0,0,0,2-2l17,1V58h3V57c3.14-.787,3.9,1.769,6,2V58l26,1v1c4.82,1.292,5.48-1.914,10-2h5v1h22v1h-1c-3.2,2.784-11.41-.178-16,0h-3v1h-14l-7-1c-0.33.667-.67,1.333-1,2l-6,1V62c1.14-1.139.4,0,1-2a40.117,40.117,0,0,0-9,1c-0.33,2-.67,4-1,6l3,1c3.13,2.854,25.01,2.763,32,2,2.93-.32,4.02-1.757,6-3V66l23,2c5.34,0.173,8.26-1.859,12-3h7V64h4v1c4.09,1.066,9.19-.477,12-1,1.43-3.826.63-3.158,8-3v1h5c0.33,0.667.67,1.333,1,2l6-1c0.67-1,1.33-2,2-3l4,1V60h4V58c-4.22.139-11.01-.111-13-2h2c3.9-3.759,16.04,1.162,19,2l8-1c0.33,1,.67,2,1,3h-3v2c2.66,1.412,4.22,2.03,9,2v1c1.61,0.894,7-1,7-1,0.33,0.667.67,1.333,1,2,1.47,0.767,6.4,2.038,9,1,0.33-.667.67-1.333,1-2h1c2.08-.276,2,1,2,1l10-1c0.33,0.667.67,1.333,1,2h21v1l12,1V68l12-1c2.02,0.176,2,1,2,1h5v1l9-1v1l4,1v1c2.87,0.571,2.36-1.808,3-2a1.549,1.549,0,0,1,2,1l5-1v2l4-1c0.33-.667.67-1.333,1-2l22-1V66h-3V64l5,1v2a12.66,12.66,0,0,0,5,1V67h3V65l6,3v1c2.76,0.74,2.28-1.723,3-2h12V66h5V65l13,1v1a2.583,2.583,0,0,0,3-1h16V65l5-1v2l37-2v1l3,1h11a2.614,2.614,0,0,1,3-1v1h4v1h7v1h-8v1h-1c-0.99,0-3.79-2.2-6-1-0.33.667-.67,1.333-1,2h-1c-0.23,1.4.37-.268,1,1,3.2,2.78,10.43-.685,15,1v1h2v1l3,1V73l31,1v1h8V74c3.92-1.1,12.43,1.283,15,2l9-1v1h7v1l5-1c0.33,0.667.67,1.333,1,2h15v7l-20-1V83h-11l-14-1V81h-13V80h-6V79h-15v1l-9-1c-0.33,1-.67,2-1,3l4,1v1h12v1h10v1c2.18,0.356,3.93-2.224,7-1,0.33,0.667.67,1.333,1,2l28-1c0.67,1,1.33,2,2,3l11-1c0.68,2.927,1.11,3.275,4,4,0.88-3.4,1.86-3.065,6-3v1h4V160H0Z"></path></svg>
         </div>
       </section>
 
@@ -649,6 +641,76 @@ const submitForm = () => {
   .hs-overlay-img { right: 10px; bottom: -20px; }
 }
 
+/* FAQ inside the blue section */
+.hs-faq-inner {
+  padding: 20px 10% 60px;
+}
+.hs-faq-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.hs-faq-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.hs-faq-header p {
+  color: rgba(255,255,255,0.75);
+  font-size: 1rem;
+}
+/* Override FAQ card styles for blue bg */
+.hs-faq-inner .faq-item {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+.hs-faq-inner .faq-item:hover {
+  background: rgba(255,255,255,0.14);
+}
+.hs-faq-inner .faq-question {
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.hs-faq-inner .faq-question h3 {
+  color: #fff;
+  font-size: 0.97rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0;
+}
+.hs-faq-inner .faq-toggle {
+  color: #fdd20a;
+  font-size: 1.4rem;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-left: 1rem;
+  transition: transform 0.2s;
+}
+.hs-faq-inner .faq-toggle.active { transform: rotate(45deg); }
+.hs-faq-inner .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: rgba(0,0,0,0.12);
+}
+.hs-faq-inner .faq-answer.active {
+  max-height: 300px;
+  padding: 16px 20px;
+}
+.hs-faq-inner .faq-answer p {
+  color: rgba(255,255,255,0.85);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.93rem;
+}
 
 
 /* Section Headers */
