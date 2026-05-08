@@ -837,6 +837,7 @@ const submitForm = () => {
 /* Join Section */
 .join-section {
   margin-bottom: 4rem;
+  padding: 0 8%;
 }
 
 .join-grid {
@@ -936,6 +937,7 @@ const submitForm = () => {
 /* Contact Section */
 .contact-section {
   margin-bottom: 4rem;
+  padding: 0 8%;
 }
 
 .contact-container {
@@ -1061,7 +1063,7 @@ const submitForm = () => {
   background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
   border-radius: 25px;
   padding: 3rem;
-  margin-bottom: 2rem;
+  margin: 0 8% 2rem;
   color: white;
 }
 
