@@ -467,6 +467,7 @@ const submitForm = () => {
   width: 50px;
   height: 50px;
   background: #14407b;
+  color: #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;

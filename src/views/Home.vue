@@ -22,7 +22,8 @@
       <section class="content-section">
         <div class="text-content">
           <h2>Not Fast food<br>But Good Food Fast.</h2>
-          <p>JAMBOAPP is an on-demand multi-service delivery platform designed to connect customers with local merchants and reliable couriers for fast and seamless delivery of food, groceries, and everyday essentials. The platform offers a smooth end-to-end experience where users can easily browse products, place orders, make secure payments, and track their deliveries in real time from dispatch to arrival. Built with a vision to become the most trusted, fast, and affordable last-mile marketplace, JAMBOAPP focuses on delivering orders within an average of 45 minutes while supporting local businesses and empowering delivery partners.</p>
+          <p>JAMBOAPP is an on-demand multi-service delivery platform designed to connect customers with local merchants and reliable couriers for fast and seamless delivery of food, groceries, and everyday essentials.</p>
+          <p>At JAMBOAPP, The platform offers a smooth end-to-end experience where users can easily browse products, place orders, make secure payments, and track their deliveries in real time from dispatch to arrival. </p>
           <div class="signature">Good Food Fast</div>
         </div>
         <div class="image-gallery">
@@ -33,7 +34,7 @@
 
       <section class="foods-menu">
         <h2>TOP CATEGORIES</h2>
-        <p>Our menu is a nod to street food vendors who help their customers stay on-the-go by delivering quick tasty bites. We incorporated flavors from around the world to offer.</p>
+        <p>Find everything you need in one place — food, groceries, essentials, and more — delivered quickly to your doorstep.</p>
         <div class="menu-categories">
           <router-link to="/category/food" class="menu-category-link">
             <div class="menu-category">

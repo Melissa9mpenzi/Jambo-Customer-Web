@@ -214,4 +214,6 @@ export default {
 
 <style scoped>
  .pizza { top: 260px; left: 35%; width: 350px;  z-index: 6; animation: floatBounce 3s ease-in-out infinite; }
+ .cheese-right { bottom: 0; right: 8%; width: 220px;   }
+.broccoli-left { bottom: 0; left: 5%; width: 250px;   }
 </style>
