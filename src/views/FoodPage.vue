@@ -9,7 +9,18 @@
 
     <Header />
     <main>
-      <HeroSection />
+
+      <!-- Page-specific Hero -->
+      <section class="page-hero">
+        <h1>Food<br><span>Delivered Fresh</span></h1>
+        <div class="paint-container">
+          <svg class="paint-svg" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 160"><path style="fill:#14407b" d="M333,20l9-1v1c-1.139,1.139-.4,0-1,2l-2-1v1l-5,1V22C332.861,20.861,333.6,22,333,20Zm-68,0h2v1C264.99,20.426,266.135,21.12,265,20Zm8,0,6,1v1c-3.1,1.643-1.8,1.9-7,2Q272.5,22,273,20Zm-10,1h2v1C262.99,21.426,264.135,22.12,263,21Zm43,3v2l6,1v1h-1v1h-8c-1.139-1.139,0-.4-2-1,1.01-3.129.557-1.518,0-5h-8V22h1V21h3c2.05,1.885,9.224,1.1,13,1v1h-1v1h-3Zm-46-2h3v1h-2c-0.73.474-.011,1.392-2,1Zm118,0v2c-3.138.048-8.5-.565-10-2h10Zm28,0v2c-5.937.177-15.034,1.018-18-2h18ZM1600,195H0V56c6.264-.162,9.232-2.562,14-4l19-1V50c2.893-.836,8.879-.905,10,0-3.537.286-4.884,1.349-8,2v2l-6,1v1c-4.671,1.436-7.876-1.19-11,2l16-1v2l-4,1v3H27l1,2c-.36.566-14.554,1.781-16,2,.844,1.135-.127.145,1,1,2.786,3.1,6.729,1.543,12,2,1.848,.16,2,1,2,1l15-1,45-1,1-2,8,1V67h5v1c3.858,1.033,8.376-.514,11-1V62a13.307,13.307,0,0,0,4-3h8v2l20,1V61c2.509-.907,4.5-.283,6-2l1-3,10-1c6.236-2.012,12.925-4.594,20-6V47l28-5h14V41h17V40h11l20-1V38l11,1V38h3V37l6-2V34h11V33h3V32c2.225-.659,17.162,2.252,19,3v1h2v1c1.682,.383,1.767-.951,2-1h15c1.382-2.612,1.769-1.693,2-6-.223-.105-3.626-1.439-3-2h1c4.8-4.753,15.039,.813,20,2v4h10c.249,.054,.311,1.362,2,1V34h2V33l15,1v1h3v1c3.564,1.13,8.383,.022,11,1v1h-5c-2.7-2.515-10.481-.273-14,0l1,3,5-1,1,2,11,2V43l6-1q-.5-2.5-1-5c1.135-.844,.145,.127,1-1h13V35c3.394-2.495,1.052-3.507,7-4,1.653,1.6,5.613,1.99,9,2l4-5h-1c-1.139-1.139,0-.4-2-1V25Z"></path></svg>
+        </div>
+        <img src="/images/burger.png"   class="hi burger-pos"   alt="Burger">
+        <img src="/images/pizza.png"    class="hi pizza-pos"    alt="Pizza">
+        <img src="/images/sharwama.png" class="hi sharwama-pos" alt="Shawarma">
+        <img src="/images/toma.png"     class="hi toma-pos"     alt="Fresh ingredients">
+      </section>
 
       <section class="category-page-section">
         <div class="category-breadcrumb">
@@ -17,30 +28,13 @@
           <span class="breadcrumb-sep">›</span>
           <span class="breadcrumb-current">Food</span>
         </div>
-
-        <!-- Category Banner with floating food images -->
-        <div class="category-banner food-banner">
-          <img src="/images/burger.png" class="float-img f1" alt="Burger">
-          <img src="/images/pizza.png" class="float-img f2" alt="Pizza">
-          <img src="/images/sharwama.png" class="float-img f3" alt="Shawarma">
-          <img src="/images/toma.png" class="float-img f4" alt="Fresh ingredients">
-          <img src="/images/paper.png" class="float-img f5" alt="">
-          <div class="banner-text">
-            <div class="banner-icon">🍔</div>
-            <h2>Food</h2>
-            <p>Explore a world of flavors from street food to fine dining, all delivered to your door.</p>
-          </div>
-        </div>
-
-        <!-- Sub-categories grid -->
         <div class="subcategory-intro">
           <h3>Browse by Type</h3>
-          <p>Discover the variety of food merchants on JamboApp</p>
+          <p>Discover the variety of food merchants registered on JamboApp</p>
         </div>
-
         <div class="subcategory-grid">
           <div class="subcategory-card" v-for="cat in foodCategories" :key="cat.name">
-            <div class="subcategory-icon">{{ cat.icon }}</div>
+            <div class="subcategory-icon"><i :class="cat.icon"></i></div>
             <div class="subcategory-info">
               <h4>{{ cat.name }}</h4>
               <p>{{ cat.description }}</p>
@@ -56,137 +50,76 @@
 <script setup>
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
-import HeroSection from '../components/HeroSection.vue'
 
 const foodCategories = [
-  { icon: '🍕', name: 'Pizza', description: 'Wood-fired, thin crust, deep dish — find your perfect slice from top pizzerias.' },
-  { icon: '🍔', name: 'Burgers', description: 'Classic beef patties, gourmet stacks, and veggie options from the best burger joints.' },
-  { icon: '🍲', name: 'Local Dishes', description: 'Authentic Kenyan and East African cuisine — ugali, nyama choma, pilau and more.' },
-  { icon: '🍳', name: 'Breakfast Menus', description: 'Start your day right with mandazi, eggs, pancakes and full English breakfasts.' },
-  { icon: '🌯', name: 'Shawarma & Wraps', description: 'Middle Eastern flavors — tender grilled meat wrapped in warm flatbread.' },
-  { icon: '🍜', name: 'Noodles & Pasta', description: 'From spaghetti bolognese to stir-fried noodles, comfort food at its finest.' },
-  { icon: '🥗', name: 'Salads & Healthy', description: 'Fresh greens, grain bowls and nutrient-packed meals for the health conscious.' },
-  { icon: '🍰', name: 'Desserts & Cakes', description: 'Sweet endings — cakes, pastries, ice cream and traditional treats delivered fresh.' },
+  { icon: 'fas fa-pizza-slice', name: 'Pizza',             description: 'Wood-fired, thin crust, deep dish — find your perfect slice from top pizzerias.' },
+  { icon: 'fas fa-hamburger',   name: 'Burgers',            description: 'Classic beef patties, gourmet stacks, and veggie options from the best burger joints.' },
+  { icon: 'fas fa-bowl-rice',   name: 'Local Dishes',       description: 'Authentic Kenyan and East African cuisine — ugali, nyama choma, pilau and more.' },
+  { icon: 'fas fa-egg',         name: 'Breakfast Menus',    description: 'Start your day right with mandazi, eggs, pancakes and full English breakfasts.' },
+  { icon: 'fas fa-hotdog',      name: 'Shawarma & Wraps',   description: 'Middle Eastern flavors — tender grilled meat wrapped in warm flatbread.' },
+  { icon: 'fas fa-bowl-food',   name: 'Noodles & Pasta',    description: 'From spaghetti bolognese to stir-fried noodles, comfort food at its finest.' },
+  { icon: 'fas fa-leaf',        name: 'Salads & Healthy',   description: 'Fresh greens, grain bowls and nutrient-packed meals for the health conscious.' },
+  { icon: 'fas fa-cake-candles',name: 'Desserts & Cakes',   description: 'Sweet endings — cakes, pastries, ice cream and traditional treats delivered fresh.' },
 ]
 </script>
 
 <style scoped>
-.category-page-section { background: #fdfbf4; padding: 40px 8% 100px; }
-
-.category-breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: #888; margin-bottom: 36px; }
-.breadcrumb-link { color: #14407b; text-decoration: none; font-weight: 600; transition: color 0.2s; }
-.breadcrumb-link:hover { color: #fdd20a; }
-.breadcrumb-sep { color: #bbb; }
-.breadcrumb-current { color: #333; font-weight: 500; }
-
-/* Category Banner */
-.category-banner {
-  position: relative;
-  border-radius: 24px;
-  padding: 70px 40px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 280px;
-  margin-bottom: 64px;
+/* Hero */
+.page-hero {
+  position: relative; text-align: center; padding: 60px 20px 0;
+  min-height: 440px; background: #fdfbf4; overflow: hidden;
+  display: flex; flex-direction: column; align-items: center;
 }
-.food-banner { background: linear-gradient(135deg, #14407b 0%, #1a5298 60%, #0d2d5a 100%); }
+.page-hero h1 {
+  font-family: 'Playfair Display', serif; font-size: clamp(2.4rem,5vw,4rem);
+  color: #14407b; margin-bottom: 20px; line-height: 1.1;
+  position: relative; z-index: 5; font-weight: 700;
+}
+.page-hero h1 span { color: #fdd20a; }
+.paint-container { position:absolute; bottom:0; left:0; width:100%; height:100%; z-index:1; pointer-events:none; }
+.paint-svg { position:absolute; bottom:-5px; width:100%; height:auto; min-height:380px; display:block; }
 
-.float-img {
-  position: absolute;
-  object-fit: contain;
-  filter: drop-shadow(0 8px 20px rgba(0,0,0,0.35));
-  pointer-events: none;
-}
-.f1 { width: 160px; bottom: -10px; left: 3%; animation: floatA 3.2s ease-in-out infinite; }
-.f2 { width: 180px; top: -20px; left: 22%; animation: floatB 3.8s ease-in-out infinite; }
-.f3 { width: 150px; bottom: -15px; right: 22%; animation: floatA 3.5s ease-in-out infinite; animation-delay: 0.6s; }
-.f4 { width: 130px; top: 5px; right: 4%; animation: floatB 2.9s ease-in-out infinite; animation-delay: 1s; }
-.f5 { width: 50px; top: 30%; left: 12%; opacity: 0.6; animation: floatA 4s ease-in-out infinite; animation-delay: 1.5s; }
+.hi { position:absolute; z-index:5; filter:drop-shadow(0 10px 20px rgba(0,0,0,0.3)); pointer-events:none; }
+.burger-pos   { width:280px; bottom:0; left:4%;  animation:floatY 3.2s ease-in-out infinite; }
+.pizza-pos    { width:200px; top:100px; left:8%; animation:floatY 3.8s ease-in-out infinite; animation-delay:.5s; }
+.sharwama-pos { width:220px; bottom:0; right:5%; animation:floatY 3.5s ease-in-out infinite; animation-delay:.8s; }
+.toma-pos     { width:160px; top:120px; right:7%; animation:floatY 2.9s ease-in-out infinite; animation-delay:1.2s; }
+@keyframes floatY { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-18px)} }
 
-@keyframes floatA { 0%,100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-16px) rotate(3deg); } }
-@keyframes floatB { 0%,100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-20px) rotate(-3deg); } }
+/* Page body */
+.category-page-section { background:#fdfbf4; padding:50px 8% 100px; }
+.category-breadcrumb { display:flex; align-items:center; gap:8px; font-size:.9rem; color:#888; margin-bottom:36px; }
+.breadcrumb-link { color:#14407b; text-decoration:none; font-weight:600; }
+.breadcrumb-link:hover { color:#fdd20a; }
+.breadcrumb-sep { color:#bbb; }
+.breadcrumb-current { color:#333; font-weight:500; }
 
-.banner-text {
-  position: relative;
-  z-index: 5;
-  text-align: center;
-  color: #fff;
-}
-.banner-icon { font-size: 3rem; margin-bottom: 10px; }
-.banner-text h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  font-weight: 700;
-  margin-bottom: 12px;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.3);
-}
-.banner-text p {
-  font-size: 1rem;
-  max-width: 480px;
-  margin: 0 auto;
-  opacity: 0.9;
-  line-height: 1.7;
-}
+.subcategory-intro { text-align:center; margin-bottom:40px; }
+.subcategory-intro h3 { font-family:'Playfair Display',serif; font-size:clamp(1.6rem,3vw,2.2rem); color:#14407b; margin-bottom:10px; }
+.subcategory-intro p { color:#666; font-size:1rem; }
 
-/* Sub-categories */
-.subcategory-intro { text-align: center; margin-bottom: 40px; }
-.subcategory-intro h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  color: #14407b;
-  margin-bottom: 10px;
-}
-.subcategory-intro p { color: #666; font-size: 1rem; }
-
-.subcategory-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 24px;
-}
+.subcategory-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:24px; }
 .subcategory-card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 28px 24px;
-  display: flex;
-  align-items: flex-start;
-  gap: 18px;
-  box-shadow: 0 6px 24px rgba(20,64,123,0.07);
-  border: 1.5px solid transparent;
-  transition: all 0.3s ease;
-  cursor: default;
+  background:#fff; border-radius:16px; padding:28px 24px;
+  display:flex; align-items:flex-start; gap:18px;
+  box-shadow:0 6px 24px rgba(20,64,123,.07);
+  border:1.5px solid transparent; transition:all .3s ease; cursor:default;
 }
-.subcategory-card:hover {
-  border-color: #14407b;
-  transform: translateY(-5px);
-  box-shadow: 0 16px 40px rgba(20,64,123,0.13);
-}
+.subcategory-card:hover { border-color:#14407b; transform:translateY(-5px); box-shadow:0 16px 40px rgba(20,64,123,.13); }
 .subcategory-icon {
-  font-size: 2.4rem;
-  flex-shrink: 0;
-  width: 56px;
-  height: 56px;
-  background: #f0f4ff;
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s;
+  flex-shrink:0; width:56px; height:56px; border-radius:50%;
+  background:#14407b; display:flex; align-items:center; justify-content:center;
+  transition:background .3s;
 }
-.subcategory-card:hover .subcategory-icon { background: #fdd20a; }
-.subcategory-info h4 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.1rem;
-  color: #14407b;
-  margin-bottom: 6px;
-  font-weight: 700;
-}
-.subcategory-info p { font-size: 0.87rem; color: #666; line-height: 1.6; }
+.subcategory-icon i { color:#fff; font-size:1.5rem; }
+.subcategory-card:hover .subcategory-icon { background:#fdd20a; }
+.subcategory-card:hover .subcategory-icon i { color:#14407b; }
+.subcategory-info h4 { font-family:'Playfair Display',serif; font-size:1.1rem; color:#14407b; margin-bottom:6px; font-weight:700; }
+.subcategory-info p { font-size:.87rem; color:#666; line-height:1.6; }
 
-@media (max-width: 768px) {
-  .category-page-section { padding: 30px 5% 80px; }
-  .category-banner { padding: 50px 20px; min-height: 220px; }
-  .f1,.f2,.f3,.f4,.f5 { width: 80px; }
+@media (max-width:768px) {
+  .page-hero { min-height:320px; }
+  .burger-pos,.pizza-pos,.sharwama-pos,.toma-pos { width:100px; }
+  .category-page-section { padding:30px 5% 80px; }
 }
 </style>

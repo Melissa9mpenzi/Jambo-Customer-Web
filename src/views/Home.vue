@@ -43,7 +43,9 @@
         <div class="menu-categories">
           <router-link to="/category/food" class="menu-category-link">
             <div class="menu-category">
-              <div class="plate-wrapper"><img src="/images/burger.png" class="category-image" alt="Burger"></div>
+              <div class="plate-wrapper">
+                <div class="cat-icon-circle"><i class="fas fa-utensils"></i></div>
+              </div>
               <div class="category-content">
                 <h3>Food</h3>
                 <p>Delicious meals, street food and quick bites delivered right to your door.</p>
@@ -53,7 +55,9 @@
           </router-link>
           <router-link to="/category/pharmacy" class="menu-category-link">
             <div class="menu-category">
-              <div class="plate-wrapper"><img src="/images/drug.png" class="category-image" alt="Pharmacy"></div>
+              <div class="plate-wrapper">
+                <div class="cat-icon-circle"><i class="fas fa-pills"></i></div>
+              </div>
               <div class="category-content">
                 <h3>Pharmacy</h3>
                 <p>Medicines, supplements and health products from trusted pharmacies near you.</p>
@@ -63,7 +67,9 @@
           </router-link>
           <router-link to="/category/shops" class="menu-category-link">
             <div class="menu-category">
-              <div class="plate-wrapper"><img src="/images/shops.png" class="category-image" alt="Shops"></div>
+              <div class="plate-wrapper">
+                <div class="cat-icon-circle"><i class="fas fa-bag-shopping"></i></div>
+              </div>
               <div class="category-content">
                 <h3>Shops</h3>
                 <p>Fashion, electronics and home goods from local and online shops near you.</p>
@@ -73,7 +79,9 @@
           </router-link>
           <router-link to="/category/groceries" class="menu-category-link">
             <div class="menu-category">
-              <div class="plate-wrapper"><img src="/images/toma.png" class="category-image" alt="Groceries"></div>
+              <div class="plate-wrapper">
+                <div class="cat-icon-circle"><i class="fas fa-basket-shopping"></i></div>
+              </div>
               <div class="category-content">
                 <h3>Groceries</h3>
                 <p>Fresh produce, pantry staples and dairy from trusted stores near you.</p>
@@ -140,18 +148,36 @@ import Footer from '../components/Footer.vue'
 </script>
 
 <style scoped>
+/* Category link wrapper */
 .menu-category-link {
   text-decoration: none;
   color: inherit;
   display: block;
   transition: transform 0.25s ease;
 }
-.menu-category-link:hover {
-  transform: translateY(-6px);
+.menu-category-link:hover { transform: translateY(-6px); }
+.menu-category-link:hover .menu-btn { background-color: #fdd20a; color: #14407b; transform: scale(1.12); }
+
+/* Icon circle replacing image plates */
+.cat-icon-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #14407b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
-.menu-category-link:hover .menu-btn {
-  background-color: #fdd20a;
+.cat-icon-circle i {
+  color: #fff;
+  font-size: 2.6rem;
+  transition: color 0.3s ease;
+}
+.menu-category-link:hover .cat-icon-circle {
+  background: #fdd20a;
+}
+.menu-category-link:hover .cat-icon-circle i {
   color: #14407b;
-  transform: scale(1.12);
 }
 </style>
