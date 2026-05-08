@@ -377,7 +377,7 @@ header.sticky .logo-circle { width: 60px; height: 60px; }
    ================================================================= */
 .page-hero { position:relative; text-align:center; padding:60px 20px 0; min-height:440px; background:#fdfbf4; overflow:hidden; display:flex; flex-direction:column; align-items:center; }
 .page-hero h1 { font-family:'Playfair Display',serif; font-size:clamp(2.4rem,5vw,4rem); color:#14407b; margin-bottom:20px; line-height:1.1; position:relative; z-index:5; font-weight:700; }
-.page-hero h1 span { color:#fdd20a; }
+.page-hero h1 span { color:#fca409; }
 .paint-container { position:absolute; bottom:0; left:0; width:100%; height:100%; z-index:1; pointer-events:none; }
 .paint-svg { position:absolute; bottom:-5px; width:100%; height:auto; min-height:380px; display:block; }
 .hi { position:absolute; z-index:5; filter:drop-shadow(0 10px 20px rgba(0,0,0,0.3)); pointer-events:none; }
@@ -477,7 +477,7 @@ header.sticky .logo-circle { width: 60px; height: 60px; }
   color: #14407b; margin-bottom: 20px; line-height: 1.1;
   position: relative; z-index: 5; font-weight: 700;
 }
-.page-hero h1 span { color: #fdd20a; }
+.page-hero h1 span { color: #fca409; }
 .paint-container { position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
 .paint-svg { position: absolute; bottom: -5px; width: 100%; height: auto; min-height: 380px; display: block; }
 .hi { position: absolute; z-index: 5; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3)); pointer-events: none; }
@@ -1330,8 +1330,8 @@ header.sticky .logo-circle { width: 60px; height: 60px; }
   font-weight: 700;
 }
 .page-hero h1 span {
-  color: #fdd20a;
-  -webkit-text-stroke: 1px #c9a800;
+  color: #fca409;
+  -webkit-text-stroke: 1px #b87200;
 }
 .paint-container {
   position: absolute;
@@ -1391,5 +1391,214 @@ header.sticky .logo-circle { width: 60px; height: 60px; }
 }
 @media (max-width: 480px) {
   .lang-switcher button { font-size: 1.2rem; padding: 3px 4px; }
+}
+
+
+/* =================================================================
+   COMPREHENSIVE MOBILE RESPONSIVENESS
+   ================================================================= */
+
+/* ── 1024px — Tablets landscape ── */
+@media (max-width: 1024px) {
+  /* Home hero */
+  .hero { min-height: 520px; padding: 50px 20px 0; }
+  .hero h1 { font-size: 3rem; }
+
+  /* Content section */
+  .content-section { flex-direction: column; gap: 40px; padding: 60px 8%; }
+  .image-gallery { width: 100%; max-width: 500px; margin: 0 auto; }
+
+  /* Categories */
+  .menu-categories { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+
+  /* Red banner */
+  .red-banner-content { flex-direction: column; align-items: center; text-align: center; gap: 30px; }
+  .left-image-wrapper img { width: 200px; }
+
+  /* Join section */
+  .join-us-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Category pages */
+  .subcategory-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Help & Support */
+  .hs-content-inner { flex-direction: column; gap: 40px; }
+  .hs-image-side { width: 100%; max-width: 500px; margin: 0 auto; }
+  .faq-container { flex-direction: column; }
+  .join-grid { grid-template-columns: 1fr 1fr; }
+  .contact-container { flex-direction: column; gap: 40px; }
+  .requirements-layout { flex-direction: column; gap: 40px; }
+  .requirements-image-side { width: 100%; max-width: 460px; margin: 0 auto; }
+
+  /* MerchantInfo */
+  .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+  .business-orbit { height: 420px; }
+}
+
+/* ── 768px — Tablets portrait & large phones ── */
+@media (max-width: 768px) {
+  /* Hero (home) */
+  .hero { min-height: 420px; padding: 40px 16px 0; }
+  .hero h1 { font-size: 2.4rem; }
+
+  /* Page hero (category pages) */
+  .page-hero { min-height: 280px; padding: 40px 16px 0; }
+  .page-hero h1 { font-size: clamp(1.8rem, 6vw, 2.6rem); }
+
+  /* Hide floating images on mobile to prevent overflow */
+  .hi { display: none; }
+  .food-item { display: none; }
+  .pizza-slice-big { display: none; }
+
+  /* Home content section */
+  .content-section { flex-direction: column; padding: 40px 6%; gap: 30px; }
+  .text-content h2 { font-size: 1.8rem; }
+  .text-content p { font-size: 0.95rem; }
+  .image-gallery { width: 100%; }
+  .main-hall-img { width: 100%; height: 260px; object-fit: cover; border-radius: 16px; }
+  .overlay-img { display: none; }
+
+  /* Top categories */
+  .foods-menu { padding: 40px 5%; }
+  .foods-menu h2 { font-size: 1.6rem; }
+  .menu-categories { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .menu-category { flex-direction: column; padding: 18px; gap: 12px; }
+  .plate-wrapper img { width: 70px; height: 70px; }
+
+  /* Red banner */
+  .red-banner { padding: 40px 6%; }
+  .red-banner-content { flex-direction: column; text-align: center; gap: 20px; }
+  .banner-center-content h3 { font-size: 1.5rem; }
+  .left-image-wrapper img { width: 160px; }
+
+  /* Join us */
+  .join-us-section { padding: 40px 6%; }
+  .join-us-grid { grid-template-columns: 1fr; gap: 20px; }
+  .join-card { padding: 28px 20px; }
+
+  /* Category pages */
+  .category-page-section { padding: 30px 5% 60px; }
+  .subcategory-grid { grid-template-columns: 1fr; gap: 16px; }
+  .subcategory-card { padding: 20px 16px; }
+
+  /* Help & Support */
+  .quick-contact-grid { flex-direction: column; gap: 16px; }
+  .hs-content-inner { flex-direction: column; gap: 30px; padding: 40px 6%; }
+  .hs-text-content h2 { font-size: 1.8rem; }
+  .hs-faq-inner { padding: 30px 5%; }
+  .faq-container { flex-direction: column; gap: 0; }
+  .join-section { padding: 40px 5%; }
+  .join-grid { grid-template-columns: 1fr; gap: 20px; }
+  .contact-section { padding: 40px 5%; }
+  .contact-container { flex-direction: column; gap: 30px; }
+  .contact-form { padding: 24px 20px; }
+
+  /* Footer */
+  .footer-links-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+  .footer-content { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
+  .jamboapp-title { font-size: 2rem; }
+
+  /* MerchantInfo */
+  .benefits-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .business-orbit { height: 320px; }
+  .orbit-center { width: 110px; height: 110px; }
+  .center-logo span { font-size: 0.6rem; }
+  .requirements-layout { flex-direction: column; gap: 30px; }
+  .faq-columns { flex-direction: column; gap: 0; }
+
+  /* CourierInfo */
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .requirements-grid { grid-template-columns: 1fr; }
+}
+
+/* ── 600px — Phones landscape / small tablets ── */
+@media (max-width: 600px) {
+  /* Home hero */
+  .hero h1 { font-size: 2rem; }
+
+  /* Top categories */
+  .menu-categories { grid-template-columns: 1fr; }
+
+  /* Category pages */
+  .subcategory-icon { width: 46px; height: 46px; }
+  .subcategory-icon i { font-size: 1.1rem; }
+
+  /* Footer */
+  .footer-links-grid { grid-template-columns: 1fr 1fr; }
+  .footer-content { grid-template-columns: repeat(2, 1fr); }
+
+  /* Lang switcher — keep visible */
+  .lang-switcher { margin-right: 6px; }
+
+  /* HelpSupport form */
+  .form-group input,
+  .form-group select,
+  .form-group textarea { font-size: 0.95rem; }
+
+  /* MerchantInfo */
+  .benefits-grid { grid-template-columns: 1fr; }
+  .business-orbit { height: 280px; }
+  .cta-buttons { flex-direction: column; align-items: center; gap: 14px; }
+  .faq-columns { flex-direction: column; }
+}
+
+/* ── 480px — Standard phones portrait ── */
+@media (max-width: 480px) {
+  /* Global spacing */
+  section { padding-left: 4%; padding-right: 4%; }
+
+  /* Home hero */
+  .hero { min-height: 340px; padding: 30px 12px 0; }
+  .hero h1 { font-size: 1.8rem; line-height: 1.2; }
+
+  /* Page hero */
+  .page-hero { min-height: 240px; padding: 30px 12px 0; }
+  .page-hero h1 { font-size: 1.7rem; }
+
+  /* Content text */
+  .text-content h2 { font-size: 1.5rem; }
+  .text-content p { font-size: 0.9rem; }
+
+  /* Top categories */
+  .foods-menu h2 { font-size: 1.4rem; }
+  .menu-category { padding: 14px; }
+  .category-content h3 { font-size: 1rem; }
+  .category-content p { font-size: 0.82rem; }
+
+  /* Join us */
+  .join-us-header h2 { font-size: 1.6rem; }
+  .join-card h3 { font-size: 1.1rem; }
+
+  /* Category pages */
+  .subcategory-intro h3 { font-size: 1.3rem; }
+  .subcategory-card { flex-direction: column; gap: 12px; }
+
+  /* Help & Support */
+  .hs-faq-header h2 { font-size: 1.5rem; }
+  .faq-question h3 { font-size: 0.95rem; }
+  .join-grid { grid-template-columns: 1fr; }
+  .section-header h2 { font-size: 1.5rem; }
+
+  /* Footer */
+  .footer-links-grid { grid-template-columns: 1fr; gap: 24px; }
+  .footer-content { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .footer-col h4 { font-size: 0.8rem; }
+  .copyright { font-size: 0.75rem; text-align: center; }
+
+  /* Header */
+  .header-center-image { display: none; }
+  .logo-circle { width: 44px; height: 44px; }
+}
+
+/* ── 380px — Very small phones ── */
+@media (max-width: 380px) {
+  .hero h1 { font-size: 1.5rem; }
+  .page-hero h1 { font-size: 1.45rem; }
+  .menu-categories { grid-template-columns: 1fr; }
+  .footer-content { grid-template-columns: 1fr; }
+  .join-us-grid { grid-template-columns: 1fr; }
+  .subcategory-card { padding: 16px 12px; }
+  .lang-switcher button { font-size: 1rem; }
 }
 
