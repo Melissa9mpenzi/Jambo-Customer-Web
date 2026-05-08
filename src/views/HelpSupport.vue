@@ -10,17 +10,15 @@
     <Header />
 
     <main class="help-support-main">
-      <!-- Hero Section -->
-      <section class="hero-section">
-        <div class="hero-content">
-          <h1>Help & Support</h1>
-          <p>We're here to help you every step of the way. Find answers, get support, and learn how to make the most of JamboApp.</p>
+      <!-- Page Hero -->
+      <section class="page-hero">
+        <h1>Help &amp; Support<br><span>We're Here For You</span></h1>
+        <div class="paint-container">
+          <svg class="paint-svg" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 160"><path style="fill:#14407b" d="M333,20l9-1v1c-1.139,1.139-.4,0-1,2l-2-1v1l-5,1V22C332.861,20.861,333.6,22,333,20Zm-68,0h2v1C264.99,20.426,266.135,21.12,265,20Zm8,0,6,1v1c-3.1,1.643-1.8,1.9-7,2Q272.5,22,273,20Zm-10,1h2v1C262.99,21.426,264.135,22.12,263,21Zm43,3v2l6,1v1h-1v1h-8c-1.139-1.139,0-.4-2-1,1.01-3.129.557-1.518,0-5h-8V22h1V21h3c2.05,1.885,9.224,1.1,13,1v1h-1v1h-3Zm-46-2h3v1h-2c-0.73.474-.011,1.392-2,1Zm118,0v2c-3.138.048-8.5-.565-10-2h10Zm28,0v2c-5.937.177-15.034,1.018-18-2h18ZM1600,195H0V56c6.264-.162,9.232-2.562,14-4l19-1V50c2.893-.836,8.879-.905,10,0-3.537.286-4.884,1.349-8,2v2l-6,1v1c-4.671,1.436-7.876-1.19-11,2l16-1v2l-4,1v3H27l1,2c-.36.566-14.554,1.781-16,2,.844,1.135-.127.145,1,1,2.786,3.1,6.729,1.543,12,2,1.848,.16,2,1,2,1l15-1,45-1,1-2,8,1V67h5v1c3.858,1.033,8.376-.514,11-1V62a13.307,13.307,0,0,0,4-3h8v2l20,1V61c2.509-.907,4.5-.283,6-2l1-3,10-1c6.236-2.012,12.925-4.594,20-6V47l28-5h14V41h17V40h11l20-1V38l11,1V38h3V37l6-2V34h11V33h3V32c2.225-.659,17.162,2.252,19,3v1h2v1c1.682,.383,1.767-.951,2-1h15c1.382-2.612,1.769-1.693,2-6-.223-.105-3.626-1.439-3-2h1c4.8-4.753,15.039,.813,20,2v4h10c.249,.054,.311,1.362,2,1V34h2V33l15,1v1h3v1c3.564,1.13,8.383,.022,11,1v1h-5c-2.7-2.515-10.481-.273-14,0l1,3,5-1,1,2,11,2V43l6-1q-.5-2.5-1-5c1.135-.844,.145,.127,1-1h13V35c3.394-2.495,1.052-3.507,7-4,1.653,1.6,5.613,1.99,9,2l4-5h-1c-1.139-1.139,0-.4-2-1V25Z"></path></svg>
         </div>
-        <div class="hero-image">
-          <div class="support-avatar">
-            <img src="/images/customer-service-hero.jpg" alt="Customer Support Agent" class="hero-support-image" />
-          </div>
-        </div>
+        <img src="/images/rider.png" class="hi h1" alt="Delivery Rider">
+        <img src="/images/phone.png" class="hi h2" alt="App on Phone">
+        <img src="/images/shops.png" class="hi h3" alt="Merchant Shop">
       </section>
 
       <!-- Quick Contact Section -->
@@ -28,7 +26,7 @@
         <div class="quick-contact-grid">
           <div class="quick-contact-item">
             <div class="quick-icon">
-              <span>📞</span>
+              <i class="fas fa-phone"></i>
             </div>
             <div class="quick-info">
               <h4>Call Us Now</h4>
@@ -38,7 +36,7 @@
           </div>
           <div class="quick-contact-item">
             <div class="quick-icon">
-              <span>�</span>
+              <i class="fab fa-whatsapp"></i>
             </div>
             <div class="quick-info">
               <h4>WhatsApp</h4>
@@ -48,7 +46,7 @@
           </div>
           <div class="quick-contact-item">
             <div class="quick-icon">
-              <span>✉️</span>
+              <i class="fas fa-envelope"></i>
             </div>
             <div class="quick-info">
               <h4>Email Support</h4>
@@ -59,111 +57,77 @@
         </div>
       </section>
 
-      <!-- Visually Striking Blue Support Section -->
-      <section class="striking-support-section">
-        <!-- Top paint wave -->
-        <div class="paint-wave-top">
-          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 120">
-            <path fill="#f8f9fa" d="M0,60 C400,120 1200,0 1600,60 L1600,120 L0,120 Z"/>
-          </svg>
+      <!-- Blue Content Section (matches homepage style) -->
+      <section class="hs-content-section">
+        <!-- Spiky paint wave TOP -->
+        <div class="hs-wave-top">
+          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 160"><path style="fill:#fdfbf4" d="M333,20l9-1v1c-1.139,1.139-.4,0-1,2l-2-1v1l-5,1V22C332.861,20.861,333.6,22,333,20Zm-68,0h2v1C264.99,20.426,266.135,21.12,265,20Zm8,0,6,1v1c-3.1,1.643-1.8,1.9-7,2Q272.5,22,273,20Zm-10,1h2v1C262.99,21.426,264.135,22.12,263,21Zm43,3v2l6,1v1h-1v1h-8c-1.139-1.139,0-.4-2-1,1.01-3.129.557-1.518,0-5h-8V22h1V21h3c2.05,1.885,9.224,1.1,13,1v1h-1v1h-3Zm-46-2h3v1h-2c-0.73.474-.011,1.392-2,1Zm118,0v2c-3.138.048-8.5-.565-10-2h10Zm28,0v2c-5.937.177-15.034,1.018-18-2h18Zm35,3h8q-0.5,2.5-1,5h2v3l15,1,1,2h18v1c2.719,0.547,4.4-1.148,6-2V34l6,1q-0.5,3-1,6h13v1h2v1h5l1-2,7,2c0.671,1.893,1.289,6.118,2,8,1.889,0.831,5,2.4,7,3h20v1l7,1V55l4-1v1h5V54h1v1h8V54c-1.975-1.129-2.338-1.417-3-4l-4-1v1l-9,1V50h-3V49h-1v1H545V49l-12-1V46h-3V45c1.719-1.127,1.355-.633,2-3h3v3c2.333,0.4,5.561,1.943,9,1V45h8v1h4v1h1V46h8c2.487-4.155,6.738-4.358,8-10l-5-1-1-2h2c3.694,3.591,4.09-.421,9,1v1h3v1l4-1c-0.083,2.971.011,4.984-1,7l-2,1v1h1c3.922,4.2,11.712-.247,18,2v1h2v1h3v1c5.15,1.671,8.465-2.556,10,1h-5c-0.88,3.4-1.861,3.065-6,3V51a12.7,12.7,0,0,0-5-1v3a29.368,29.368,0,0,0-7,1l1,3,14,1a25.313,25.313,0,0,0,5-1v1h3v1c1.94,0.4,3.789-1.883,7-1v1l13,1V58c3.577,0.063,5.714-.128,8-1V56l-5-1V54c-4.24-1.526-7.016,1.066-10-2,1.139-1.139.4,0,1-2h-8V49l15,1V49h13V48l6-1v2l4-1,1,3h5v1h-3v4c2.533-.505,5.063-2.78,7-3,1.6-.182,1.247,1.736,2,2,2.8,0.981,5.051-.647,7-1l1-3c4.465,0.373,2.915.628,7,0-0.36,2.022-1.432,2.944,0,4h-4v1c1.135,0.844.145-.127,1,1a10.6,10.6,0,0,0,4,1v2l8-1,1,2h2v1h8V59l8-1v1h2l1,2h9v1c4.4,1.239,12.371.419,15,0V61a3.983,3.983,0,0,1-2-2h6c1.392,1.14,5.988.69,9,0V58c3.224-.468,3.834,3.133,8,2V59l6-1v1h4v1h2v1h16v1h10v1c3.08,0.817,5.362-1.476,7-1l1,2h6V62c5.272-.273,15.725-2.758,22-1v1h5l12-1,1,2a10.88,10.88,0,0,0,7,3c1.139-1.139,0-.4,2-1V64h-3V62l15-1v1h10c3.061,0.9,8.609,3.347,14,2V63a2.657,2.657,0,0,1,3,1c4.524,1.1,8.372-.942,11-2l1-2c-1.135-.844-0.145.127-1-1l-8-1q1-3.5,2-7l10-1v1l9,1v1l32,1v2l16,1v1h-1c-0.233,1.59,1.616,1.242,2,2,1.813,3.58-1.626,3.413,4,4l3-5,6,1,1-2h6V57l9,1a100.135,100.135,0,0,1,25-3v2a105.972,105.972,0,0,0,17,1v2a11.352,11.352,0,0,0,2-2l17,1V58h3V57c3.14-.787,3.9,1.769,6,2V58l26,1v1c4.82,1.292,5.48-1.914,10-2h5v1h22v1h-1c-3.2,2.784-11.41-.178-16,0h-3v1h-14l-7-1c-0.33.667-.67,1.333-1,2l-6,1V62c1.14-1.139.4,0,1-2a40.117,40.117,0,0,0-9,1c-0.33,2-.67,4-1,6l3,1c3.13,2.854,25.01,2.763,32,2,2.93-.32,4.02-1.757,6-3V66l23,2c5.34,0.173,8.26-1.859,12-3h7V64h4v1c4.09,1.066,9.19-.477,12-1,1.43-3.826.63-3.158,8-3v1h5c0.33,0.667.67,1.333,1,2l6-1c0.67-1,1.33-2,2-3l4,1V60h4V58c-4.22.139-11.01-.111-13-2h2c3.9-3.759,16.04,1.162,19,2l8-1c0.33,1,.67,2,1,3h-3v2c2.66,1.412,4.22,2.03,9,2v1c1.61,0.894,7-1,7-1,0.33,0.667.67,1.333,1,2,1.47,0.767,6.4,2.038,9,1,0.33-.667.67-1.333,1-2h1c2.08-.276,2,1,2,1l10-1c0.33,0.667.67,1.333,1,2h21v1l12,1V68l12-1c2.02,0.176,2,1,2,1h5v1l9-1v1l4,1v1c2.87,0.571,2.36-1.808,3-2a1.549,1.549,0,0,1,2,1l5-1v2l4-1c0.33-.667.67-1.333,1-2l22-1V66h-3V64l5,1v2a12.66,12.66,0,0,0,5,1V67h3V65l6,3v1c2.76,0.74,2.28-1.723,3-2h12V66h5V65l13,1v1a2.583,2.583,0,0,0,3-1h16V65l5-1v2l37-2v1l3,1h11a2.614,2.614,0,0,1,3-1v1h4v1h7v1h-8v1h-1c-0.99,0-3.79-2.2-6-1-0.33.667-.67,1.333-1,2h-1c-0.23,1.4.37-.268,1,1,3.2,2.78,10.43-.685,15,1v1h2v1l3,1V73l31,1v1h8V74c3.92-1.1,12.43,1.283,15,2l9-1v1h7v1l5-1c0.33,0.667.67,1.333,1,2h15v7l-20-1V83h-11l-14-1V81h-13V80h-6V79h-15v1l-9-1c-0.33,1-.67,2-1,3l4,1v1h12v1h10v1c2.18,0.356,3.93-2.224,7-1,0.33,0.667.67,1.333,1,2l28-1c0.67,1,1.33,2,2,3l11-1c0.68,2.927,1.11,3.275,4,4,0.88-3.4,1.86-3.065,6-3v1h4V0H0Z"></path></svg>
         </div>
 
-        
-        <!-- Floating delivery images -->
-        <div class="floating-images">
-          <img src="/images/drug.png" class="float-img img-med" alt="Medicine">
-          <img src="/images/pizza.png" class="float-img img-pizza" alt="Pizza">
-          <img src="/images/burger.png" class="float-img img-burger" alt="Burger">
-          <img src="/images/shops.png" class="float-img img-shop" alt="Shop">
-          <img src="/images/toma.png" class="float-img img-grocery" alt="Grocery">
-        </div>
-        
-        <!-- Main content -->
-        <div class="striking-content">
-          <div class="content-badge">
-            <i class="fas fa-headset"></i>
-            <span>Always Here For You</span>
+        <!-- Content -->
+        <div class="hs-content-inner">
+          <div class="hs-text-content">
+            <h2>Always Ready<br>To Help You.</h2>
+            <p>Whether you have a question about your order, need to report an issue, or want to learn more about JamboApp — our dedicated support team is here for you around the clock.</p>
+            <div class="hs-contact-lines">
+              <div class="hs-contact-line">
+                <i class="fas fa-phone"></i>
+                <span>+254 700 000 000</span>
+              </div>
+              <div class="hs-contact-line">
+                <i class="fab fa-whatsapp"></i>
+                <span>Chat on WhatsApp</span>
+              </div>
+              <div class="hs-contact-line">
+                <i class="fas fa-envelope"></i>
+                <span>support@jamboapp.com</span>
+              </div>
+            </div>
+            <div class="hs-signature">JamboApp Support Team</div>
           </div>
-          
-          <h2 class="striking-title">
-            Need Help?<br>
-            <span class="highlight">We've Got You Covered</span>
-          </h2>
-          
-          <p class="striking-description">
-            Our dedicated support team is available round the clock to assist you with orders, 
-            partnerships, or any questions you might have about JamboApp.
-          </p>
-          
-          <div class="striking-stats">
-            <div class="stat-card">
-              <div class="stat-icon"><i class="fas fa-users"></i></div>
-              <div class="stat-value">500+</div>
-              <div class="stat-desc">Support Agents</div>
-            </div>
-            <div class="stat-card featured">
-              <div class="stat-icon"><i class="fas fa-clock"></i></div>
-              <div class="stat-value">24/7</div>
-              <div class="stat-desc">Always Available</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-icon"><i class="fas fa-smile"></i></div>
-              <div class="stat-value">99%</div>
-              <div class="stat-desc">Happy Customers</div>
+          <div class="hs-image-side">
+            <img src="/images/support-team.jpg" class="hs-main-img" alt="Support Team">
+            <div class="hs-overlay-img">
+              <img src="/images/customer-service-hero.jpg" alt="Customer Service">
             </div>
           </div>
-          
-          <div class="cta-buttons">
-            <button class="btn-primary">
-              <i class="fas fa-phone"></i> Call Now
-            </button>
-            <button class="btn-secondary">
-              <i class="fas fa-comments"></i> Start Chat
-            </button>
-          </div>
         </div>
-        
-        <!-- Bottom paint wave -->
-        <div class="paint-wave-bottom">
-          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 120">
-            <path fill="#ffffff" d="M0,60 C400,0 1200,120 1600,60 L1600,0 L0,0 Z"/>
-          </svg>
-        </div>
-      </section>
 
-      <!-- FAQ Section -->
-      <section class="faq-section">
-        <div class="section-header">
-          <h2>Frequently Asked Questions</h2>
-          <p>Find quick answers to common questions about JamboApp</p>
-        </div>
-        <div class="faq-avatar">
-          <img src="/images/faq-expert.jpg" alt="Help Expert" class="faq-expert-image" />
-          <p>Got questions? We have answers!</p>
-        </div>
-        <div class="faq-container">
-          <div class="faq-column">
-            <div class="faq-item" v-for="(faq, index) in faqsLeft" :key="index" @click="toggleFaq(index + 'left')">
-              <div class="faq-question">
-                <h3>{{ faq.question }}</h3>
-                <span class="faq-toggle" :class="{ 'active': faq.isOpen }">+</span>
+        <!-- FAQ inside the blue section -->
+        <div class="hs-faq-inner">
+          <div class="hs-faq-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Find quick answers to common questions about JamboApp</p>
+          </div>
+          <div class="faq-container">
+            <div class="faq-column">
+              <div class="faq-item" v-for="(faq, index) in faqsLeft" :key="index" @click="toggleFaq(index + 'left')">
+                <div class="faq-question">
+                  <h3>{{ faq.question }}</h3>
+                  <span class="faq-toggle" :class="{ 'active': faq.isOpen }">+</span>
+                </div>
+                <div class="faq-answer" :class="{ 'active': faq.isOpen }">
+                  <p>{{ faq.answer }}</p>
+                </div>
               </div>
-              <div class="faq-answer" :class="{ 'active': faq.isOpen }">
-                <p>{{ faq.answer }}</p>
+            </div>
+            <div class="faq-column">
+              <div class="faq-item" v-for="(faq, index) in faqsRight" :key="index" @click="toggleFaq(index + 'right')">
+                <div class="faq-question">
+                  <h3>{{ faq.question }}</h3>
+                  <span class="faq-toggle" :class="{ 'active': faq.isOpen }">+</span>
+                </div>
+                <div class="faq-answer" :class="{ 'active': faq.isOpen }">
+                  <p>{{ faq.answer }}</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="faq-column">
-            <div class="faq-item" v-for="(faq, index) in faqsRight" :key="index" @click="toggleFaq(index + 'right')">
-              <div class="faq-question">
-                <h3>{{ faq.question }}</h3>
-                <span class="faq-toggle" :class="{ 'active': faq.isOpen }">+</span>
-              </div>
-              <div class="faq-answer" :class="{ 'active': faq.isOpen }">
-                <p>{{ faq.answer }}</p>
-              </div>
-            </div>
-          </div>
+        </div>
+
+        <!-- Bottom wave -->
+        <div class="hs-wave-bottom">
+          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 160"><path style="fill:#fdfbf4" d="M333,20l9-1v1c-1.139,1.139-.4,0-1,2l-2-1v1l-5,1V22C332.861,20.861,333.6,22,333,20Zm-68,0h2v1C264.99,20.426,266.135,21.12,265,20Zm8,0,6,1v1c-3.1,1.643-1.8,1.9-7,2Q272.5,22,273,20Zm-10,1h2v1C262.99,21.426,264.135,22.12,263,21Zm43,3v2l6,1v1h-1v1h-8c-1.139-1.139,0-.4-2-1,1.01-3.129.557-1.518,0-5h-8V22h1V21h3c2.05,1.885,9.224,1.1,13,1v1h-1v1h-3Zm-46-2h3v1h-2c-0.73.474-.011,1.392-2,1Zm118,0v2c-3.138.048-8.5-.565-10-2h10Zm28,0v2c-5.937.177-15.034,1.018-18-2h18Zm35,3h8q-0.5,2.5-1,5h2v3l15,1,1,2h18v1c2.719,0.547,4.4-1.148,6-2V34l6,1q-0.5,3-1,6h13v1h2v1h5l1-2,7,2c0.671,1.893,1.289,6.118,2,8,1.889,0.831,5,2.4,7,3h20v1l7,1V55l4-1v1h5V54h1v1h8V54c-1.975-1.129-2.338-1.417-3-4l-4-1v1l-9,1V50h-3V49h-1v1H545V49l-12-1V46h-3V45c1.719-1.127,1.355-.633,2-3h3v3c2.333,0.4,5.561,1.943,9,1V45h8v1h4v1h1V46h8c2.487-4.155,6.738-4.358,8-10l-5-1-1-2h2c3.694,3.591,4.09-.421,9,1v1h3v1l4-1c-0.083,2.971.011,4.984-1,7l-2,1v1h1c3.922,4.2,11.712-.247,18,2v1h2v1h3v1c5.15,1.671,8.465-2.556,10,1h-5c-0.88,3.4-1.861,3.065-6,3V51a12.7,12.7,0,0,0-5-1v3a29.368,29.368,0,0,0-7,1l1,3,14,1a25.313,25.313,0,0,0,5-1v1h3v1c1.94,0.4,3.789-1.883,7-1v1l13,1V58c3.577,0.063,5.714-.128,8-1V56l-5-1V54c-4.24-1.526-7.016,1.066-10-2,1.139-1.139.4,0,1-2h-8V49l15,1V49h13V48l6-1v2l4-1,1,3h5v1h-3v4c2.533-.505,5.063-2.78,7-3,1.6-.182,1.247,1.736,2,2,2.8,0.981,5.051-.647,7-1l1-3c4.465,0.373,2.915.628,7,0-0.36,2.022-1.432,2.944,0,4h-4v1c1.135,0.844.145-.127,1,1a10.6,10.6,0,0,0,4,1v2l8-1,1,2h2v1h8V59l8-1v1h2l1,2h9v1c4.4,1.239,12.371.419,15,0V61a3.983,3.983,0,0,1-2-2h6c1.392,1.14,5.988.69,9,0V58c3.224-.468,3.834,3.133,8,2V59l6-1v1h4v1h2v1h16v1h10v1c3.08,0.817,5.362-1.476,7-1l1,2h6V62c5.272-.273,15.725-2.758,22-1v1h5l12-1,1,2a10.88,10.88,0,0,0,7,3c1.139-1.139,0-.4,2-1V64h-3V62l15-1v1h10c3.061,0.9,8.609,3.347,14,2V63a2.657,2.657,0,0,1,3,1c4.524,1.1,8.372-.942,11-2l1-2c-1.135-.844-0.145.127-1-1l-8-1q1-3.5,2-7l10-1v1l9,1v1l32,1v2l16,1v1h-1c-0.233,1.59,1.616,1.242,2,2,1.813,3.58-1.626,3.413,4,4l3-5,6,1,1-2h6V57l9,1a100.135,100.135,0,0,1,25-3v2a105.972,105.972,0,0,0,17,1v2a11.352,11.352,0,0,0,2-2l17,1V58h3V57c3.14-.787,3.9,1.769,6,2V58l26,1v1c4.82,1.292,5.48-1.914,10-2h5v1h22v1h-1c-3.2,2.784-11.41-.178-16,0h-3v1h-14l-7-1c-0.33.667-.67,1.333-1,2l-6,1V62c1.14-1.139.4,0,1-2a40.117,40.117,0,0,0-9,1c-0.33,2-.67,4-1,6l3,1c3.13,2.854,25.01,2.763,32,2,2.93-.32,4.02-1.757,6-3V66l23,2c5.34,0.173,8.26-1.859,12-3h7V64h4v1c4.09,1.066,9.19-.477,12-1,1.43-3.826.63-3.158,8-3v1h5c0.33,0.667.67,1.333,1,2l6-1c0.67-1,1.33-2,2-3l4,1V60h4V58c-4.22.139-11.01-.111-13-2h2c3.9-3.759,16.04,1.162,19,2l8-1c0.33,1,.67,2,1,3h-3v2c2.66,1.412,4.22,2.03,9,2v1c1.61,0.894,7-1,7-1,0.33,0.667.67,1.333,1,2,1.47,0.767,6.4,2.038,9,1,0.33-.667.67-1.333,1-2h1c2.08-.276,2,1,2,1l10-1c0.33,0.667.67,1.333,1,2h21v1l12,1V68l12-1c2.02,0.176,2,1,2,1h5v1l9-1v1l4,1v1c2.87,0.571,2.36-1.808,3-2a1.549,1.549,0,0,1,2,1l5-1v2l4-1c0.33-.667.67-1.333,1-2l22-1V66h-3V64l5,1v2a12.66,12.66,0,0,0,5,1V67h3V65l6,3v1c2.76,0.74,2.28-1.723,3-2h12V66h5V65l13,1v1a2.583,2.583,0,0,0,3-1h16V65l5-1v2l37-2v1l3,1h11a2.614,2.614,0,0,1,3-1v1h4v1h7v1h-8v1h-1c-0.99,0-3.79-2.2-6-1-0.33.667-.67,1.333-1,2h-1c-0.23,1.4.37-.268,1,1,3.2,2.78,10.43-.685,15,1v1h2v1l3,1V73l31,1v1h8V74c3.92-1.1,12.43,1.283,15,2l9-1v1h7v1l5-1c0.33,0.667.67,1.333,1,2h15v7l-20-1V83h-11l-14-1V81h-13V80h-6V79h-15v1l-9-1c-0.33,1-.67,2-1,3l4,1v1h12v1h10v1c2.18,0.356,3.93-2.224,7-1,0.33,0.667.67,1.333,1,2l28-1c0.67,1,1.33,2,2,3l11-1c0.68,2.927,1.11,3.275,4,4,0.88-3.4,1.86-3.065,6-3v1h4V160H0Z"></path></svg>
         </div>
       </section>
 
@@ -185,7 +149,7 @@
                 <p>{{ step }}</p>
               </div>
             </div>
-            <button class="join-btn">Apply Now</button>
+            <router-link to="/courier-info" class="join-btn">Apply Now →</router-link>
           </div>
 
           <div class="join-card">
@@ -199,7 +163,7 @@
                 <p>{{ step }}</p>
               </div>
             </div>
-            <button class="join-btn">Register Business</button>
+            <router-link to="/merchant-info" class="join-btn">Register Business →</router-link>
           </div>
 
           <div class="join-card">
@@ -422,20 +386,31 @@ const submitForm = () => {
 
 <style scoped>
 .help-support-main {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-/* Hero Section */
-.hero-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-  margin-bottom: 4rem;
-  padding: 3rem 0;
+/* Page Hero */
+.page-hero {
+  position: relative; text-align: center; padding: 60px 20px 0;
+  min-height: 440px; background: #fdfbf4; overflow: hidden;
+  display: flex; flex-direction: column; align-items: center;
 }
+.page-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  color: #14407b; margin-bottom: 20px; line-height: 1.1;
+  position: relative; z-index: 5; font-weight: 700;
+}
+.page-hero h1 span { color: #fdd20a; }
+.paint-container { position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+.paint-svg { position: absolute; bottom: -5px; width: 100%; height: auto; min-height: 380px; display: block; }
+.hi { position: absolute; z-index: 5; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3)); pointer-events: none; }
+.h1 { width: 260px; bottom: 0; left: 3%; animation: floatY 3.2s ease-in-out infinite; }
+.h2 { width: 200px; bottom: 0; right: 3%; animation: floatY 3.8s ease-in-out infinite; animation-delay: .5s; }
+.h3 { width: 160px; top: 110px; right: 10%; animation: floatY 2.9s ease-in-out infinite; animation-delay: 1s; opacity: .85; }
+@keyframes floatY { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-18px)} }
 
 .hero-content h1 {
   font-size: 3.5rem;
@@ -539,275 +514,204 @@ const submitForm = () => {
   font-size: 0.85rem;
 }
 
-/* Blue Support Section */
-.striking-support-section {
+/* Blue Content Section — matches homepage content-section */
+.hs-content-section {
   position: relative;
-  background: #14407b;
-  padding: 6rem 0 8rem;
-  margin: 0;
+  background-color: #14407b;
   overflow: hidden;
-}
-
-/* Paint wave separators */
-.paint-wave-top {
-  position: absolute;
-  top: -1px;
-  left: 0;
-  width: 100%;
-  height: 80px;
+  color: #fff;
   z-index: 2;
 }
 
-.paint-wave-top svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.paint-wave-bottom {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  z-index: 2;
-}
-
-.paint-wave-bottom svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-
-/* Floating images */
-.floating-images {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 3;
-}
-
-.float-img {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
-  animation: floatBounce 3s ease-in-out infinite;
-}
-
-.img-med {
-  left: 8%;
-  top: 20%;
-  width: 80px;
-  height: 80px;
-  animation-delay: 0s;
-}
-
-.img-pizza {
-  left: 5%;
-  bottom: 25%;
-  width: 90px;
-  height: 90px;
-  animation-delay: 0.5s;
-}
-
-.img-burger {
-  left: 50%;
-  top: 10%;
-  width: 140px;
-  height: 140px;
-  transform: translateX(-50%);
-  animation: floatBurger 3.5s ease-in-out infinite;
-}
-
-.img-shop {
-  right: 8%;
-  top: 25%;
-  width: 85px;
-  height: 85px;
-  animation-delay: 1s;
-}
-
-.img-grocery {
-  right: 5%;
-  bottom: 20%;
-  width: 80px;
-  height: 80px;
-  animation-delay: 1.5s;
-}
-
-@keyframes floatBounce {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-15px) rotate(3deg); }
-}
-
-@keyframes floatBurger {
-  0%, 100% { transform: translateX(-50%) translateY(0) rotate(0deg); }
-  50% { transform: translateX(-50%) translateY(-20px) rotate(-2deg); }
-}
-
-/* Main content */
-.striking-content {
+.hs-wave-top {
   position: relative;
-  z-index: 4;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  height: 120px;
+  margin-bottom: -4px;
+  z-index: 1;
 }
+.hs-wave-top svg { width: 100%; height: 100%; display: block; }
 
-.content-badge {
-  display: inline-flex;
+.hs-wave-bottom {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  margin-top: -4px;
+  z-index: 1;
+}
+.hs-wave-bottom svg { width: 100%; height: 100%; display: block; }
+
+.hs-content-inner {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  padding: 0.6rem 1.2rem;
-  border-radius: 50px;
-  margin-bottom: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  gap: 60px;
+  padding: 60px 10%;
+  flex-wrap: wrap;
 }
 
-.content-badge i {
-  color: #fdd20a;
-  font-size: 1.2rem;
-}
+.hs-text-content { flex: 1; min-width: 280px; }
 
-.content-badge span {
-  color: #ffffff;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.striking-title {
-  color: #ffffff;
-  font-size: 3rem;
+.hs-text-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
+  color: #fff;
 }
 
-.striking-title .highlight {
-  color: #fdd20a;
-  text-shadow: 0 2px 10px rgba(253, 210, 10, 0.3);
-}
-
-.striking-description {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 1.15rem;
+.hs-text-content p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.88);
   line-height: 1.8;
-  margin-bottom: 2.5rem;
-  max-width: 550px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 2rem;
+  max-width: 480px;
 }
 
-/* Stats cards */
-.striking-stats {
+.hs-contact-lines {
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 14px;
   margin-bottom: 2.5rem;
 }
 
-.stat-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 1.5rem;
-  min-width: 140px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  transition: all 0.3s ease;
+.hs-contact-line {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
-
-.stat-card:hover {
-  transform: translateY(-8px);
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-}
-
-.stat-card.featured {
-  background: rgba(253, 210, 10, 0.15);
-  border-color: rgba(253, 210, 10, 0.3);
-  transform: scale(1.05);
-}
-
-.stat-card.featured:hover {
-  background: rgba(253, 210, 10, 0.25);
-  box-shadow: 0 20px 40px rgba(253, 210, 10, 0.2);
-}
-
-.stat-icon {
-  font-size: 1.8rem;
+.hs-contact-line i {
+  font-size: 1.3rem;
   color: #fdd20a;
-  margin-bottom: 0.8rem;
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
 }
-
-.stat-value {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 0.3rem;
-}
-
-.stat-desc {
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.8);
+.hs-contact-line span {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.92);
   font-weight: 500;
 }
 
-/* CTA Buttons */
-.cta-buttons {
+.hs-signature {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: #fdd20a;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.hs-image-side {
+  flex: 1;
+  min-width: 260px;
+  position: relative;
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
 }
 
-.btn-primary {
-  display: inline-flex;
+.hs-main-img {
+  width: 100%;
+  max-width: 420px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+  display: block;
+}
+
+.hs-overlay-img {
+  position: absolute;
+  bottom: -30px;
+  right: -20px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  border: 4px solid #fdd20a;
+}
+.hs-overlay-img img {
+  width: 160px;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .hs-content-inner { flex-direction: column; gap: 40px; padding: 50px 6%; }
+  .hs-overlay-img { right: 10px; bottom: -20px; }
+}
+
+/* FAQ inside the blue section */
+.hs-faq-inner {
+  padding: 20px 10% 60px;
+}
+.hs-faq-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.hs-faq-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.hs-faq-header p {
+  color: rgba(255,255,255,0.75);
+  font-size: 1rem;
+}
+/* Override FAQ card styles for blue bg */
+.hs-faq-inner .faq-item {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+.hs-faq-inner .faq-item:hover {
+  background: rgba(255,255,255,0.14);
+}
+.hs-faq-inner .faq-question {
+  padding: 18px 20px;
+  display: flex;
   align-items: center;
-  gap: 0.5rem;
-  background: #fdd20a;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.hs-faq-inner .faq-question h3 {
   color: #14407b;
-  padding: 1rem 2rem;
-  border-radius: 50px;
+  font-size: 0.97rem;
   font-weight: 600;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 20px rgba(253, 210, 10, 0.3);
+  line-height: 1.4;
+  margin: 0;
+}
+.hs-faq-inner .faq-toggle {
+  color: #fdd20a;
+  font-size: 1.4rem;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-left: 1rem;
+  transition: transform 0.2s;
+}
+.hs-faq-inner .faq-toggle.active { transform: rotate(45deg); }
+.hs-faq-inner .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: rgba(0,0,0,0.12);
+}
+.hs-faq-inner .faq-answer.active {
+  max-height: 300px;
+  padding: 16px 20px;
+}
+.hs-faq-inner .faq-answer p {
+  color: rgba(255,255,255,0.85);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.93rem;
 }
 
-.btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(253, 210, 10, 0.4);
-}
-
-.btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: transparent;
-  color: #ffffff;
-  padding: 1rem 2rem;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 1rem;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: #ffffff;
-  transform: translateY(-3px);
-}
 
 /* Section Headers */
 .section-header {
@@ -933,6 +837,7 @@ const submitForm = () => {
 /* Join Section */
 .join-section {
   margin-bottom: 4rem;
+  padding: 0 8%;
 }
 
 .join-grid {
@@ -1019,16 +924,20 @@ const submitForm = () => {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .join-btn:hover {
   background: linear-gradient(135deg, #2a5298 0%, #14407b 100%);
   transform: translateY(-2px);
+  color: #fdd20a;
 }
 
 /* Contact Section */
 .contact-section {
   margin-bottom: 4rem;
+  padding: 0 8%;
 }
 
 .contact-container {
@@ -1154,7 +1063,7 @@ const submitForm = () => {
   background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
   border-radius: 25px;
   padding: 3rem;
-  margin-bottom: 2rem;
+  margin: 0 8% 2rem;
   color: white;
 }
 
