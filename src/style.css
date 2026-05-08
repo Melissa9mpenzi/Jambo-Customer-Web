@@ -6,27 +6,27 @@ body { font-family: 'Montserrat', sans-serif; background-color: #fdfbf4; color: 
 .shape-left { top: 0; left: 0; transform: translate(-20%, 10%); }
 .shape-right { top: 0; right: 40px; transform: translate(10%, 5%) rotate(15deg); }
 
-.hero { position: relative; text-align: center; padding: 60px 20px 0; min-height: 650px; background-color: #fdfbf4; overflow: hidden; display: flex; flex-direction: column; align-items: center; }
+.hero { position: relative; text-align: center; padding: 60px 20px 0; min-height: 650px; background-color: #fdfbf4;  display: flex; flex-direction: column; align-items: center; }
 .hero h1 { font-family: 'Playfair Display', serif; font-size: 4rem; color: #14407b; margin-bottom: 20px; line-height: 1.1; position: relative; z-index: 5; font-weight: 700; }
 .paint-container { position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
 .paint-svg { position: absolute; bottom: -5px; width: 100%; height: auto; min-height: 450px; display: block; }
 .food-item { position: absolute; z-index: 5; }
-.pizza { top: 260px; left: 45%; width: 180px;  z-index: 6; animation: floatBounce 3s ease-in-out infinite; }
+.pizza { top: 300px; left: 38%; width: 300px;  z-index: 6; animation: floatBounce 3s ease-in-out infinite; }
 .paper-left { top: 120px; left: 35%; width: 60px; z-index: 4; }
 .paper-right { top: 120px; right: 35%; width: 60px; z-index: 4; }
 .pepper-right { top: 200px; right: 5%; width: 250px; }
-.cheese-right { bottom: 0; right: 8%; width: 200px;   }
-.broccoli-left { bottom: 0; left: 5%; width: 250px;   }
+.cheese-right { bottom: -180px; right: 8%; width: 220px;   }
+.broccoli-left { bottom: -200px; left: 5%; width: 250px;   }
 .broccoli-left-2 { top: 150px; left: 6%; width: 180px;  }
 @keyframes floatBounce { 0% { transform: translateY(0px); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0px); } }
 
-.content-section { background-color: #14407b; padding: 150px 10%; display: flex; justify-content: space-between; align-items: center; color: #fff; z-index: 2; min-height: 500px; margin-top: -15px; gap: 40px; flex-wrap: wrap; }
+.content-section { background-color: #14407b; padding: 450px 10% 100px; display: flex; justify-content: space-between; align-items: center; color: #fff; z-index: 2; min-height: 500px; margin-top: -15px; gap: 40px; flex-wrap: wrap; }
 .text-content { flex: 1 1 400px; padding-right: 20px; }
 .text-content h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 2.8rem); text-transform: uppercase; line-height: 1.2; margin-bottom: 25px; letter-spacing: 1px; }
 .text-content p { font-size: 0.95rem; line-height: 1.8; margin-bottom: 30px; opacity: 0.9; font-weight: 300; }
 .signature { font-family: 'Great Vibes', cursive; font-size: 2.6rem; opacity: 0.9; }
 .image-gallery { flex: 1 1 350px; position: relative; }
-.main-hall-img { width: 100%; height: auto; min-height: 380px; object-fit: cover; display: block; }
+.main-hall-img { width: 100%; height: auto; min-height: 380px; object-fit: cover; display: block; border-radius: 20px; }
 .overlay-img { position: absolute; bottom: -35px; left: -25px; width: 140px; height: 100px; background: #222; box-shadow: 0 12px 28px rgba(0,0,0,0.4); border: 4px solid #14407b; border-radius: 4px; overflow: hidden; }
 .overlay-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
@@ -129,7 +129,7 @@ header.sticky .logo-circle { width: 60px; height: 60px; }
 .spacer { flex: 1; }
 .menu-link.router-link-active { background: #fdfbf4; color: #14407b; border-left: 3px solid #fdd20a; font-weight: 600; }
 .header-center-image { display: flex; align-items: center; justify-content: center; height: 70px; margin: 0 16px; }
-.header-center-image img { max-height: 100%; max-width: 100%; object-fit: cover; }
+.header-center-image img { max-height: 100%; object-fit: cover; margin-left:-60px; }
 .hamburger-btn { width: 50px; height: 50px; border-radius: 50%; border: 2px solid #fff; background: #14407b; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; cursor: pointer; z-index: 60; transition: all 0.3s ease; padding: 12px; }
 .hamburger-btn span { display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px; transition: all 0.3s ease; }
 .hamburger-btn:hover { background: #fdfbf4; }
@@ -166,7 +166,6 @@ header.sticky .logo-circle { width: 60px; height: 60px; }
   .slide-menu { width: 100%; right: -100%; }
 }
 
-.cheese-right { bottom: 0; right: 8%; width: 200px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2)); animation: floatBounce 2.8s ease-in-out infinite; animation-delay: 1.2s; }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 .section-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #14407b; text-align: center; margin-bottom: 15px; }
 .section-subtitle { text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 50px; }

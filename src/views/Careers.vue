@@ -121,3 +121,7 @@ export default {
 }
 </script>
 
+<style scoped>
+.cheese-right { bottom: 0; right: 8%; width: 220px;   }
+.broccoli-left { bottom: 0; left: 5%; width: 250px;   }
+</style>
