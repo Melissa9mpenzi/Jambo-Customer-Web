@@ -680,7 +680,7 @@ const submitForm = () => {
   cursor: pointer;
 }
 .hs-faq-inner .faq-question h3 {
-  color: #fff;
+  color: #14407b;
   font-size: 0.97rem;
   font-weight: 600;
   line-height: 1.4;
