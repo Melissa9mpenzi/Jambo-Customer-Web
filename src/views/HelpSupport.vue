@@ -183,7 +183,7 @@
                 <p>{{ step }}</p>
               </div>
             </div>
-            <button class="join-btn">Apply Now</button>
+            <router-link to="/courier-info" class="join-btn">Apply Now →</router-link>
           </div>
 
           <div class="join-card">
@@ -197,7 +197,7 @@
                 <p>{{ step }}</p>
               </div>
             </div>
-            <button class="join-btn">Register Business</button>
+            <router-link to="/merchant-info" class="join-btn">Register Business →</router-link>
           </div>
 
           <div class="join-card">
@@ -1028,11 +1028,14 @@ const submitForm = () => {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .join-btn:hover {
   background: linear-gradient(135deg, #2a5298 0%, #14407b 100%);
   transform: translateY(-2px);
+  color: #fdd20a;
 }
 
 /* Contact Section */
