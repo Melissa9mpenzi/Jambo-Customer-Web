@@ -15,5 +15,3 @@ defineProps({
   subtitle: { type: String, default: '' }
 })
 </script>
-
-</style>
