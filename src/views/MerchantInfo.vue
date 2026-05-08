@@ -158,6 +158,8 @@
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 
+
+
 export default {
   name: 'PartnerRegistration',
   components: { Header, Footer },
@@ -211,111 +213,5 @@ export default {
 </script>
 
 <style scoped>
-.hero { position: relative; text-align: center; padding: 60px 20px 0; min-height: 650px; background-color: #fdfbf4; overflow: hidden; display: flex; flex-direction: column; align-items: center; }
-.hero h1 { font-family: 'Playfair Display', serif; font-size: 4rem; color: #14407b; margin-bottom: 20px; line-height: 1.1; position: relative; z-index: 5; font-weight: 700; }
-.hero h1 span { color: #fdd20a; }
-.paint-container { position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
-.paint-svg { position: absolute; bottom: -5px; width: 100%; height: auto; min-height: 450px; display: block; }
-.food-item { position: absolute; z-index: 5; }
-.pizza { top: 320px; left: 35%; width: 320px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3)); z-index: 6; animation: floatBounce 3s ease-in-out infinite; }
-.paper-left { top: 120px; left: 35%; width: 60px; z-index: 4; }
-.paper-right { top: 120px; right: 35%; width: 60px; z-index: 4; }
-.pepper-right { top: 200px; right: 5%; width: 250px; animation: floatBounce 3.2s ease-in-out infinite; animation-delay: 1s; }
-.cheese-right { bottom: 0; right: 8%; width: 200px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2)); animation: floatBounce 2.8s ease-in-out infinite; animation-delay: 1.2s; }
-.broccoli-left { bottom: 0; left: 5%; width: 250px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2)); animation: floatBounce 3.4s ease-in-out infinite; animation-delay: 1.4s; }
-.broccoli-left-2 { top: 150px; left: 6%; width: 180px; animation: floatBounce 3.1s ease-in-out infinite; animation-delay: 1.6s; }
-@keyframes floatBounce { 0% { transform: translateY(0px); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0px); } }
-.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-.section-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #14407b; text-align: center; margin-bottom: 15px; }
-.section-subtitle { text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 50px; }
-.why-partner { padding: 80px 0; background: #14407b; color: #fff; }
-.why-partner .section-title { color: #fff; }
-.why-partner .section-subtitle { color: rgba(255, 255, 255, 0.85); }
-.benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
-.benefit-card { background: rgba(255, 255, 255, 0.1); padding: 35px 30px; border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease; }
-.benefit-card:hover { background: rgba(255, 255, 255, 0.15); transform: translateY(-5px); }
-.benefit-icon { font-size: 2.5rem; color: #fdd20a; margin-bottom: 20px; }
-.benefit-card h3 { font-size: 1.3rem; margin-bottom: 12px; color: #fff; }
-.benefit-card p { color: rgba(255, 255, 255, 0.8); line-height: 1.6; }
-.business-types { padding: 80px 0; background: #fdfbf4; overflow: hidden; }
-.business-orbit { position: relative; width: 500px; height: 500px; margin: 50px auto; }
-.orbit-center { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; }
-.center-logo { width: 120px; height: 120px; border-radius: 50%; background: #14407b; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center; font-size: 0.75rem; font-weight: 600; box-shadow: 0 10px 40px rgba(20,64,123,0.3); }
-.center-logo i { font-size: 1.8rem; margin-bottom: 5px; }
-.orbit-ring { position: absolute; top: 0; left: 0; right: 0; bottom: 0; border: 2px dashed rgba(20,64,123,0.15); border-radius: 50%; }
-.orbit-item { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-220px) rotate(calc(-1 * var(--angle))); display: flex; flex-direction: column; align-items: center; gap: 6px; cursor: pointer; z-index: 3; transition: all 0.3s ease; }
-.orbit-icon { width: 100px; height: 100px; border-radius: 50%; background: #fff; border: 2px solid #e0e0e0; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: #14407b; transition: all 0.3s ease; }
-.orbit-item.active .orbit-icon, .orbit-item:hover .orbit-icon { background: #14407b; color: #fff; border-color: #14407b; transform: scale(1.15); box-shadow: 0 8px 25px rgba(20,64,123,0.25); }
-.orbit-label { font-size: 0.75rem; font-weight: 600; color: #14407b; text-align: center; }
-.business-detail-panel { max-width: 600px; margin: 20px auto 0; background: #fff; border-radius: 20px; padding: 30px; box-shadow: 0 15px 40px rgba(0,0,0,0.08); opacity: 0; transform: translateY(20px); transition: all 0.4s ease; }
-.business-detail-panel.visible { opacity: 1; transform: translateY(0); }
-.panel-header { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
-.panel-header i { font-size: 1.8rem; color: #14407b; }
-.panel-header h3 { font-size: 1.3rem; color: #14407b; flex: 1; }
-.close-panel { width: 35px; height: 35px; border-radius: 50%; border: none; background: #f0f0f0; font-size: 1.2rem; cursor: pointer; color: #666; transition: all 0.3s ease; }
-.close-panel:hover { background: #e0e0e0; color: #333; }
-.panel-items { display: flex; flex-wrap: wrap; gap: 10px; }
-.item-tag { padding: 8px 16px; border-radius: 50px; background: #fdfbf4; border: 1px solid #e0e0e0; color: #14407b; font-size: 0.9rem; font-weight: 500; transition: all 0.3s ease; }
-.item-tag:hover { background: #14407b; color: #fff; border-color: #14407b; }
-.partner-requirements { padding: 80px 0; background: #fff; }
-.requirements-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-top: 40px; }
-.requirements-image-side { position: relative; overflow: hidden;  }
-.side-image { width: 100%; height: 650px; object-fit: cover; display: block;  transition: transform 0.5s ease; }
-.requirements-image-side:hover .side-image { transform: scale(1.05); }
-.image-overlay-text { position: absolute; bottom: 0; left: 0; right: 0; padding: 30px; background: linear-gradient(transparent, rgba(20,64,123,0.9)); color: #fff; text-align: center; }
-.image-overlay-text span { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 600; }
-.requirements-timeline-side { padding-left: 20px; }
-.requirements-timeline { position: relative; }
-.timeline-track { position: relative; display: flex; flex-direction: column; gap: 0; }
-.timeline-node { position: relative; display: flex; align-items: flex-start; padding: 15px 0; padding-left: 70px; min-height: 90px; }
-.node-connector { position: absolute; left: 24px; top: 60px; bottom: -25px; width: 2px; background: #14407b; }
-.node-circle { position: absolute; left: 0; top: 28px; width: 50px; height: 50px; border-radius: 50%; background: #14407b; border: 3px solid #14407b; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #fff; box-shadow: 0 5px 20px rgba(20,64,123,0.2); z-index: 2; transition: all 0.3s ease; }
-.timeline-node:hover .node-circle { transform: scale(1.1); background: #fdd20a; border-color: #fdd20a; color: #14407b; }
-.node-content { opacity: 1; transform: translateX(0); transition: all 0.3s ease; }
-.timeline-node:hover .node-content { transform: translateX(5px); }
-.node-number { font-size: 0.8rem; font-weight: 700; color: #fdd20a; margin-bottom: 5px; letter-spacing: 1px; }
-.node-content h3 { font-size: 1.2rem; color: #14407b; margin-bottom: 5px; }
-.node-content p { color: #666; line-height: 1.5; }
-.faq-section { padding: 80px 0; background: #f8f9fa; }
-.faq-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 40px; }
-.faq-item { background: #fff; border-radius: 12px; margin-bottom: 12px; overflow: hidden; border: 1px solid #e8e8e8; transition: all 0.3s ease; }
-.faq-item:hover { border-color: #14407b; }
-.faq-item.active { border-color: #14407b; box-shadow: 0 5px 20px rgba(20,64,123,0.1); }
-.faq-question { display: flex; align-items: center; gap: 15px; padding: 18px 20px; cursor: pointer; }
-.faq-number { font-size: 0.85rem; font-weight: 700; color: #fdd20a; min-width: 28px; }
-.faq-question h3 { flex: 1; font-size: 0.95rem; color: #333; font-weight: 600; margin: 0; }
-.faq-question i { font-size: 1.2rem; color: #14407b; transition: transform 0.3s ease; }
-.faq-item.active .faq-question i { transform: rotate(180deg); }
-.faq-answer { padding: 0 20px 20px; padding-left: 63px; }
-.faq-answer p { color: #666; line-height: 1.7; margin: 0; font-size: 0.9rem; }
-.cta-section { padding: 80px 0 120px; background: #fdfbf4; text-align: center; }
-.cta-section h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #14407b; margin-bottom: 15px; }
-.cta-section p { font-size: 1.1rem; color: #666; margin-bottom: 40px; }
-.cta-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
-.cta-btn { display: inline-flex; align-items: center; gap: 10px; padding: 15px 35px; border-radius: 50px; font-size: 1.1rem; font-weight: 600; text-decoration: none; transition: all 0.3s ease; }
-.cta-primary { background: #14407b; color: #fff; }
-.cta-primary:hover { background: #0d2f5c; transform: translateY(-2px); }
-.cta-secondary { background: transparent; color: #14407b; border: 2px solid #14407b; }
-.cta-secondary:hover { background: #14407b; color: #fff; transform: translateY(-2px); }
-@media (max-width: 768px) {
-  .hero { min-height: 500px; padding: 40px 20px 0; }
-  .hero h1 { font-size: 2.5rem; }
-  .pizza { width: 250px; top: 250px; left: 25%; }
-  .section-title { font-size: 2rem; }
-  .benefits-grid { grid-template-columns: 1fr; }
-  .business-orbit { width: 340px; height: 340px; }
-  .orbit-item { transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-150px) rotate(calc(-1 * var(--angle))); }
-  .center-logo { width: 90px; height: 90px; font-size: 0.65rem; }
-  .center-logo i { font-size: 1.3rem; }
-  .orbit-icon { width: 48px; height: 48px; font-size: 1.1rem; }
-  .orbit-label { font-size: 0.65rem; }
-  .requirements-layout { grid-template-columns: 1fr; gap: 40px; }
-  .side-image { height: 350px; }
-  .requirements-timeline-side { padding-left: 0; }
-  .faq-columns { grid-template-columns: 1fr; }
-  .cta-buttons { flex-direction: column; align-items: center; }
-  .timeline-node { padding-left: 60px; }
-  .node-circle { width: 40px; height: 40px; font-size: 1rem; left: 0; }
-  .node-connector { left: 19px; }
-}
+ .pizza { top: 260px; left: 35%; width: 350px;  z-index: 6; animation: floatBounce 3s ease-in-out infinite; }
 </style>

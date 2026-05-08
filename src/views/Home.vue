@@ -1,12 +1,6 @@
 <template>
   <div>
-    <!-- All content from App.vue goes here -->
-    <div class="page-shape shape-left">
-      <svg viewBox="0 0 200 200"><circle cx="60" cy="60" r="58" fill="#14407b" opacity="0.18"/><circle cx="140" cy="90" r="35" fill="#fdd20a" opacity="0.28"/><path d="M20,160 Q90,100 180,145" fill="none" stroke="#14407b" stroke-width="8" opacity="0.2"/></svg>
-    </div>
-    <div class="page-shape shape-right">
-      <svg viewBox="0 0 200 200"><circle cx="150" cy="50" r="52" fill="#14407b" opacity="0.16"/><circle cx="60" cy="120" r="28" fill="#fdd20a" opacity="0.28"/><path d="M20,45 Q90,95 145,25" fill="none" stroke="#14407b" stroke-width="7" opacity="0.22"/></svg>
-    </div>
+
 
     <Header />
 
@@ -96,7 +90,7 @@
           <div class="banner-center-content">
             <h3>Authentic Taste From Our Kitchen</h3>
             <p>Every dish is crafted with care using fresh, premium ingredients. Experience the flavors that have made us a favorite.</p>
-            <button class="center-btn" aria-label="Explore our kitchen">→</button>
+            <router-link to="/category/food" class="center-btn" aria-label="Explore our kitchen">→</router-link>
           </div>
         </div>
       </section>
