@@ -257,22 +257,6 @@
         </div>
       </section>
 
-      <!-- Emergency Support -->
-      <section class="emergency-section">
-        <div class="emergency-content">
-          <div class="emergency-icon">
-            <img src="/images/logo.png" alt="Emergency Support" />
-          </div>
-          <div class="emergency-text">
-            <h2>Emergency Support</h2>
-            <p>For urgent issues with active deliveries, please call our emergency hotline</p>
-            <div class="emergency-number">
-              <span>Emergency Hotline:</span>
-              <strong>+254 700 999 999</strong>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
     <Footer />
@@ -1058,65 +1042,6 @@ const submitForm = () => {
   transform: translateY(-2px);
 }
 
-/* Emergency Section */
-.emergency-section {
-  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
-  border-radius: 25px;
-  padding: 3rem;
-  margin: 0 8% 2rem;
-  color: white;
-}
-
-.emergency-content {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.emergency-icon {
-  width: 80px;
-  height: 80px;
-  background: rgba(255,255,255,0.2);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.emergency-icon img {
-  width: 50px;
-  height: 50px;
-  filter: brightness(0) invert(1);
-}
-
-.emergency-text h2 {
-  margin: 0 0 1rem 0;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.emergency-text p {
-  margin: 0 0 1.5rem 0;
-  font-size: 1.1rem;
-  opacity: 0.9;
-}
-
-.emergency-number {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-size: 1.2rem;
-}
-
-.emergency-number span {
-  opacity: 0.9;
-}
-
-.emergency-number strong {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
