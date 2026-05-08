@@ -420,9 +420,9 @@ const submitForm = () => {
 
 <style scoped>
 .help-support-main {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* Page Hero */
