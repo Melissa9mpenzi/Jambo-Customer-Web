@@ -564,6 +564,10 @@ header.sticky .logo-circle { width: 60px; height: 60px; }
   font-size: 1.3rem;
 }
 
+.quick-icon i {
+  color: #fff;
+}
+
 .quick-icon span {
   filter: brightness(0) invert(1);
 }

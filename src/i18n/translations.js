@@ -31,14 +31,18 @@ export const translations = {
     contentSection: {
       heading:   { sw: 'Si Chakula cha Haraka\nBali Chakula Kizuri kwa Haraka.', en: 'Not Fast food\nBut Good Food Fast.' },
       body:      {
-        sw: 'JAMBOAPP ni jukwaa la utoaji wa huduma nyingi kwa mahitaji ya haraka, lilioundwa kuunganisha wateja na wafanyabiashara wa mitaa na wasambazaji wa kuaminika kwa utoaji wa haraka na bila vikwazo wa chakula, mboga, na mahitaji ya kila siku. Jukwaa linatoa uzoefu mzuri kutoka mwanzo hadi mwisho ambapo watumiaji wanaweza kutafuta bidhaa kwa urahisi, kuweka maagizo, kulipa kwa usalama, na kufuatilia utoaji wao wakati halisi. Kwa maono ya kuwa soko la mwisho la kuaminika, la haraka, na la bei nafuu, JAMBOAPP inazingatia kutoa maagizo ndani ya wastani wa dakika 45 huku ikisaidia biashara za mitaa na kuwawezesha washirika wa utoaji.',
-        en:  'JAMBOAPP is an on-demand multi-service delivery platform designed to connect customers with local merchants and reliable couriers for fast and seamless delivery of food, groceries, and everyday essentials. The platform offers a smooth end-to-end experience where users can easily browse products, place orders, make secure payments, and track their deliveries in real time. Built with a vision to become the most trusted, fast, and affordable last-mile marketplace, JAMBOAPP focuses on delivering orders within an average of 45 minutes while supporting local businesses and empowering delivery partners.'
+        sw: 'JAMBOAPP ni jukwaa la utoaji wa huduma nyingi kwa mahitaji ya haraka, lilioundwa kuunganisha wateja na wafanyabiashara wa mitaa na wasambazaji wa kuaminika kwa utoaji wa haraka wa chakula, mboga, na mahitaji ya kila siku.',
+        en:  'JAMBOAPP is an on-demand multi-service delivery platform designed to connect customers with local merchants and reliable couriers for fast and seamless delivery of food, groceries, and everyday essentials.'
+      },
+      body2: {
+        sw: 'Kwenye JAMBOAPP, jukwaa linatoa uzoefu mzuri wa mwisho hadi mwisho ambapo watumiaji wanaweza kutafuta bidhaa kwa urahisi, kuweka maagizo, kulipa kwa usalama, na kufuatilia utoaji wao wakati halisi kutoka utumwaji hadi kuwasili.',
+        en:  'At JAMBOAPP, The platform offers a smooth end-to-end experience where users can easily browse products, place orders, make secure payments, and track their deliveries in real time from dispatch to arrival.'
       },
       signature: { sw: 'Chakula Kizuri kwa Haraka', en: 'Good Food Fast' },
     },
     categories: {
       title:    { sw: 'MAKUNDI MAKUU',       en: 'TOP CATEGORIES' },
-      subtitle: { sw: 'Menyu yetu inaheshimu wauzaji wa chakula cha mtaani ambao husaidia wateja wao kukimbia kwa kutoa vitafunio vya haraka na vitamu. Tulijumuisha ladha kutoka duniani kote.', en: 'Our menu is a nod to street food vendors who help their customers stay on-the-go by delivering quick tasty bites. We incorporated flavors from around the world to offer.' },
+      subtitle: { sw: 'Pata kila unachohitaji mahali pamoja — chakula, mboga, bidhaa muhimu, na zaidi — vilivyotolewa haraka mlangoni mwako.', en: 'Find everything you need in one place — food, groceries, essentials, and more — delivered quickly to your doorstep.' },
       food: {
         name: { sw: 'Chakula',      en: 'Food' },
         desc: { sw: 'Milo mizuri, chakula cha mtaani na vitafunio vya haraka vilivyoletwa mlangoni mwako.', en: 'Delicious meals, street food and quick bites delivered right to your door.' },
@@ -57,7 +61,7 @@ export const translations = {
       },
     },
     banner: {
-      heading: { sw: 'Ladha ya Kweli Kutoka Jikoni Letu',  en: 'Authentic Taste From Our Kitchen' },
+      heading: { sw: 'Ubora wa Kweli Kutoka kwa Huduma Zetu', en: 'Authentic Quality From Our Services' },
       body:    { sw: 'Kila sahani inaandaliwa kwa uangalifu kwa kutumia viungo vipya vya hali ya juu. Jaribu ladha ambazo zimetufanya kuwa pendwa.',  en: 'Every dish is crafted with care using fresh, premium ingredients. Experience the flavors that have made us a favorite.' },
     },
     joinUs: {
