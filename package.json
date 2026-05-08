@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@unhead/vue": "^1.1.30",
+    "aos": "^2.3.4",
     "vue": "^3.4.0",
     "vue-router": "^4.6.4"
   },
