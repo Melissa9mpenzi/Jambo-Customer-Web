@@ -18,6 +18,7 @@
         </div>
         <img src="/images/rider.png" class="hi h1" alt="Delivery Rider">
         <img src="/images/phone.png" class="hi h2" alt="App on Phone">
+        <img src="/images/shops.png" class="hi h3" alt="Merchant Shop">
       </section>
 
       <!-- Quick Contact Section -->
