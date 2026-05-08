@@ -26,7 +26,7 @@
         <div class="quick-contact-grid">
           <div class="quick-contact-item">
             <div class="quick-icon">
-              <span>📞</span>
+              <i class="fas fa-phone"></i>
             </div>
             <div class="quick-info">
               <h4>Call Us Now</h4>
@@ -36,7 +36,7 @@
           </div>
           <div class="quick-contact-item">
             <div class="quick-icon">
-              <span>�</span>
+              <i class="fab fa-whatsapp"></i>
             </div>
             <div class="quick-info">
               <h4>WhatsApp</h4>
@@ -46,7 +46,7 @@
           </div>
           <div class="quick-contact-item">
             <div class="quick-icon">
-              <span>✉️</span>
+              <i class="fas fa-envelope"></i>
             </div>
             <div class="quick-info">
               <h4>Email Support</h4>
@@ -57,74 +57,48 @@
         </div>
       </section>
 
-      <!-- Visually Striking Blue Support Section -->
-      <section class="striking-support-section">
-        <!-- Top paint wave -->
-        <div class="paint-wave-top">
-          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 120">
-            <path fill="#f8f9fa" d="M0,60 C400,120 1200,0 1600,60 L1600,120 L0,120 Z"/>
+      <!-- Blue Content Section (matches homepage style) -->
+      <section class="hs-content-section">
+        <!-- Spiky paint wave TOP -->
+        <div class="hs-wave-top">
+          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 160">
+            <path fill="#fdfbf4" d="M333,20l9-1v1c-1.139,1.139-.4,0-1,2l-2-1v1l-5,1V22C332.861,20.861,333.6,22,333,20Zm-68,0h2v1C264.99,20.426,266.135,21.12,265,20Zm8,0,6,1v1c-3.1,1.643-1.8,1.9-7,2Q272.5,22,273,20Zm-10,1h2v1C262.99,21.426,264.135,22.12,263,21Zm43,3v2l6,1v1h-1v1h-8c-1.139-1.139,0-.4-2-1,1.01-3.129.557-1.518,0-5h-8V22h1V21h3c2.05,1.885,9.224,1.1,13,1v1h-1v1h-3Zm-46-2h3v1h-2c-0.73.474-.011,1.392-2,1Zm118,0v2c-3.138.048-8.5-.565-10-2h10Zm28,0v2c-5.937.177-15.034,1.018-18-2h18ZM0,0H1600V160H0Z"/>
           </svg>
         </div>
 
-        
-        <!-- Floating delivery images -->
-        <div class="floating-images">
-          <img src="/images/drug.png" class="float-img img-med" alt="Medicine">
-          <img src="/images/pizza.png" class="float-img img-pizza" alt="Pizza">
-          <img src="/images/burger.png" class="float-img img-burger" alt="Burger">
-          <img src="/images/shops.png" class="float-img img-shop" alt="Shop">
-          <img src="/images/toma.png" class="float-img img-grocery" alt="Grocery">
-        </div>
-        
-        <!-- Main content -->
-        <div class="striking-content">
-          <div class="content-badge">
-            <i class="fas fa-headset"></i>
-            <span>Always Here For You</span>
+        <!-- Content -->
+        <div class="hs-content-inner">
+          <div class="hs-text-content">
+            <h2>Always Ready<br>To Help You.</h2>
+            <p>Whether you have a question about your order, need to report an issue, or want to learn more about JamboApp — our dedicated support team is here for you around the clock.</p>
+            <div class="hs-contact-lines">
+              <div class="hs-contact-line">
+                <i class="fas fa-phone"></i>
+                <span>+254 700 000 000</span>
+              </div>
+              <div class="hs-contact-line">
+                <i class="fab fa-whatsapp"></i>
+                <span>Chat on WhatsApp</span>
+              </div>
+              <div class="hs-contact-line">
+                <i class="fas fa-envelope"></i>
+                <span>support@jamboapp.com</span>
+              </div>
+            </div>
+            <div class="hs-signature">JamboApp Support Team</div>
           </div>
-          
-          <h2 class="striking-title">
-            Need Help?<br>
-            <span class="highlight">We've Got You Covered</span>
-          </h2>
-          
-          <p class="striking-description">
-            Our dedicated support team is available round the clock to assist you with orders, 
-            partnerships, or any questions you might have about JamboApp.
-          </p>
-          
-          <div class="striking-stats">
-            <div class="stat-card">
-              <div class="stat-icon"><i class="fas fa-users"></i></div>
-              <div class="stat-value">500+</div>
-              <div class="stat-desc">Support Agents</div>
+          <div class="hs-image-side">
+            <img src="/images/support-team.jpg" class="hs-main-img" alt="Support Team">
+            <div class="hs-overlay-img">
+              <img src="/images/customer-service-hero.jpg" alt="Customer Service">
             </div>
-            <div class="stat-card featured">
-              <div class="stat-icon"><i class="fas fa-clock"></i></div>
-              <div class="stat-value">24/7</div>
-              <div class="stat-desc">Always Available</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-icon"><i class="fas fa-smile"></i></div>
-              <div class="stat-value">99%</div>
-              <div class="stat-desc">Happy Customers</div>
-            </div>
-          </div>
-          
-          <div class="cta-buttons">
-            <button class="btn-primary">
-              <i class="fas fa-phone"></i> Call Now
-            </button>
-            <button class="btn-secondary">
-              <i class="fas fa-comments"></i> Start Chat
-            </button>
           </div>
         </div>
-        
-        <!-- Bottom paint wave -->
-        <div class="paint-wave-bottom">
-          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 120">
-            <path fill="#ffffff" d="M0,60 C400,0 1200,120 1600,60 L1600,0 L0,0 Z"/>
+
+        <!-- Spiky paint wave BOTTOM -->
+        <div class="hs-wave-bottom">
+          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1600 160">
+            <path fill="#fdfbf4" d="M333,140l9,1v-1c-1.139-1.139-.4,0-1-2l-2,1v-1l-5-1v1C332.861,139.139,333.6,138,333,140Zm-68,0h2v-1C264.99,139.574,266.135,138.88,265,140Zm8,0,6-1v-1c-3.1-1.643-1.8-1.9-7-2Q272.5,138,273,140Zm-10-1h2v-1C262.99,138.574,264.135,139.12,263,139Zm43-3v-2l6-1v-1h-1v-1h-8c-1.139,1.139,0,.4-2,1,1.01,3.129.557,1.518,0,5h-8v1h1v1h3c2.05-1.885,9.224-1.1,13-1v-1h-1v-1h-3Zm-46,2h3v-1h-2c-0.73-.474-.011-1.392-2-1Zm118,0v-2c-3.138-.048-8.5.565-10,2h10Zm28,0v-2c-5.937-.177-15.034-1.018-18,2h18ZM0,160H1600V0H0Z"/>
           </svg>
         </div>
       </section>
@@ -548,275 +522,134 @@ const submitForm = () => {
   font-size: 0.85rem;
 }
 
-/* Blue Support Section */
-.striking-support-section {
+/* Blue Content Section — matches homepage content-section */
+.hs-content-section {
   position: relative;
-  background: #14407b;
-  padding: 6rem 0 8rem;
-  margin: 0;
+  background-color: #14407b;
   overflow: hidden;
-}
-
-/* Paint wave separators */
-.paint-wave-top {
-  position: absolute;
-  top: -1px;
-  left: 0;
-  width: 100%;
-  height: 80px;
+  color: #fff;
   z-index: 2;
 }
 
-.paint-wave-top svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.paint-wave-bottom {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  z-index: 2;
-}
-
-.paint-wave-bottom svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-
-/* Floating images */
-.floating-images {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 3;
-}
-
-.float-img {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
-  animation: floatBounce 3s ease-in-out infinite;
-}
-
-.img-med {
-  left: 8%;
-  top: 20%;
-  width: 80px;
-  height: 80px;
-  animation-delay: 0s;
-}
-
-.img-pizza {
-  left: 5%;
-  bottom: 25%;
-  width: 90px;
-  height: 90px;
-  animation-delay: 0.5s;
-}
-
-.img-burger {
-  left: 50%;
-  top: 10%;
-  width: 140px;
-  height: 140px;
-  transform: translateX(-50%);
-  animation: floatBurger 3.5s ease-in-out infinite;
-}
-
-.img-shop {
-  right: 8%;
-  top: 25%;
-  width: 85px;
-  height: 85px;
-  animation-delay: 1s;
-}
-
-.img-grocery {
-  right: 5%;
-  bottom: 20%;
-  width: 80px;
-  height: 80px;
-  animation-delay: 1.5s;
-}
-
-@keyframes floatBounce {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-15px) rotate(3deg); }
-}
-
-@keyframes floatBurger {
-  0%, 100% { transform: translateX(-50%) translateY(0) rotate(0deg); }
-  50% { transform: translateX(-50%) translateY(-20px) rotate(-2deg); }
-}
-
-/* Main content */
-.striking-content {
+.hs-wave-top {
   position: relative;
-  z-index: 4;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  height: 120px;
+  margin-bottom: -4px;
+  z-index: 1;
 }
+.hs-wave-top svg { width: 100%; height: 100%; display: block; }
 
-.content-badge {
-  display: inline-flex;
+.hs-wave-bottom {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  margin-top: -4px;
+  z-index: 1;
+}
+.hs-wave-bottom svg { width: 100%; height: 100%; display: block; }
+
+.hs-content-inner {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  padding: 0.6rem 1.2rem;
-  border-radius: 50px;
-  margin-bottom: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  gap: 60px;
+  padding: 60px 10%;
+  flex-wrap: wrap;
 }
 
-.content-badge i {
-  color: #fdd20a;
-  font-size: 1.2rem;
-}
+.hs-text-content { flex: 1; min-width: 280px; }
 
-.content-badge span {
-  color: #ffffff;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.striking-title {
-  color: #ffffff;
-  font-size: 3rem;
+.hs-text-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
+  color: #fff;
 }
 
-.striking-title .highlight {
-  color: #fdd20a;
-  text-shadow: 0 2px 10px rgba(253, 210, 10, 0.3);
-}
-
-.striking-description {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 1.15rem;
+.hs-text-content p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.88);
   line-height: 1.8;
-  margin-bottom: 2.5rem;
-  max-width: 550px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 2rem;
+  max-width: 480px;
 }
 
-/* Stats cards */
-.striking-stats {
+.hs-contact-lines {
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 14px;
   margin-bottom: 2.5rem;
 }
 
-.stat-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 1.5rem;
-  min-width: 140px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  transition: all 0.3s ease;
+.hs-contact-line {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
-
-.stat-card:hover {
-  transform: translateY(-8px);
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-}
-
-.stat-card.featured {
-  background: rgba(253, 210, 10, 0.15);
-  border-color: rgba(253, 210, 10, 0.3);
-  transform: scale(1.05);
-}
-
-.stat-card.featured:hover {
-  background: rgba(253, 210, 10, 0.25);
-  box-shadow: 0 20px 40px rgba(253, 210, 10, 0.2);
-}
-
-.stat-icon {
-  font-size: 1.8rem;
+.hs-contact-line i {
+  font-size: 1.3rem;
   color: #fdd20a;
-  margin-bottom: 0.8rem;
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
 }
-
-.stat-value {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 0.3rem;
-}
-
-.stat-desc {
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.8);
+.hs-contact-line span {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.92);
   font-weight: 500;
 }
 
-/* CTA Buttons */
-.cta-buttons {
+.hs-signature {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: #fdd20a;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.hs-image-side {
+  flex: 1;
+  min-width: 260px;
+  position: relative;
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
 }
 
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: #fdd20a;
-  color: #14407b;
-  padding: 1rem 2rem;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 20px rgba(253, 210, 10, 0.3);
+.hs-main-img {
+  width: 100%;
+  max-width: 420px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+  display: block;
 }
 
-.btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(253, 210, 10, 0.4);
+.hs-overlay-img {
+  position: absolute;
+  bottom: -30px;
+  right: -20px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  border: 4px solid #fdd20a;
+}
+.hs-overlay-img img {
+  width: 160px;
+  height: 140px;
+  object-fit: cover;
+  display: block;
 }
 
-.btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: transparent;
-  color: #ffffff;
-  padding: 1rem 2rem;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 1rem;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  transition: all 0.3s ease;
+@media (max-width: 900px) {
+  .hs-content-inner { flex-direction: column; gap: 40px; padding: 50px 6%; }
+  .hs-overlay-img { right: 10px; bottom: -20px; }
 }
 
-.btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: #ffffff;
-  transform: translateY(-3px);
-}
+
 
 /* Section Headers */
 .section-header {
